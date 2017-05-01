@@ -1,0 +1,94 @@
+{
+   "clear_win_cancel_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "Annulla"
+   },
+   "clear_win_clear_all_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "Rimuovi tutto"
+   },
+   "clear_win_middle_text": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "Non mostrare più questo dialogo"
+   },
+   "clear_win_top_content": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "Vuoi \u003Cb>Rimuovi tutto\u003C/b> download?"
+   },
+   "control_cancel_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Annulla"
+   },
+   "control_finder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Mirino"
+   },
+   "control_folder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "cartella"
+   },
+   "control_resume_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Curriculum vitae"
+   },
+   "control_retry_download_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Riprovare scaricare"
+   },
+   "control_show_in_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Mostrare"
+   },
+   "control_status_canceled_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "Annullato"
+   },
+   "control_status_paused_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "In pausa"
+   },
+   "control_status_removed_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "Rimosso"
+   },
+   "extension_default_title": {
+      "description": "The field, that describes the default title of extension.",
+      "message": "Download manager"
+   },
+   "extension_description": {
+      "description": "The field, that describes the description of extension.",
+      "message": "Gestisce e interagisce con i download direttamente dal barra degli strumenti del browser . Il più conveniente download manager per il browser ."
+   },
+   "extension_name": {
+      "description": "The field, that describes the name of extension.",
+      "message": "Download manager Chrome"
+   },
+   "extension_short_name": {
+      "description": "The field, that describes the short name of extension.",
+      "message": "Download manager Chrome"
+   },
+   "footer_show_all_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "Mostra tutti i download"
+   },
+   "head_clear_button_value": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "Rimuovere"
+   },
+   "head_downloads_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "Download"
+   },
+   "head_open_folder_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "Cartella aperta"
+   },
+   "item_name_open_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "Aperto"
+   },
+   "item_remove_button_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "Rimuovere dalla lista"
+   }
+}

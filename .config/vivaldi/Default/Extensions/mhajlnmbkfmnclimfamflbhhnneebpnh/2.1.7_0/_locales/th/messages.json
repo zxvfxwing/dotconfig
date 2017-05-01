@@ -1,0 +1,94 @@
+{
+   "clear_win_cancel_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ยกเลิก"
+   },
+   "clear_win_clear_all_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ลบทั้งหมด"
+   },
+   "clear_win_middle_text": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ไม่แสดง กล่องโต้ตอบนี้อีก"
+   },
+   "clear_win_top_content": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "คุณต้องการที่จะ \u003Cb>ลบทั้งหมด\u003C/b> ดาวน์โหลด?"
+   },
+   "control_cancel_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ยกเลิก"
+   },
+   "control_finder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Finder"
+   },
+   "control_folder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "โฟลเดอร์"
+   },
+   "control_resume_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ประวัติย่อ"
+   },
+   "control_retry_download_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ลองดาวน์โหลดอีกครั้ง"
+   },
+   "control_show_in_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "แสดง ใน"
+   },
+   "control_status_canceled_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "ยกเลิก"
+   },
+   "control_status_paused_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "หยุดชั่วคราว"
+   },
+   "control_status_removed_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "ลบออก"
+   },
+   "extension_default_title": {
+      "description": "The field, that describes the default title of extension.",
+      "message": "ผู้จัดการการดาวน์โหลด"
+   },
+   "extension_description": {
+      "description": "The field, that describes the description of extension.",
+      "message": "การบริหารจัดการและ การโต้ตอบกับ การดาวน์โหลดของคุณ ได้โดยตรงจาก แถบเครื่องมือ เบราว์เซอร์ ที่สะดวกที่สุด สำหรับ ผู้จัดการการดาวน์โหลด เบราว์เซอร์ ของคุณ"
+   },
+   "extension_name": {
+      "description": "The field, that describes the name of extension.",
+      "message": "ผู้จัดการการดาวน์โหลด Chrome"
+   },
+   "extension_short_name": {
+      "description": "The field, that describes the short name of extension.",
+      "message": "ผู้จัดการการดาวน์โหลด Chrome"
+   },
+   "footer_show_all_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "แสดงการดาวน์โหลดทั้งหมด"
+   },
+   "head_clear_button_value": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "เอาออก"
+   },
+   "head_downloads_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ดาวน์โหลด"
+   },
+   "head_open_folder_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "เปิดโฟลเดอร์"
+   },
+   "item_name_open_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "เปิด"
+   },
+   "item_remove_button_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "ลบออกจากรายการ"
+   }
+}

@@ -1,0 +1,541 @@
+T 1489705578 18<teraflops18>	secondbox: I can do CUDA stuff with optirun/primus
+T 1489705615 23*	lacrymology (~lacrymolo@190.2.100.13423) vient de rentrer
+T 1489705618 24*	utack_ a quitté (Ping timeout: 264 seconds)
+T 1489705654 24*	lvkm a quitté (Ping timeout: 245 seconds)
+T 1489705668 18<teraflops18>	I can mining bitcoins while making french toast on my laptop :P
+T 1489705670 24*	rubdos a quitté (Ping timeout: 256 seconds)
+T 1489705683 23*	sajattack (~sajattack@S01060018e7f04e85.gv.shawcable.net23) vient de rentrer
+T 1489705686 24*	secondbox a quitté (Remote host closed the connection)
+T 1489705698 18<teraflops18>	he left, I blame my joke
+T 1489705734 23*	Pie-jacker875 (~Pie-jacke@c-24-62-41-71.hsd1.ma.comcast.net23) vient de rentrer
+T 1489705865 23*	sunn (~oliver@host86-191-187-185.range86-191.btcentralplus.com23) vient de rentrer
+T 1489705908 24*	kryl a quitté (Ping timeout: 256 seconds)
+T 1489705914 24*	esreverse a quitté (Quit: <--)
+T 1489705944 24*	Tazmain a quitté (Quit: Leaving)
+T 1489706005 24*	k3asd` a quitté (Ping timeout: 246 seconds)
+T 1489706019 23*	secondbox (~johannes@gprs-inet-183-141.elisa.ee23) vient de rentrer
+T 1489706022 18<secondbox18>	lol
+T 1489706035 24*	bkn89 a quitté (Quit: Leaving)
+T 1489706068 18<secondbox18>	doing a -Syyuu because still got a black screen, bumblebee seems to be very taken aback by the lack of bbswitch, and bbswitch needs a fresher kernel
+T 1489706081 24*	Caleb a quitté (Quit: REALITY.SYS Corrupted: Re-boot universe? (Y/N/Q))
+T 1489706091 18<earnestly18>	secondbox: Why are you using -uu then...?
+T 1489706098 18<earnestly18>	secondbox: In fact, why are you using -yy?
+T 1489706126 18<sheep18>	secondbox: always reboot after kernel updates
+T 1489706204 18<secondbox18>	earnestly: eh, friend helped me setup arch and he suggested it
+T 1489706220 18<earnestly18>	secondbox: Do you know what -uu does?  Or why you'd need to use -yy?
+T 1489706245 18<teraflops18>	secondbox: bbswitch is optional dep for bumblebee
+T 1489706249 18<earnestly18>	secondbox: Either way, their suggestion was pretty bad.  To update, simply -Syu
+T 1489706262 18<Scimmia18>	I always have to qustion if these people are really friends when people say that
+T 1489706298 24*	Cirrus_Minor a quitté (Quit: WeeChat 1.7)
+T 1489706307 24*	kremfloete a quitté (Quit: kremfloete)
+T 1489706308 18<Scimmia18>	most often they're setting their "friend" up
+T 1489706313 23*	yahal (~stf@i577A242C.versanet.de23) vient de rentrer
+T 1489706326 23*	bitmod (~bitmod@gateway/tor-sasl/bitmod23) vient de rentrer
+T 1489706339 18<bitmod18>	what's the best way of installing python on arch?
+T 1489706349 18<memori18>	pacman -S python
+T 1489706363 23*	kremfloete (~kremfloet@84-52-239.231.3p.ntebredband.no23) vient de rentrer
+T 1489706371 18<memori18>	^ is python3, use python2 if you want python2
+T 1489706391 18<earnestly18>	"python" always refers to the latest version of python
+T 1489706392 24*	Perigee a quitté (Quit: WeeChat 1.7)
+T 1489706397 18<bitmod18>	anaconda isn't recommend then?
+T 1489706408 18<earnestly18>	Of course not?
+T 1489706411 24*	gugah a quitté (Ping timeout: 268 seconds)
+T 1489706417 18<sheep18>	always use pacman unless you absolutely can't
+T 1489706424 18<bitmod18>	understood, thanks
+T 1489706456 18<memori18>	Some people are still stuck in python2, though, so figured I'd be explicit
+T 1489706457 18*	earnestly has to go and figure out what this anaconda shit is now
+T 1489706457 24*	KaibutsuX a quitté (Ping timeout: 256 seconds)
+T 1489706457 18<Scimmia18>	earnestly: similar to pip
+T 1489706463 18<earnestly18>	Another one? :s
+T 1489706466 18<Scimmia18>	yep
+T 1489706474 18<sheep18>	what is this, windows?
+T 1489706484 23*	Perigee (~Perigee@pool-108-36-240-70.phlapa.fios.verizon.net23) vient de rentrer
+T 1489706518 18<teraflops18>	that anaconda thingy is in the AUR though
+T 1489706530 23*	datamoshr (~john@unaffiliated/datamoshr23) vient de rentrer
+T 1489706535 18<earnestly18>	Back when I thought https://standalone-sysadmin.com/just-what-we-need-another-package-manager-a93adc844a1f was enough
+T 1489706537 18<phrik18>	Title: Just what we need…another package manager – Standalone-SysAdmin (at standalone-sysadmin.com)
+T 1489706548 18<teraflops18>	🐍 
+T 1489706582 18<memori18>	Now let's go write another python package manager, but in go :3
+T 1489706585 18<secondbox18>	Scimmia: lol
+T 1489706593 18<earnestly18>	Then again, who am I really kidding.  New languages have existed almost every month or two for the last 30 years or more, and each one seems to eventually aquire yet-another-language-package-manager, each of which do nothing new, solve nothing generically and all suck
+T 1489706609 18<bitmod18>	regarding language package managers, should i prioritize pacman over managers like pip?
+T 1489706616 18<earnestly18>	bitmod: Yes of course
+T 1489706624 18<secondbox18>	bitmod: pip often has fresher versions, though
+T 1489706629 18<earnestly18>	No
+T 1489706634 18<memori18>	bitmod, yes. Pacman > AUR managers > per-langauge managers
+T 1489706637 23*	Nullifer (~Nullifer@104.218.70.12823) vient de rentrer
+T 1489706654 18<earnestly18>	bitmod: Write your own packages if they're not already, it's dead easy
+T 1489706656 18<sheep18>	except in the case where you're dealing with venv or something lik that
+T 1489706661 18<earnestly18>	No need
+T 1489706667 18<bitmod18>	what exactly is the reasoning behind this? I would've assumed the language package manager would have the most up-to-date version
+T 1489706683 18<earnestly18>	bitmod: It does, secondbox has no authority here
+T 1489706690 18<teraflops18>	xD
+T 1489706693 18<secondbox18>	lol
+T 1489706695 18<earnestly18>	sheep: Or did your friend tell you that? :p
+T 1489706698 18<sheep18>	but in that case the language package manager interferes with the system package manager
+T 1489706699 18<earnestly18>	secondbox: *^
+T 1489706705 18<robattila25618>	bitmod: because pacman cant remove pip files, any stuff installed with pip is going to be leftovers in /usr/lib
+T 1489706719 18<robattila25618>	although easy to remove i guess but i dont see the point
+T 1489706742 18<earnestly18>	I feel like package managers being one of the most awesome things about Linux distributions, and yet no one really seems to understand the most fundamental way they work
+T 1489706749 18<earnestly18>	Then again, most people don't even know how toilets work
+T 1489706757 18<secondbox18>	fair enough, I'm fairly shit at maintaining my arch, but when working with python either at work or for udacity pip is often the more up-to-date version
+T 1489706763 18<teraflops18>	those white holes?
+T 1489706772 18<memori18>	Yeah, I just accept it as part of the linux magic
+T 1489706773 18<earnestly18>	secondbox: That makes no sense though
+T 1489706788 24*	mystified a quitté (Quit: Leaving)
+T 1489706804 18<earnestly18>	secondbox: pip doesn't "package" git releases, which you can.  pip just packages what upstream squirts out, and there's no reason you couldn't bump the pkgver and get that new version too
+T 1489706870 18<earnestly18>	I feel like the only sane language of recent times when it comes to this is pony
+T 1489706871 23*	doMynation (~doMynatio@modemcable094.145-131-66.mc.videotron.ca23) vient de rentrer
+T 1489706899 18<secondbox18>	bleh
+T 1489706903 18<earnestly18>	Why can't CS people learn from both extant art and from prior art?  At all?  Ever?
+T 1489706910 23*	daey_ (~Flutterba@unaffiliated/day23) vient de rentrer
+T 1489706919 18<earnestly18>	The same square wheels every two months
+T 1489706941 18<earnestly18>	I blame ACM and IEEE for being absolute scum
+T 1489706963 18<bitmod18>	i'm a little confused. If arch doesn't have packages for the majority of languages (which would otherwise be installed using that language's package manager), it seems unrealistic to use pacman in most circumstances
+T 1489706975 24*	nando293921 a quitté (Ping timeout: 240 seconds)
+T 1489707000 24*	clynamen a quitté (Ping timeout: 260 seconds)
+T 1489707004 23*	utack_ (~utack@2a02:810a:83c0:f3f8:5ee0:c5ff:fe29:835d23) vient de rentrer
+T 1489707041 18<earnestly18>	teraflops: Remember that toilet?  Yeah ^
+T 1489707045 18<secondbox18>	I'll continue fixing the arch shit later, /me awaaay
+T 1489707047 24*	secondbox (~johannes@gprs-inet-183-141.elisa.ee24) est parti
+T 1489707056 24*	momomo a quitté (Ping timeout: 260 seconds)
+T 1489707069 18<teraflops18>	bitmod: you better use linux from scracth and get rid of a package manager then
+T 1489707070 Python interface unloaded
+T 1489707070 FiSHLiM plugin unloaded
+T 1489858254 19*	Vous parlez maintenant sur 22#archlinux
+T 1489858254 22*	Le sujet de 22#archlinux est : Welcome to Arch Linux World Domination, Inc. <+> π <+> Channel rules: https://goo.gl/fkksz9 <+> Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net <+> Become an official Arch Tester: https://goo.gl/3uvJQk <+> Breaking news: The new nvidia stuff doesn't get along with the old nvidia stuff
+T 1489858254 22*	Sujet de 22#archlinux choisi par 26IHateMyIsp (24Tue Mar 14 21:36:33 2017)
+T 1489858259 20<spoken>30	hello dear friends
+T 1489858312 24*	govg a quitté (Ping timeout: 260 seconds)
+T 1489858377 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489858505 23*	datamoshr (~john@unaffiliated/datamoshr23) vient de rentrer
+T 1489858547 24*	ishmael a quitté (Quit: ishmael)
+T 1489858558 18<d_garbage18>	!trollcat
+T 1489858558 18<phrik18>	http://i.imgur.com/bG4Qy.jpg
+T 1489858568 24*	teknolust a quitté (Read error: No route to host)
+T 1489858574 18<knucker_18>	!trollcat
+T 1489858576 18<phrik18>	http://i.imgur.com/bG4Qy.jpg
+T 1489858602 23*	Galactus (~Galactus@unaffiliated/galactus23) vient de rentrer
+T 1489858667 23*	strelox (~user@p200300754F741600ABAC493DF603E10E.dip0.t-ipconnect.de23) vient de rentrer
+T 1489858690 23*	MiLeon (~MiLeon@HSI-KBW-109-193-166-038.hsi7.kabel-badenwuerttemberg.de23) vient de rentrer
+T 1489858701 24*	mohsen_ a quitté (Quit: WeeChat 1.7)
+T 1489858708 24*	govg a quitté (Ping timeout: 240 seconds)
+T 1489858756 24*	mtorromeo a quitté (Remote host closed the connection)
+T 1489858804 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489858806 24*	datamoshr a quitté (Ping timeout: 256 seconds)
+T 1489858831 23*	marinos (~marinos@athedsl-297383.home.otenet.gr23) vient de rentrer
+T 1489858833 24*	erdave a quitté (Read error: Connection reset by peer)
+T 1489858929 23*	mtorromeo (~quassel@archlinux/trusteduser/mtorromeo23) vient de rentrer
+T 1489858932 23*	mmillar (~mmillar@static-50-53-71-0.bvtn.or.frontiernet.net23) vient de rentrer
+T 1489858944 23*	Silenced (~Silenced@unaffiliated/silenced-v2/x-967658923) vient de rentrer
+T 1489858960 23*	homerj (~homerj@april-fools/2013/second/homerj23) vient de rentrer
+T 1489858972 23*	solenodic (~solenodic@unaffiliated/solenodic23) vient de rentrer
+T 1489859085 24*	mmillar_ a quitté (Ping timeout: 258 seconds)
+T 1489859111 23*	datamoshr (~john@unaffiliated/datamoshr23) vient de rentrer
+T 1489859115 23*	ishmael (~ishmael@gateway/tor-sasl/ishmael23) vient de rentrer
+T 1489859146 24*	govg a quitté (Ping timeout: 256 seconds)
+T 1489859206 18<boogiewoogie18>	hey. when using xinit i get the error "parse_vt_settings: cannot open /dev/tty0 (Permission denied)" as a user with ALL(ALL) permissions. ive read i shouldnt sudo xinit, so i assume this should work as a normal user. any ideas as to why it doesnt?
+T 1489859210 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489859245 18<Namarrgon18>	you should use startx, not xinit, and not with sudo
+T 1489859255 18<boogiewoogie18>	okay
+T 1489859275 18<boogiewoogie18>	yeah, startx does work, i was just interested in the reason for xinit not working
+T 1489859287 18<Namarrgon18>	startx will start X on the same vt you ran it, where logind has set up the proper permissions for /dev
+T 1489859307 24*	even_me a quitté (Remote host closed the connection)
+T 1489859323 23*	even_me (~eVe@archlinux/fellow/even23) vient de rentrer
+T 1489859339 18<Namarrgon18>	if you start X on a differnt vt that you never logged in on you won't have permissions for /dev/drm/*, /dev/input/* etc
+T 1489859358 18<riverclaw18>	SysGhost earnestly Tom^ I had to go while you were discussing the 100mb issue, is there consensus on what to do now? :) 
+T 1489859368 24*	datamoshr a quitté (Ping timeout: 240 seconds)
+T 1489859371 18<boogiewoogie18>	okay
+T 1489859391 18<boogiewoogie18>	thanks for the explanation :)
+T 1489859392 23*	tharugrim (~tharugrim@unaffiliated/tharugrim23) vient de rentrer
+T 1489859412 23*	YungRaj (~YungRaj@70-139-212-121.lightspeed.cyprtx.sbcglobal.net23) vient de rentrer
+T 1489859449 23*	orf_ (~orf_@host86-141-163-18.range86-141.btcentralplus.com23) vient de rentrer
+T 1489859449 24*	zxhello a quitté (Read error: Connection reset by peer)
+T 1489859458 18<Namarrgon18>	boogiewoogie: take a loot at the startx script to see what it is doing
+T 1489859470 23*	zxhello (~zx@159.224.41.19323) vient de rentrer
+T 1489859490 23*	nartes (~nartes@109.126.151.12223) vient de rentrer
+T 1489859540 18<computer200018>	Can the Chromium Title Bar and close/min/max buttons be made to look like any other window in Arch Linux? Why does it look different?
+T 1489859550 23*	teknolust (~quassel@70.15.234.47.res-cmts.ovr.ptd.net23) vient de rentrer
+T 1489859553 18<boogiewoogie18>	okay, on it
+T 1489859577 18<boogiewoogie18>	also i figured vt was a user from your explanation - is that correct? whats it short for?
+T 1489859597 24*	Valicek1 a quitté (Ping timeout: 240 seconds)
+T 1489859622 24*	clandestino a quitté (Ping timeout: 256 seconds)
+T 1489859626 18<beest18>	computer2000: "use system title bar and borders" will set chromium to whatever your gtk theme is
+T 1489859630 18<earnestly18>	riverclaw: If you already have an extant ESP, use gparted to resize that to 200M instead of Windows' default 100M
+T 1489859646 23*	dx486 (~username@unaffiliated/chessknight23) vient de rentrer
+T 1489859652 18<Namarrgon18>	boogiewoogie: virtual terminal, the thing you run startx from
+T 1489859659 18<earnestly18>	riverclaw: I suggest doing that before adding partitions for Linux
+T 1489859666 18<computer200018>	beest: where do I set that
+T 1489859678 18<beest18>	in the chromium settings under "appearance"
+T 1489859706 18<computer200018>	beest, thanks
+T 1489859710 18<earnestly18>	riverclaw: alternatively you could create the ESP yourself initially but only if when installing Windows the ESP resides on the "C:\" drive
+T 1489859712 23*	aze (~aze@unaffiliated/aze23) vient de rentrer
+T 1489859734 24*	nyarlu a quitté (Quit: WeeChat 1.7)
+T 1489859748 18<boogiewoogie18>	i see, thanks
+T 1489859764 23*	mar77i_ (~mar77i@77-56-218-203.dclient.hispeed.ch23) vient de rentrer
+T 1489859776 18<beest18>	i misspoke, you have to hit a button somewhere to use your gtk theme but "use system title bar and borders" will use your wm's bar
+T 1489859812 18<computer200018>	Is there a place to browse available gnome themes for arch linux? sorry new to arch
+T 1489859819 23*	frankdrey (~textual@2601:601:c700:7c2e:8de3:baef:e690:ad8723) vient de rentrer
+T 1489859827 18<riverclaw18>	earnestly I've already installed arch, but let me explain my situation, I've got a tightly packed small SSD with windows, this is where the esp resides. I've got a second drive, a hdd where i've got my arch partition & currently because grub needs it for legacy booting, i've got a bios partition
+T 1489859841 18<earnestly18>	computer2000: Does it make it easier if you instead drop "arch" and simply search for gnome themes?
+T 1489859851 18<earnestly18>	computer2000: Since there's nothing specific to Arch about Gnome themes
+T 1489859870 24*	mar77i a quitté (Ping timeout: 260 seconds)
+T 1489859890 18<earnestly18>	riverclaw: Why use legacy BIOS boot at all?
+T 1489859890 18<computer200018>	earnestly, yes
+T 1489859923 18<computer200018>	earnestly, thanks i'm sorry i'm noob, so noob
+T 1489859925 18<SysGhost18>	riverclaw: You can try to battle that GPT/BIOS combo. It does work, if done right with the extra BIOS partition. You could try to resize that ESP partition, and go for a full UEFI boot (prefered imho). or shrink down the initramfs, and hope it'll fit within the 100 MB ESP.
+T 1489859933 18<riverclaw18>	Because i didn't want to fiddle with my windows install, I'm not experienced so I'd rather stay away from it as I don't trust myself
+T 1489859941 18<earnestly18>	riverclaw: grub can be installed as an EFI binary directly to the ESP and effortlessly load kernels from your secondary harddrive (assuming you don't use grub-mkconfig), either that or refined, which is also able to load kernels from different disks
+T 1489859979 18<earnestly18>	riverclaw: Just not systemd-boot, because that thing is shit
+T 1489859979 23*	borkr (~borkr@83.243.155.12623) vient de rentrer
+T 1489859987 18<riverclaw18>	okay hold on earnestly 
+T 1489859988 18<earnestly18>	riverclaw: You'll probably have better luck with refined.  Don't use legacy bios (CSM) mode
+T 1489860006 18<riverclaw18>	I'd rather battle the GPI/BIOS combo
+T 1489860022 23*	sphrak (~niclas@host-85-30-183-143.sydskane.nu23) vient de rentrer
+T 1489860029 18<riverclaw18>	but mybe we can skip GRUB all together and go for syslinux
+T 1489860029 18<earnestly18>	riverclaw: I don't recommend wasting your time doing that
+T 1489860037 20<spoken>30	hi, i got a problem with my screen and amdgpu
+T 1489860046 18<earnestly18>	riverclaw: You can't really
+T 1489860047 20<spoken>30	can't setup 144Hz without artifact on screen
+T 1489860053 18<riverclaw18>	earnestly I've tried that before but that wouldn't detect my arch partition, thus had nothing to boot 
+T 1489860059 18<earnestly18>	riverclaw: Unless you don't mind manually changing the boot device from POST every time
+T 1489860072 18<riverclaw18>	what do you mean?
+T 1489860073 18<earnestly18>	riverclaw: So you did it wrong, once, and gave up?
+T 1489860076 18<earnestly18>	Sigh
+T 1489860079 24*	marinos a quitté (Quit: Lost terminal)
+T 1489860091 18<earnestly18>	riverclaw: Sorry, I don't recommend what you're doing, you'll have to figure it out because I don't want to
+T 1489860105 19<Namarrgon>	spoken: #amdgpu #radeon bugs.freedesktop.org
+T 1489860121 18<riverclaw18>	earnestly no I tried installing it for UEFI, legacy and neither worked, so I tried GRUB which at least detects my partitions, so that's going slightly better
+T 1489860149 18<earnestly18>	computer2000: Don't worry, just think of Linux as Linux and forget distros are a thing.  As the name suggests, they're supposed to only distribute the software from upstream (where the software is made).  Some modify it, add their own artwork and logos and stuff, generally trying to make the whole experience cohesive
+T 1489860150 18<riverclaw18>	earnestly Ok, no worries. I knew what I signed up for when I decided to go for arch ;) 
+T 1489860155 19<Tom^>	spoken: what kind of cable are you using?
+T 1489860159 18<SysGhost18>	riverclaw: If I had that situation, I'd resize the ESP. Then, *if* the windows boot fail, simply boot up a Windows ISO and perform a boot repair.
+T 1489860166 24*	govg a quitté (Ping timeout: 258 seconds)
+T 1489860197 18<earnestly18>	riverclaw: I wouldn't use grub to detect anything, I'd write it manually, which I was willing to help you do, but not if you're going to do silly things like dual EFI and Legacy BIOS booting
+T 1489860199 20<spoken>30	Tom^: DVI ofc, I know that HDMI doesn't support it atm
+T 1489860222 19<Tom^>	spoken: its only dual link dvi cables that runs 144hz
+T 1489860227 24*	blueness a quitté (Quit: blueness)
+T 1489860235 19<Tom^>	spoken: which i hope you have
+T 1489860238 18<earnestly18>	I don't :(
+T 1489860243 20<spoken>30	Tom^: the fact is that on Windows it works fine
+T 1489860250 18<Tom^18>	is it a dual link cable?
+T 1489860266 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489860268 23*	smdeep (~smdeep@202.142.103.5123) vient de rentrer
+T 1489860275 19<earnestly>	spoken: https://en.wikipedia.org/wiki/File:DVI_Connector_Types.svg
+T 1489860276 18<phrik18>	Title: File:DVI Connector Types.svg - Wikipedia (at en.wikipedia.org)
+T 1489860279 18<computer200018>	earnestly, thanks. Can there be only one theme installed at a time or is there like a manager to switch between themes? I see I can use AUR packages but when installing I guess it overwrites the existing, currenty running one?
+T 1489860298 18<earnestly18>	computer2000: you can install many, but only use one at a time
+T 1489860312 18<computer200018>	earnestly, how to switch between them?
+T 1489860320 18<earnestly18>	computer2000: It shouldn't overwrite, each theme should occupy its own directory
+T 1489860331 18<earnestly18>	computer2000: Doesn't gnome-tweak-tool let you do that easily?
+T 1489860340 18<riverclaw18>	earnestly I've not decided on what to do at all, I don't want to use legacy booting or dual EFI, I only thought of it because the other options weren't going anywhere with my know-how, elaborate on what you mean by writing it manually please 
+T 1489860342 18<computer200018>	earnestly, oh i'll check
+T 1489860345 20<spoken>30	:o sorry, I wanted to say DisplayPort ... I'm using DP sorry guys
+T 1489860366 20<spoken>30	and btw I got an RX 480, with Dual Link DVI-D
+T 1489860378 18<Tom^18>	right, then yes you better ask in #amdgpu #radeon and check bugs.freedesktop.org
+T 1489860409 23*	Repentinus (~repentinu@fsfe/repentinus23) vient de rentrer
+T 1489860439 18<earnestly18>	riverclaw: I wouldn't use grub in this specific case though, I'd recommend refined.  As for manually writing the grub.cfg, doing something like: search -u "the / fs UUID" root, and linux $(root)/boot/...
+T 1489860449 23*	somis (~somis@149.56.153.17723) vient de rentrer
+T 1489860460 23*	Keniyal (~Keniyal@unaffiliated/keniyal23) vient de rentrer
+T 1489860484 18<earnestly18>	riverclaw: My grub lives on a tiny FAT12 ESP booting a btrfs / on the same device but different partition: https://ptpb.pw/VfB4/sh
+T 1489860485 18<phrik18>	Title: pb (at ptpb.pw)
+T 1489860508 18<Paddy_NI18>	earnestly: What size is your ESP?
+T 1489860556 23*	souledge220 (~souledge2@rstinder.de23) vient de rentrer
+T 1489860569 18<SysGhost18>	earnestly: I like that you have comments in that config. Many don't bother with that.
+T 1489860615 18<earnestly18>	Paddy_NI: 2M, could have gone smaller but that's the largest image size I could make grub-mkimage or grub-standalone generate
+T 1489860625 18<Tom^18>	SysGhost: he is such a showoff
+T 1489860636 18<earnestly18>	Tom^: I comment for my own benefit
+T 1489860644 18<earnestly18>	I don't remember any of this shit
+T 1489860667 18<Paddy_NI18>	earnestly: I opted for 1GiB as I felt paranoid that it would eventually bite me in the ass if I had gone smaller
+T 1489860672 24*	govg a quitté (Ping timeout: 258 seconds)
+T 1489860672 18<computer200018>	Any recommendation for flat, modern gnome theme? :)
+T 1489860680 18<Paddy_NI18>	computer2000: ARc
+T 1489860682 18<Paddy_NI18>	Arc
+T 1489860695 18<computer200018>	What about https://github.com/nana-4/Flat-Plat
+T 1489860696 18<phrik18>	Title: GitHub - nana-4/Flat-Plat: A Material Design-like theme for GNOME/GTK+ based desktop environments. (at github.com)
+T 1489860718 18<earnestly18>	Paddy_NI: I didn't plan on adding anything other than grub.efi to the ESP, but if I was using refined and Windows I would probably use ~200M FAT32
+T 1489860720 18<Paddy_NI18>	Wow, bright!
+T 1489860728 24*	rquid a quitté (Remote host closed the connection)
+T 1489860733 23*	gffa (~unknown@unaffiliated/gffa23) vient de rentrer
+T 1489860734 18<Paddy_NI18>	I could definitely not look at that for more than 5 mins computer2000 
+T 1489860736 24*	robattila256 a quitté (Quit: WeeChat 1.7)
+T 1489860746 18<earnestly18>	Paddy_NI: Ostensibly UEFI only supports FAT32 but you can bet these vendors just steal vfat code which supports all of them
+T 1489860752 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489860757 18<Paddy_NI18>	Absolutely
+T 1489860773 18<earnestly18>	computer2000: Looks nice, try it and see
+T 1489860783 23*	Valicek1 (~Thunderbi@37-48-39-131.tmcz.cz23) vient de rentrer
+T 1489860785 18<earnestly18>	Paddy_NI: It has a dark variant :P
+T 1489860821 18<earnestly18>	computer2000: (Keep in mind that it's including both a Gnome shell theme and a GTK3 theme, two different components)
+T 1489860827 24*	mefistofeles a quitté (Ping timeout: 240 seconds)
+T 1489860844 18<computer200018>	Do you guys use yaourt?
+T 1489860845 18<earnestly18>	computer2000: Again, gnome-tweak-tool should make doing this relatively easy
+T 1489860848 18<computer200018>	earnestly, what does that  mean?
+T 1489860850 18<riverclaw18>	earnestly Could it be that the problem with my grub is that I'm not using UUID's but rather write stuff like /dev/sda ? Because my setup should realy work.. As (you?) said, the problem is that grub can't find his files in /boot, right?  But when I'm in the grub cli it detects the disks fine
+T 1489860852 18<earnestly18>	computer2000: Nope, highly unrecommended
+T 1489860909 18<earnestly18>	computer2000: Stick with git and makepkg for now, until you know enough to make an informed choice yourself
+T 1489860909 18<computer200018>	earnestly, what does it mean it comes with gtk3 and gnome themes, what's the difference? sorry
+T 1489860909 18<SysGhost18>	I'm stil wondering why in the world did the Unified EFI Forum settle for FAT32 of all available file systems. ??? 
+T 1489860909 18<riverclaw18>	earnestly If you'd rather push on using refined instead of grub, I'm game, you're the pro here :p 
+T 1489860909 18<computer200018>	earnestly, ok
+T 1489860931 18<earnestly18>	computer2000: The buttons, sliders and so on are GTK3 elements.  The client side decorations, overlays, panel and so on are the gnome shell (the compositor which arranges the windows on your screen)
+T 1489860962 18<computer200018>	earnestly, I see, so I have to activate both
+T 1489860972 24*	rtkt a quitté (Ping timeout: 260 seconds)
+T 1489860981 18<earnestly18>	computer2000: If you want a consistent theme across both, yeah
+T 1489860992 23*	Hairyplotter (~Want@d-24-245-119-23.cpe.metrocast.net23) vient de rentrer
+T 1489861012 23*	blueness (~blueness@gentoo/developer/blueness23) vient de rentrer
+T 1489861017 23*	Avonis (~Avonis@unaffiliated/avonis23) vient de rentrer
+T 1489861046 18<earnestly18>	riverclaw: See http://www.rodsbooks.com/refind/configfile.html and https://wiki.archlinux.org/index.php/REFInd
+T 1489861047 18<phrik18>	Title: The rEFInd Boot Manager: Configuring the Boot Manager (at www.rodsbooks.com)
+T 1489861060 18<riverclaw18>	earnestly on it.
+T 1489861069 24*	rolig a quitté (Ping timeout: 246 seconds)
+T 1489861107 23*	Agent001 (~quassel@185.202.60.94.rev.vodafone.pt23) vient de rentrer
+T 1489861116 23*	Phenox_ (~phenox_@195.82.49.14023) vient de rentrer
+T 1489861123 24*	crCr62U0 a quitté (Quit: Leaving)
+T 1489861130 18<earnestly18>	riverclaw: The problem with having both a UEFI install (Windows) and a CSM install is that you can't easily switch between the two.  You have to configure the BIOS every boot to prefer CSM or UEFI booting and then still manually specify device boot order
+T 1489861149 24*	c_korn a quitté (Quit: Leaving)
+T 1489861172 18<earnestly18>	riverclaw: Of all UEFI's faults, dual booting isn't one of them.  It makes it really trivial even
+T 1489861179 20<spoken>30	ok thx guys
+T 1489861182 23*	rolig (~rolig@unaffiliated/rollig23) vient de rentrer
+T 1489861184 20<spoken>30	I found a solution
+T 1489861184 20<spoken>30	:o
+T 1489861210 20<spoken>30	com #11 : https://bugs.freedesktop.org/show_bug.cgi?id=96868 in case you wanted to know
+T 1489861212 18<phrik18>	Title: 96868 – AMDGPU Tonga only does 2560x1440 at 120hz, switching to 144hz causes display errors, same thing used to happen with fglrx. (at bugs.freedesktop.org)
+T 1489861217 18<earnestly18>	riverclaw: You can mount the ESP on the /boot mountpoint so kernel updates implicitly install there making life even simpler.  In which case you can just use systemd-boot
+T 1489861228 24*	govg a quitté (Ping timeout: 240 seconds)
+T 1489861250 23*	steakwipe (~ninjapira@unaffiliated/ninjapirate23) vient de rentrer
+T 1489861259 23*	zsk (~zsk@unaffiliated/zsk23) vient de rentrer
+T 1489861260 19<earnestly>	spoken: Good find
+T 1489861289 19<earnestly>	spoken: You may want to include your experience and information since it could do with a comment from 2017 ;p
+T 1489861313 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489861317 23*	kiao2938 (~mj@46.128.154.166.dynamic.cablesurf.de23) vient de rentrer
+T 1489861318 24*	Adbray a quitté (Quit: Quit)
+T 1489861334 Erenzie ericchu ericnoan ErkiDerLoony errl erufu 
+T 1489861335 earnestly e e0f e2k eadrom Eantit eb0t_ ebe ec ecloud ecraven ectospasm ec\_ Eduard_Munteanu edumass egis egrain eidolon eighty6me eir Eisenhans ekkelett ekra elbo22 elgatov elijah Elish Elizabeth elliot007 elliot_51 elonus elsewho emilsp EMIYA emlow empty[] enckse enderst endre enkeyz Enkidu_ak Entalyan epatpol epheo epic epon eprice equilibriumuk Erenzie ericchu ericnoan ErkiDerLoony errl erufu eschwartz esph etix etnbrd eto EvanA even_me evie_hammond evil-god Ewout ewpt3ch Exagone313 excalibr 
+T 1489861345 20<spoken>30	@earnestly: ok :)
+T 1489861369 18<riverclaw18>	earnestly yeah I understand it's a hassle, but for me it would be acceptable since i'm only going to try arch, see if it is my thing and if i like it enough i'll throw windows from my SSD and make it switch places with arch currently on my hdd. So in principle although pretty crappy, it would be okay for my situation. I'm just a bit frustrated that I couldn't make GRUB or syslinux boot my 
+T 1489861369 18<riverclaw18>	arch install, makes me feel a little bad inside. 
+T 1489861373 18<earnestly18>	riverclaw: That is, use the Windows ESP as your /boot iff you only use the stock kernel
+T 1489861385 24*	Phenox_ a quitté (Ping timeout: 240 seconds)
+T 1489861401 24*	GI_Jack a quitté (Quit: Leaving)
+T 1489861401 18<riverclaw18>	earnestly but lets focus on getting refined 
+T 1489861407 18<earnestly18>	riverclaw: Tbh
+T 1489861418 18<earnestly18>	riverclaw: Since you just said this is to try Arch, you're not going to be using multiple kernels
+T 1489861432 18<earnestly18>	riverclaw: In light of that you should really be mounting the ESP as your /boot instead
+T 1489861446 18<riverclaw18>	ok
+T 1489861455 18<riverclaw18>	but I'm a bit confused as to what to do next 
+T 1489861458 18<earnestly18>	And since everything no lives on the ESP, use systemd-boot.  It will detect the Windows loader and create a meny entry for it too
+T 1489861467 18<riverclaw18>	I'm not very familiar with this tuff
+T 1489861485 18<riverclaw18>	systemd-boot is a script I can simply run, i assume?
+T 1489861490 18<earnestly18>	riverclaw: It's a bit overwhelming yeah, it makes a lot of sense once you grok it but getting there is difficult
+T 1489861541 18<earnestly18>	riverclaw: systemd-boot is the general name for systemd's bootloader, the tool `bootctl' is used to manage it and query information
+T 1489861553 18<riverclaw18>	earnestly yeah, good that there's guys like you in these irc channels ;)
+T 1489861574 18<earnestly18>	riverclaw: E.g. even though I'm not using systemd-boot, I can still get info from it: https://ptpb.pw/yaM3
+T 1489861577 18<riverclaw18>	Ok, so I should remove the legacy partition, remove grub
+T 1489861590 23*	medzernik (~david@95-105-186-188.dynamic.orange.sk23) vient de rentrer
+T 1489861600 24*	muhannad__ a quitté (Quit: muhannad__)
+T 1489861609 18<riverclaw18>	earnestly I see
+T 1489861618 18<earnestly18>	(Nevermind the redhat thing, that's something lenovo thought grub was so I decided to keep it as a joke.  (You'd have have read MJG articles about how crazy a lot of UEFI stuff was/is))
+T 1489861623 24*	egrain a quitté (Remote host closed the connection)
+T 1489861634 18<earnestly18>	riverclaw: Are you willing to start clean?
+T 1489861638 24*	govg a quitté (Ping timeout: 258 seconds)
+T 1489861646 18<earnestly18>	riverclaw: (You don't have to, but it might be easier to "see" what's going on)
+T 1489861647 24*	jomg a quitté (Quit: Leaving)
+T 1489861693 18<riverclaw18>	earnestly I can install arch again, but I can't give you a clean disk to work with, My arch partition sits on its drive alongside another filled with data used by windows
+T 1489861694 23*	rtkt (~rtkt@ptr-fhfszoxih9re3plzful.18120a2.ip6.access.telenet.be23) vient de rentrer
+T 1489861706 23*	Adbray (~Adbray@2001:470:c692:666:4c45:c220:a394:c13523) vient de rentrer
+T 1489861709 24*	rtkt a quitté (Remote host closed the connection)
+T 1489861713 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489861723 18<earnestly18>	riverclaw: That's fine, I didn't mean empty disks
+T 1489861726 18<riverclaw18>	But the arch drive has no on is.
+T 1489861728 24*	TotalOblivion a quitté (Ping timeout: 260 seconds)
+T 1489861757 18<riverclaw18>	earnestly good, lets go I'll switch to UEFI, boot from my arch live iso and start fresh
+T 1489861764 23*	mstruebing (~mstruebin@178.162.199.6623) vient de rentrer
+T 1489861777 18<earnestly18>	riverclaw: Go with a single partition then, put Arch there.  Mount it to /mnt, then mount the extant ESP to /mnt/boot
+T 1489861784 18<earnestly18>	riverclaw: Yep
+T 1489861791 24*	computer2000 a quitté (Remote host closed the connection)
+T 1489861858 18<riverclaw18>	earnestly give me a minute
+T 1489861858 24*	c4mp4r a quitté (Ping timeout: 264 seconds)
+T 1489861858 23*	c4mp4r (~catalin@79.112.81.22823) vient de rentrer
+T 1489861858 23*	elliot_598 (~elliot@150.129.109.5823) vient de rentrer
+T 1489861908 24*	Valicek1 a quitté (Ping timeout: 240 seconds)
+T 1489861959 24*	blueness a quitté (Quit: blueness)
+T 1489861975 20<spoken>30	done, I posted my message :)
+T 1489861980 19<earnestly>	spoken: \o/
+T 1489861984 24*	alx741 a quitté (Quit: alx741)
+T 1489861991 20<spoken>30	Can I post the solution on ArchWiki ? 
+T 1489862002 20<spoken>30	is it possible for me to modify it ? 
+T 1489862021 23*	alx741 (~alx741@190.152.48.12623) vient de rentrer
+T 1489862036 24*	elliot_51 a quitté (Ping timeout: 260 seconds)
+T 1489862038 24*	dx486 a quitté (Quit: Leaving)
+T 1489862049 19<earnestly>	spoken: Yes, but remember to keep a link (reference) to the bug report in the wiki so that if this gets fixed it can be removed
+T 1489862068 24*	govg a quitté (Ping timeout: 240 seconds)
+T 1489862072 20<spoken>30	kk understood
+T 1489862091 23*	badpixel (~igor@unaffiliated/badpixel23) vient de rentrer
+T 1489862159 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489862186 23*	sysfx (~nimda@37.35.13.15723) vient de rentrer
+T 1489862195 24*	j08nY a quitté (Quit: Leaving)
+T 1489862196 23*	tearitdown (~user@5.197.37.6923) vient de rentrer
+T 1489862199 18<riverclaw18>	earnestly I'm ready got the esp mounted as boot and everything is cleaned up
+T 1489862225 18<earnestly18>	riverclaw: pacstrap as usual, then once done, chroot in and bootctl --path=/boot install
+T 1489862246 24*	sunshinehunter a quitté (Remote host closed the connection)
+T 1489862284 23*	torak (~torak@88.226.49.25023) vient de rentrer
+T 1489862285 18<earnestly18>	(bootctl does look for /boot by default but also tries /efi and /boot/efi as well, it'd probably be fine to not include --path, but better to be explicit when the default isn't one thing)
+T 1489862289 18<riverclaw18>	earnestly litteraly type ' bootctl --path=/boot install '?
+T 1489862303 18<earnestly18>	riverclaw: After you've pacstrapped and arch-chroot'd in
+T 1489862309 18<riverclaw18>	kk
+T 1489862311 24*	homerj a quitté (Remote host closed the connection)
+T 1489862319 18<earnestly18>	riverclaw: Then you can check the results with `bootctl status'
+T 1489862322 18<riverclaw18>	kk
+T 1489862329 18<riverclaw18>	give me a minute :)
+T 1489862344 23*	BlueRavenGT (~BlueRaven@8-22-13-219.utopiafiber.net23) vient de rentrer
+T 1489862351 18<earnestly18>	!yt hybrid - break my soul
+T 1489862352 18<phrik18>	earnestly: Hybrid- Break My Soul - YouTube <https://www.youtube.com/watch?v=Mdy1i_d2i-s>
+T 1489862353 18<earnestly18>	Tom^: ^
+T 1489862398 24*	mirk0 a quitté (Ping timeout: 264 seconds)
+T 1489862404 23*	amdi_ (~amdi_@pool-108-32-75-158.pitbpa.fios.verizon.net23) vient de rentrer
+T 1489862434 24*	jiggawattz (jiggawattz@w0000.net24) est parti ("tschüß!")
+T 1489862438 23*	InverseRhombus (~InverseRh@2a02:c7d:da1e:1300:b937:c268:ffe:b3c823) vient de rentrer
+T 1489862463 23*	astrofog (~astrofog@unaffiliated/astrofog23) vient de rentrer
+T 1489862463 23*	aw1 (~aw1@unaffiliated/aw123) vient de rentrer
+T 1489862467 23*	homerj (~homerj@april-fools/2013/second/homerj23) vient de rentrer
+T 1489862477 24*	errl a quitté (Remote host closed the connection)
+T 1489862496 23*	chr0mag (~chr0mag@69.50.180.172.cable.tpia.cipherkey.com23) vient de rentrer
+T 1489862506 24*	Keniyal a quitté (Ping timeout: 264 seconds)
+T 1489862534 18<homerj18>	getting a bit more comfortable with this KDE Discover to update packages
+T 1489862540 23*	setty1 (~weechat@46.25.189.3023) vient de rentrer
+T 1489862542 24*	eprice a quitté (Quit: EliteBNC free bnc service - http://elitebnc.org - be a part of the Elite!)
+T 1489862556 18<earnestly18>	homerj: How does it do that?
+T 1489862560 23*	clandestino (~raijin@unaffiliated/raijin23) vient de rentrer
+T 1489862566 18<earnestly18>	homerj: Ah, packagekit
+T 1489862582 18<homerj18>	package...yes
+T 1489862592 18<earnestly18>	homerj: Nice
+T 1489862622 18<homerj18>	throws up a a notification when there's stuff to update
+T 1489862632 18<homerj18>	no AUR support though, at least not yet
+T 1489862644 24*	hj0x3 a quitté (Remote host closed the connection)
+T 1489862645 18<earnestly18>	homerj: Yeah, these also certainly beat the pants of distro specific stuff like ubuntu's software center
+T 1489862647 23*	muhannad__ (~muhannad@95.218.87.6223) vient de rentrer
+T 1489862650 24*	darme a quitté (Ping timeout: 258 seconds)
+T 1489862650 24*	aajjbb a quitté (Ping timeout: 264 seconds)
+T 1489862661 18<earnestly18>	homerj: I doubt it'd ever support the AUR (nor do I think it should :P)
+T 1489862666 23*	hj0x3 (~hj0x3@46.166.137.21223) vient de rentrer
+T 1489862669 18<earnestly18>	of/off
+T 1489862701 23*	mitchel (~mitchel@ip5457546e.direct-adsl.nl23) vient de rentrer
+T 1489862740 24*	riverclaw a quitté (Ping timeout: 260 seconds)
+T 1489862744 24*	steakwipe a quitté (Remote host closed the connection)
+T 1489862757 23*	datamoshr (~john@unaffiliated/datamoshr23) vient de rentrer
+T 1489862758 18<sysfx18>	Hi all, I have a little trouble with my new usb connected printer, I'm trying to get it to work under arch linux, I've installed the driver, and it is appearing as /dev/usb/lp0, so I can print using the echo command, but I can't get it to appear in cups, any ideas?
+T 1489862799 24*	Avonis a quitté (Quit: rip)
+T 1489862861 18<earnestly18>	sysfx: (Side question, can you basically redirect ps into lp0 and print it?)
+T 1489862879 18<sysfx18>	yes, echo test > /dev/usb/lp0 prints test
+T 1489862890 18<earnestly18>	sysfx: I mean, postscript commands and such
+T 1489862897 24*	govg a quitté (Ping timeout: 240 seconds)
+T 1489862900 18<earnestly18>	sysfx: Or, cat foo.pdf > /dev/usb/lp0
+T 1489862906 24*	pavlushka a quitté (Quit: See you on the other side.....)
+T 1489862915 18<earnestly18>	(uuoc but you get the idea)
+T 1489862939 18<homerj18>	cups should just autodetect it when you "add printer"
+T 1489862943 18<homerj18>	make the uri, etc.
+T 1489862956 24*	mitchel a quitté (Client Quit)
+T 1489862957 23*	riverclaw (~riverclaw@87.66.234.14623) vient de rentrer
+T 1489862963 23*	Valicek1 (~Thunderbi@37-48-0-65.tmcz.cz23) vient de rentrer
+T 1489862965 18<homerj18>	you may need the footmatic stuff, depending on what printer it is
+T 1489862979 18<homerj18>	or foomatic-zjs or whatever
+T 1489862984 18<riverclaw18>	earnestly sorry for the disconnect, not sure what happend. But it seems fine now
+T 1489863008 18<earnestly18>	sysfx: E.g. can you redirect https://ptpb.pw/wK5s this into lp0?
+T 1489863019 23*	Quark (~quark@unaffiliated/quark23) vient de rentrer
+T 1489863025 18<earnestly18>	(Because that would be really cool)
+T 1489863034 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489863043 18<homerj18>	earnestly, that's how my old HP Laserjet 4L worked
+T 1489863044 24*	datamoshr a quitté (Ping timeout: 260 seconds)
+T 1489863045 18<homerj18>	heh
+T 1489863068 18<earnestly18>	homerj: :D
+T 1489863087 23*	gh16ito (~gh16ito@cpe-24-90-212-88.nyc.res.rr.com23) vient de rentrer
+T 1489863107 23*	niemal (~mein@unaffiliated/anoniem4l23) vient de rentrer
+T 1489863120 23*	darme (~darme@88-223-71-157.meganet.lt23) vient de rentrer
+T 1489863121 18<earnestly18>	riverclaw: Disconnections can happen, what do you mean but "it seems fine now"?  The connection or something else?
+T 1489863130 18<sysfx18>	it should just work, i know, yes i have the fommatic stuff installed
+T 1489863145 23*	pajpax (~pajpax@bband-dyn103.95-103-254.t-com.sk23) vient de rentrer
+T 1489863148 18<riverclaw18>	earnestly the connection ;) I ran 'bootctl --path=/boot install' succesfully, wht's next? 
+T 1489863163 18<earnestly18>	riverclaw: Check that it worked, bootctl status
+T 1489863177 24*	HuntsMan a quitté (Ping timeout: 240 seconds)
+T 1489863188 24*	tinnotl1 a quitté (Ping timeout: 240 seconds)
+T 1489863206 18<riverclaw18>	I can't exactly give you a copy, how can I tell it's good? I can see the Linux boot manager on top of the windows boot manager
+T 1489863210 18<gh16ito18>	So I'm trying to fix this issue: "ca-certificates-utils: /etc/ssl/certs/ca-certificates.crt exists in filesystem"
+T 1489863219 18<gh16ito18>	I'm thinking I need to uninstall ca-certificates-utils?
+T 1489863247 18<gh16ito18>	But when I do pacman -R ca-certificates-utils, it says it can't be done because it's breaking a bunch of dependencies.
+T 1489863254 18<mtn18>	gh16ito: read the news on the front page
+T 1489863296 23*	stefanauss_ (~stefanaus@host67-101-dynamic.171-212-r.retail.telecomitalia.it23) vient de rentrer
+T 1489863310 18<gh16ito18>	Ah, OK.
+T 1489863319 18<earnestly18>	riverclaw: IF you're not sure how to make sense of it, feel free to post the output somewhere
+T 1489863354 18<gh16ito18>	Thanks mtn!
+T 1489863358 24*	zsk a quitté (Quit: Leaving...)
+T 1489863359 18<earnestly18>	gh16ito: Although the news covers this, remember that a general way to deal with "file exists" type errors is to follow these simple steps:
+T 1489863362 24*	chocopuff a quitté (Ping timeout: 256 seconds)
+T 1489863363 18<earnestly18>	!give gh16ito conflict
+T 1489863364 18<phrik18>	gh16ito: Check which package owns the file with pacman -Qo, if nothing does, remove it. If the file is owned ensure it's not an AUR (or foreign) package, otherwise submit a bug report. Repeat until no more conflicts.
+T 1489863366 18<mtn18>	gh16ito: welcome
+T 1489863370 18<riverclaw18>	earnestly, sure, what do you suggest I use to post it?
+T 1489863380 18<earnestly18>	riverclaw: Any pastebin in the /topic would be fine
+T 1489863380 24*	govg a quitté (Ping timeout: 260 seconds)
+T 1489863383 18<tomty8918>	!ptpb
+T 1489863384 18<phrik18>	“<command> 2>&1 | curl -F c=@- https://ptpb.pw” OR “curl -F c=@path/to/a/file https://ptpb.pw” OR install community/pbpst
+T 1489863387 24*	aw1 a quitté (Ping timeout: 240 seconds)
+T 1489863392 18<earnestly18>	riverclaw: ^ e.g.
+T 1489863399 18<tomty8918>	buhman is a saint
+T 1489863405 20<spoken>30	Solution added here : https://wiki.archlinux.org/index.php/AMDGPU#Troubleshooting
+T 1489863406 18<phrik18>	Title: AMDGPU - ArchWiki (at wiki.archlinux.org)
+T 1489863407 18<riverclaw18>	awesome, thanks :p 
+T 1489863409 18<tomty8918>	and sudokode 
+T 1489863409 23*	jstimm (~jstimm@unaffiliated/jstimm23) vient de rentrer
+T 1489863414 20<spoken>30	In Troubleshooting section
+T 1489863419 20<spoken>30	Hope it will help more people
+T 1489863424 18<earnestly18>	tomty89: And silverp :P
+T 1489863425 24*	stefanauss a quitté (Ping timeout: 240 seconds)
+T 1489863430 18<tomty8918>	hmm
+T 1489863441 23*	h4k1m (~hakim@unaffiliated/h4k1m23) vient de rentrer
+T 1489863451 18<knucker_18>	i just install arch linux from wiki was amazing expiriance i want to do it again :P
+T 1489863458 23*	govg (~govg@unaffiliated/govg23) vient de rentrer
+T 1489863484 20<spoken>30	knucker_: ahah welcome :D
+T 1489863485 19<earnestly>	spoken: Nice, yeah I'm sure it will.  Btw, change the code examples to use the code block stuff.  So in the edit section, place a leading space on the line, and use # echo ..., to emphasis that it's root
+T 1489863496 24*	nartes a quitté (Quit: Leaving)
+T 1489863500 19<earnestly>	spoken: Or I guess I can
+T 1489863515 19<knucker_>	spoken i feel i am wizard now
+T 1489863516 23*	nartes (~nartes@109.126.151.12223) vient de rentrer
+T 1489863517 18<knucker_18>	lol
+T 1489863517 20<spoken>30	thx :) and correct my english please
+T 1489863522 20<spoken>30	:p
+T 1489863528 23*	mohsen_ (~Mohsen@188.210.79.23823) vient de rentrer
+T 1489863542 24*	nartes a quitté (Max SendQ exceeded)
+T 1489863559 23*	addcn (~addcn@209.129.128.21323) vient de rentrer
+T 1489863566 24*	28shiva est maintenant connu sous le nom 18in1t3r
+T 1489863578 23*	nartes (~nartes@109.126.151.12223) vient de rentrer
+T 1489863595 23*	rio (~rio@summer.c137.eu23) vient de rentrer
+T 1489863602 18<knucker_18>	is better to have a long term kernel ?
+T 1489863617 24*	gh16ito a quitté (Quit: Leaving)
+T 1489863624 18<haavard18>	knucker_: depends on your definition of "better"
+T 1489863627 18<rio18>	anybody experiencing sound problem since a recent update? https://bbs.archlinux.org/viewtopic.php?id=224221 -- by now i think it might be codec-related
+T 1489863628 18<phrik18>	Title: Strange sound problems after update / Multimedia and Games / Arch Linux Forums (at bbs.archlinux.org)
+T 1489863643 18<knucker_18>	haavard: better i mean more stable
+T 1489863647 23*	Keniyal (~Keniyal@unaffiliated/keniyal23) vient de rentrer
+T 1489863732 18<riverclaw18>	earnestly https://ptpb.pw/HHUv
+T 1489863740 19<earnestly>	spoken: See https://wiki.archlinux.org/index.php/AMDGPU#Screen_artifacts_and_frenquency_problem
+T 1489863741 18<phrik18>	Title: AMDGPU - ArchWiki (at wiki.archlinux.org)
+T 1489863748 23*	j12t (~j12t@c-50-131-55-96.hsd1.ca.comcast.net23) vient de rentrer
+T 1489863754 19<earnestly>	spoken: Remember btw, & isn't the same as 'and'
+T 1489863768 18<riverclaw18>	earnestly tried installing pbpst but it's being annoying, will fix later :p
+T 1489863785 18<haavard18>	knucker_: I mean, yeah, it's probably gonna be more stable. How much, though?
+T 1489863792 18<earnestly18>	riverclaw: Looks good, you can see it's listing both Linux and Windows
+T 1489863794 23*	CykloTronic86 (~CykloTron@ip175-241-58-62.adsl.versatel.nl23) vient de rentrer
+T 1489863806 18<earnestly18>	riverclaw: Finish up in the chroot as needed and then reboot to see if it works
+T 1489863807 18<haavard18>	knucker_: personally I have both linux and linux-lts installed. I've never had an issue that could be solved by booting -lts
+T 1489863808 24*	CykloTronic86 a quitté (Remote host closed the connection)
+T 1489863809 20<spoken>30	earnestly: thx buddy :)
+T 1489863816 18<riverclaw18>	earnestly that's it????
+T 1489863827 18<riverclaw18>	earnestly this should work??
+T 1489863841 23*	hringriin (~hringriin@p5DCC3033.dip0.t-ipconnect.de23) vient de rentrer
+T 1489863851 23*	dx486 (~username@unaffiliated/chessknight23) vient de rentrer
+T 1489863863 18<tomty8918>	rio: maybe something to do with resampling?
+T 1489863866 18<earnestly18>	riverclaw: It should, double check in /boot/loader/loader.conf that you have a default
+T 1489863870 24*	Eduard_Munteanu a quitté (Remote host closed the connection)
+T 1489863871 20<spoken>30	so cia guys :)
+T 1489863876 Python interface unloaded
+T 1489863876 FiSHLiM plugin unloaded

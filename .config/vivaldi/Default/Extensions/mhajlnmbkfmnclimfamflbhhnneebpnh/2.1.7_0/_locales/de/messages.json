@@ -1,0 +1,94 @@
+{
+   "clear_win_cancel_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "Stornieren"
+   },
+   "clear_win_clear_all_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "Alles entfernen"
+   },
+   "clear_win_middle_text": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "Nicht mehr anzeigen Diesen Dialog"
+   },
+   "clear_win_top_content": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "Möchten Sie \u003Cb>Alles entfernen\u003C/b> downloads?"
+   },
+   "control_cancel_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Stornieren"
+   },
+   "control_finder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Finder"
+   },
+   "control_folder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "mappe"
+   },
+   "control_resume_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Fortsetzen"
+   },
+   "control_retry_download_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Versuchen Sie es erneut herunterladen"
+   },
+   "control_show_in_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "Zeigen in"
+   },
+   "control_status_canceled_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "Abgebrochen"
+   },
+   "control_status_paused_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "Pausiert"
+   },
+   "control_status_removed_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "Entfernt"
+   },
+   "extension_default_title": {
+      "description": "The field, that describes the default title of extension.",
+      "message": "Download-Manager"
+   },
+   "extension_description": {
+      "description": "The field, that describes the description of extension.",
+      "message": "Verwaltet und interagiert  mit Ihrem Download direkt von Browser- Symbolleiste. Am bequemsten Download-Manager für Ihren Browser."
+   },
+   "extension_name": {
+      "description": "The field, that describes the name of extension.",
+      "message": "Download-Manager Chrome"
+   },
+   "extension_short_name": {
+      "description": "The field, that describes the short name of extension.",
+      "message": "Download-Manager Chrome"
+   },
+   "footer_show_all_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "Zeige alle Downloads"
+   },
+   "head_clear_button_value": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "Entfernen"
+   },
+   "head_downloads_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "Downloads"
+   },
+   "head_open_folder_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "Ordner öffnen"
+   },
+   "item_name_open_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "Öffnen"
+   },
+   "item_remove_button_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "Aus Liste entfernen"
+   }
+}

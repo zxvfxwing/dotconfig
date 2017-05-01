@@ -1,0 +1,94 @@
+{
+   "clear_win_cancel_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ರದ್ದು"
+   },
+   "clear_win_clear_all_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ಎಲ್ಲಾ ತೆಗೆದುಹಾಕಲು"
+   },
+   "clear_win_middle_text": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ಈ ಸಂವಾದವನ್ನು ಮತ್ತೆ ತೋರಿಸುವುದಿಲ್ಲ"
+   },
+   "clear_win_top_content": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ನೀವು ಬಯಸುವಿರಾ \u003Cb>ಎಲ್ಲಾ ತೆಗೆದುಹಾಕಲು\u003C/b> ಡೌನ್ಲೋಡ್ಗಳು?"
+   },
+   "control_cancel_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ರದ್ದು"
+   },
+   "control_finder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ಶೋಧಕ"
+   },
+   "control_folder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ಫೋಲ್ಡರ್"
+   },
+   "control_resume_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ಮುಂದುವರಿಕೆ"
+   },
+   "control_retry_download_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ಡೌನ್ಲೋಡ್ ಮರುಪ್ರಯತ್ನಿಸಿ"
+   },
+   "control_show_in_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ತೋರಿಸಲು"
+   },
+   "control_status_canceled_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "ರದ್ದು"
+   },
+   "control_status_paused_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "ನಿಲ್ಲಿಸಲಾಗಿದೆ"
+   },
+   "control_status_removed_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "ತೆಗೆದು"
+   },
+   "extension_default_title": {
+      "description": "The field, that describes the default title of extension.",
+      "message": "ಡೌನ್ಲೋಡ್ ಮ್ಯಾನೇಜರ್"
+   },
+   "extension_description": {
+      "description": "The field, that describes the description of extension.",
+      "message": "ನಿರ್ವಹಿಸುತ್ತದೆ ಮತ್ತು ನೇರವಾಗಿ ಬ್ರೌಸರ್ ಟೂಲ್ಬಾರ್ಗೆ ನಿಮ್ಮ ಡೌನ್ಲೋಡ್ಗಳು ಪರಸ್ಪರ. ನಿಮ್ಮ ಬ್ರೌಸರ್ ಅತ್ಯಂತ ಅನುಕೂಲಕರ ಡೌನ್ಲೋಡ್ ಮ್ಯಾನೇಜರ್ ."
+   },
+   "extension_name": {
+      "description": "The field, that describes the name of extension.",
+      "message": "ಡೌನ್ಲೋಡ್ ಮ್ಯಾನೇಜರ್ Chrome"
+   },
+   "extension_short_name": {
+      "description": "The field, that describes the short name of extension.",
+      "message": "ಡೌನ್ಲೋಡ್ ಮ್ಯಾನೇಜರ್ Chrome"
+   },
+   "footer_show_all_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ಎಲ್ಲಾ ಡೌನ್ಲೋಡ್ಗಳನ್ನು ತೋರಿಸಿ"
+   },
+   "head_clear_button_value": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ತೆಗೆದು"
+   },
+   "head_downloads_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ಡೌನ್ಲೋಡ್ಗಳು"
+   },
+   "head_open_folder_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ಮುಕ್ತ ಫೋಲ್ಡರ್"
+   },
+   "item_name_open_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "ತೆರೆದ"
+   },
+   "item_remove_button_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಲು"
+   }
+}

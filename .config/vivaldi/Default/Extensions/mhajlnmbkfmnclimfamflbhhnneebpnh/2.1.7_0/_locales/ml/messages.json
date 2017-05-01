@@ -1,0 +1,94 @@
+{
+   "clear_win_cancel_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "റദ്ദാക്കുക"
+   },
+   "clear_win_clear_all_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "എല്ലാം നീക്കം ചെയ്യുക"
+   },
+   "clear_win_middle_text": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ഈ ഡയലോഗ് വീണ്ടും കാണിക്കരുത്"
+   },
+   "clear_win_top_content": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "നിങ്ങൾക്ക് ആഗ്രഹമുണ്ടോ \u003Cb>എല്ലാം നീക്കം ചെയ്യുക\u003C/b> ഡൗൺലോഡുകൾ?"
+   },
+   "control_cancel_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "റദ്ദാക്കുക"
+   },
+   "control_finder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ഫൈൻഡർ"
+   },
+   "control_folder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ഫോൾഡർ"
+   },
+   "control_resume_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "പുനരാരംഭിക്കുക"
+   },
+   "control_retry_download_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "വീണ്ടും ഡൌണ്ലോഡ്"
+   },
+   "control_show_in_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "കാണിക്കുന്നതിനുള്ള"
+   },
+   "control_status_canceled_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "റദ്ദാക്കി"
+   },
+   "control_status_paused_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "താൽക്കാലികമായി"
+   },
+   "control_status_removed_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "നീക്കംചെയ്തു"
+   },
+   "extension_default_title": {
+      "description": "The field, that describes the default title of extension.",
+      "message": "ഡൗൺലോഡ് മാനേജർ"
+   },
+   "extension_description": {
+      "description": "The field, that describes the description of extension.",
+      "message": "മാനേജ് ബ്രൗസർ ഉപകരണബാറിൽ നിന്നും നേരിട്ട് നിങ്ങളുടെ ഡൗൺലോഡുകൾ പ്രതിപ്രവർത്തനങ്ങളിലേർപ്പെടാറുണ്ട്. നിങ്ങളുടെ ബ്രൗസർ വേണ്ടി ഏറ്റവും അനുയോജ്യമായത് ഡൗൺലോഡ് മാനേജർ ."
+   },
+   "extension_name": {
+      "description": "The field, that describes the name of extension.",
+      "message": "ഡൗൺലോഡ് മാനേജർ Chrome"
+   },
+   "extension_short_name": {
+      "description": "The field, that describes the short name of extension.",
+      "message": "ഡൗൺലോഡ് മാനേജർ Chrome"
+   },
+   "footer_show_all_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "എല്ലാ ഡൌൺലോഡുകളും കാണിക്കുക"
+   },
+   "head_clear_button_value": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "നീക്കം"
+   },
+   "head_downloads_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ഡൗൺലോഡുകൾ"
+   },
+   "head_open_folder_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ഫോൾഡർ തുറക്കുക"
+   },
+   "item_name_open_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "തുറക്കുക"
+   },
+   "item_remove_button_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "പട്ടികയിൽ നിന്ന് നീക്കം"
+   }
+}

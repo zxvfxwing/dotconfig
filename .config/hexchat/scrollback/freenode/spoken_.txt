@@ -1,0 +1,3 @@
+T 1489531877 18<spoken_>	REGISTER dropit74 spoken.spok@gmail.com
+T 1489531904 18<spoken_>	IDENTIFY dropit74
+T 1489532112 18<spoken_>	REGISTER spoken spoken.spok@gmail.com

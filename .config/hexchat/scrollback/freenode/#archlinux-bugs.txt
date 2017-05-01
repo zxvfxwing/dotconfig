@@ -1,0 +1,12 @@
+T 1489530691 19*	Vous parlez maintenant sur 22#archlinux-bugs
+T 1489530691 22*	Le sujet de 22#archlinux-bugs est : The bugtracker is at http://bugs.archlinux.org. TODO: http://wiki.archlinux.org/index.php/Bug_Day
+T 1489530691 22*	Sujet de 22#archlinux-bugs choisi par 26Scimmia!~Scimmia@dhcp-142-99-212-67.cf-res.cfu.net (24Sun Dec 11 16:21:07 2016)
+T 1489530703 20<spoken_>30	Hi
+T 1489530866 20<spoken_>30	someone here ? 
+T 1489530876 18<anthraxx18>	maybe
+T 1489531015 20<spoken_>30	So, i'm running ArchLinux (obviously) with XFCE DE and wanted to use compiz + gtk-window-decorator
+T 1489531060 20<spoken_>30	Everything works fine, but on my windows I only got the close button
+T 1489531070 20<spoken_>30	Minimize / Maximize are missing
+T 1489531265 19<anthraxx>	spoken_: you want to ask #archlinux
+T 1489531284 20<spoken_>30	better ? 
+T 1489531366 20*	Déconnecté (20)

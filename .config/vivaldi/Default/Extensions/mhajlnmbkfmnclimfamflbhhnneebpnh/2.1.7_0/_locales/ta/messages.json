@@ -1,0 +1,94 @@
+{
+   "clear_win_cancel_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "ரத்து"
+   },
+   "clear_win_clear_all_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "அனைத்து நீக்க"
+   },
+   "clear_win_middle_text": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "மீண்டும் இந்த உரையாடலை காட்டாதே"
+   },
+   "clear_win_top_content": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "உனக்கு வேண்டுமா \u003Cb>அனைத்து நீக்க\u003C/b> இறக்கம்?"
+   },
+   "control_cancel_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ரத்து"
+   },
+   "control_finder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "தேடுங்கள்"
+   },
+   "control_folder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "அடைவு"
+   },
+   "control_resume_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "விண்ணப்பத்தை"
+   },
+   "control_retry_download_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "பதிவிறக்கம் செய்ய முயற்சிக்கலாம்"
+   },
+   "control_show_in_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "காண்பிக்க"
+   },
+   "control_status_canceled_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "ரத்து"
+   },
+   "control_status_paused_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "இடைநிறுத்தப்பட்டுள்ளது"
+   },
+   "control_status_removed_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "நீக்கப்பட்டது"
+   },
+   "extension_default_title": {
+      "description": "The field, that describes the default title of extension.",
+      "message": "பதிவிறக்க மேலாளர்"
+   },
+   "extension_description": {
+      "description": "The field, that describes the description of extension.",
+      "message": "நிர்வகிக்கிறது மற்றும் உலாவியில் இருந்து நேரடியாக உங்கள் இறக்கம் ஊடாடுகிறது. உங்கள் உலாவியில் மிகவும் வசதியான பதிவிறக்க மேலாளர் ."
+   },
+   "extension_name": {
+      "description": "The field, that describes the name of extension.",
+      "message": "பதிவிறக்க மேலாளர் Chrome"
+   },
+   "extension_short_name": {
+      "description": "The field, that describes the short name of extension.",
+      "message": "பதிவிறக்க மேலாளர் Chrome"
+   },
+   "footer_show_all_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "அனைத்து இறக்கம் காட்ட"
+   },
+   "head_clear_button_value": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "நீக்க"
+   },
+   "head_downloads_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "இறக்கம்"
+   },
+   "head_open_folder_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "திறந்த அடைவு"
+   },
+   "item_name_open_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "திறந்த"
+   },
+   "item_remove_button_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "பட்டியியல் இருந்து நீக்கு"
+   }
+}

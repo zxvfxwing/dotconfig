@@ -1,0 +1,6 @@
+2017/05/01-18:18:16.399 2625 Reusing MANIFEST /home/spoken/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2017/05/01-18:18:16.399 2625 Recovering log #6356
+2017/05/01-18:18:16.614 2625 Reusing old log /home/spoken/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/006356.log 
+2017/05/01-18:29:42.940 5970 Level-0 table #6360: started
+2017/05/01-18:29:43.257 5970 Level-0 table #6360: 1545571 bytes OK
+2017/05/01-18:29:43.331 5970 Delete type=0 #6356

@@ -1,0 +1,455 @@
+/*
+ * This file is a part of the Chrome Download Manager project.
+ *
+ */
+
+@media only screen and (min-device-width: 1500px) {
+	body { zoom: 1.15; }
+}
+
+@media only screen and (min-device-width: 1800px) {
+	body { zoom: 1.25; }
+}
+
+* { margin:0; padding:0; }
+
+body {
+	font-family: Roboto, 'Segoe UI', Tahoma, sans-serif
+	font-size: 81.25%;
+	
+	width:400px;
+	padding:0;
+	margin:0px;
+	-webkit-font-smoothing: antialiased;
+	background:#eceff1;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+h1 {
+	border-bottom: 6px solid #EBEFF9;
+	display: inline;
+	border:0;
+	font-size:14px;
+	font-weight:500;
+	color:#b0bec5;
+	text-align:center;
+	display:block;
+	background:#34495e;
+	padding:12px 0;
+	height: 20px;
+}
+
+a {
+	color: #15C;
+	text-decoration: underline;
+	outline: 0;
+}
+
+#title {
+	cursor:default;
+}
+
+#term {
+	border: 1px solid #BFBFBF;
+	border-radius: 2px;
+	box-sizing: border-box;
+	color: #444;
+	font: inherit;
+	margin: 0;
+	min-height: 2em;
+	padding: 3px;
+	padding-bottom: 4px;	
+
+	-webkit-appearance: textfield;
+	min-width: 160px;
+
+	width:330px;
+	outline:none;	
+}
+
+#search {
+	margin-bottom: 20px;
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+
+input#term:focus {
+	opacity: 1;
+}
+
+#downloads {
+	min-height: 321px;
+	overflow: hidden;
+}
+
+.download {  
+	position: relative;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor:default;
+	padding:10px 10px 10px 50px;
+	height: 41px;
+	font-size:12px; 
+	border-left: 4px solid rgb(103, 206, 71);
+}
+
+.download:nth-of-type(2n) {
+	background: #F8F8F8;
+}
+
+.icon {
+	width:16px;
+	height:16px;
+	position: absolute;
+	top:8px; /*23px;*/
+	left:10px;
+}
+
+.src-url {
+	color: #56D;
+	display: inline-block;
+	max-width: 450px;
+	overflow: hidden;
+	padding-bottom: 1px;
+	padding-top: 4px;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display:none;
+}
+
+.name-wrapper {
+	margin-top:-3px;
+}
+
+.name {
+	word-break: break-all;
+	text-decoration:none;
+
+	overflow: hidden;
+	white-space: nowrap;	
+	text-overflow: ellipsis;
+	display:block;
+	padding-right: 0px;
+
+	color:#555; 
+	font-weight: bold; 
+	display: inline-block;
+	max-width: 320px;
+}
+
+.controls a {
+  -webkit-margin-end: 16px;
+  color: #777;
+  text-decoration: none;
+}
+
+.download .status {
+	color: #999;
+	white-space: nowrap;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* Progress bar & download states */
+
+.download .progress-bar {
+	margin:2px 0;
+	visibility: hidden;
+	background: #EDEDED;
+	border: 1px solid #EDEDED;
+}
+
+.download .progress {
+	width:0;
+	height:3px;	
+}
+
+.download.in-progress .progress-bar, 
+.download.paused .progress-bar {
+	visibility: visible;
+}
+
+.in-progress .progress {
+	background:#52B3FF;
+}
+
+.paused .progress {
+	background: #FFCC00;
+}
+
+.download.in-progress {
+	border-left-color: #52B3FF;
+}
+
+.download.canceled, .download.interrupted, .download.removed  {
+	border-left-color: #F77A7A;
+}
+
+.download.paused {
+	border-left-color: #FFCC00;
+}
+
+.canceled .status, .removed .status {
+	color: #FF5757;
+	visibility: hidden;
+}
+
+.canceled .name, .removed .name {
+	color: #888 !important;
+	border-color:transparent !important;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* Danger state */
+
+.danger .name {
+	color: red !important;
+}
+
+.danger .name:before {
+	/*content: "! ";*/
+}
+
+.danger .progress {
+	background: red;
+}
+
+.download.danger {
+	border-left-color: red;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* Pointer */
+
+.canceled, .interrupted, .danger, .in-progress, .removed { cursor:default; }
+
+/*--------------------------------------------------------------------------------------------*/
+/* Hover & Active UI states */
+
+.download {
+	border-top:2px solid transparent;
+	border-bottom:2px solid transparent;
+}
+
+.download:hover {
+	background: rgba(3, 169, 244, 0.1);
+}
+
+.download:hover a.name { 	
+	color:rgb(1, 142, 236) !important;  
+}
+.download:hover a.name.non-hover { 
+  color:#555 !important;  
+}
+
+.download a:hover { 
+	color:rgb(1, 142, 236) !important; 
+}
+
+.download a:active { 
+	color:rgb(0, 115, 192) !important; 
+}
+
+.download a.active { 
+	color:rgb(0, 115, 192) !important; 
+}
+
+.download .controls a:hover { 
+  border-bottom:1px solid #d0d0d0 !important;
+}
+
+.download .controls a:active { 
+  border-bottom:1px solid #aaa !important;
+}
+
+.download .controls a.active { 
+  border-bottom:1px solid #aaa !important;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* Remove buttons */
+
+a.remove {
+	color: #666;
+	display: inline-block; 
+	position: absolute; 
+	z-index:200;
+	right: 4px; 
+	top: 3px;   
+	border-radius: 65px; 
+	cursor:pointer;
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+	text-align: center;
+	background: #E7E7E7;
+	border: 1px solid #c2c2c2; 
+	width: 17px;
+	height: 17px;
+	line-height: 15px;
+	text-decoration: none; 
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-transition: opacity .3s, -webkit-transform .1s;
+	display:block;
+}
+
+a.remove:hover {
+	background: rgb(255, 98, 98);
+	color: #fff !important; 
+	border: 1px solid #C94839;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* Other buttons */
+
+#clear {
+  position:absolute;
+  top:10px;
+  right:10px;
+}
+
+#open_folder {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #34495e !important;
+  
+	cursor: pointer;
+	
+	width: 16px;
+	height: 16px;
+	
+	position:absolute;
+	top:14px;
+	right:358px;
+}
+#open_folder:hover {
+	width: 17px;
+	height: 17px;
+}
+
+#show-all {
+	display: block;
+	text-align: center;
+	padding: 12px 0;
+	text-decoration: none;
+	z-index: 200;
+	position: relative;
+	border-top:2px solid transparent;
+	border-bottom:2px solid transparent;
+	background: #34495e;
+	color:#b0bec5;
+	font-size:14px;
+	font-weight:500;
+}
+
+#show-all:hover {
+	background: #34495e;
+	color: #ecf0f3 !important;
+}
+
+#empty-smile {
+	font-size: 190px;
+	line-height: 300px;
+	text-align: center;
+	cursor:default;
+}
+
+#search { display:none; }
+
+/*--------------------------------------------------------------------------------------------*/
+/* Modal */
+
+.modal {
+	position: absolute;
+	z-index: 100;
+	width: 80%;
+	left: 10%;
+	top: 50%;
+	background: #fff;
+	height: 140px;
+	margin-top: -70px;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+	border-right-width: 2px;
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 3px;
+	-webkit-transition: all .1s ease-in;	
+	-webkit-transform: scale(.8);
+	opacity: 0.3;
+	display: none;
+}
+
+.modal.visible {
+	-webkit-transition: all .1s;
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+.modal-content {
+	position:relative
+}
+
+.modal-buttons {
+	margin: 30px 0;
+	text-align: right;
+}
+
+.modal-overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	display: none;
+}
+
+.checkboxes input {
+    vertical-align: middle;
+}
+
+.checkboxes  label {
+    display: block;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.checkboxes  label span {
+    vertical-align: middle;
+}
+
+button {
+	font-size: 13px;
+	padding: 3px 8px;
+	
+	color:#b0bec5;
+	background:#34495e;
+	
+	cursor: pointer;
+
+	border-radius: 4px;
+	border: 1px solid #34495e;
+	outline: 0;
+	margin: 0 5px 0 0;
+}
+
+button:hover {
+	color:#ecf0f3;
+}
+
+button.danger {
+	cursor: pointer;
+	
+	border-color: rgb(255, 156, 156);
+	background: rgb(255, 238, 238);
+	color: rgb(245, 64, 64);
+}
+
+button:hover.danger {
+	border-color: rgb(255, 50, 50);
+	color: rgb(255, 50, 50);
+	background: rgb(255, 230, 230);
+}

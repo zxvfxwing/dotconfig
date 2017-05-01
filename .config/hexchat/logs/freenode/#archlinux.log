@@ -1,0 +1,1059 @@
+**** DÉBUT DU JOURNAL À Tue Mar 14 23:57:46 2017
+
+mars 14 23:57:46 *	Vous parlez maintenant sur #archlinux
+mars 14 23:57:46 *	Le sujet de #archlinux est : Welcome to Arch Linux World Domination, Inc. <+> π <+> Channel rules: https://goo.gl/fkksz9 <+> Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net <+> Become an official Arch Tester: https://goo.gl/3uvJQk <+> Breaking news: The new nvidia stuff doesn't get along with the old nvidia stuff
+mars 14 23:57:46 *	Sujet de #archlinux choisi par IHateMyIsp (Tue Mar 14 21:36:33 2017)
+mars 14 23:57:49 <spoken_two>	hello
+mars 14 23:57:50 *	beest a quitté (Ping timeout: 256 seconds)
+mars 14 23:57:54 *	boto (~boto@freebsd/contributor/boto) vient de rentrer
+mars 14 23:57:59 <Cirrus_Minor>	piousminion: FWIW amdgpu didnt work for me when i tried it 2 days ago, mibbe was a PEBKAC
+mars 14 23:58:01 <piousminion>	Cirrus_Minor: That's the trouble. They won't install due to conflicts and wanting to remove libglvnd which mesa requires.
+mars 14 23:58:19 *	cache_return (c_return@gateway/shell/blinkenshell.org/x-jkymtwurzdjrirmk) est parti
+mars 14 23:58:31 *	cache_return (c_return@gateway/shell/blinkenshell.org/x-jkymtwurzdjrirmk) vient de rentrer
+mars 14 23:58:37 <Cirrus_Minor>	piousminion: they will install
+mars 14 23:58:37 <Namarrgon>	piousminion: it might work but the changes to the PKGBUILD will be rather invasive
+mars 14 23:58:39 *	c_korn a quitté (Quit: Leaving)
+mars 14 23:58:52 <michaelis>	Good night.
+mars 14 23:58:57 *	michaelis a quitté (Quit: Lämnar)
+mars 14 23:59:04 <piousminion>	Cirrus_Minor: amdgpu != amdgpu-pro
+mars 14 23:59:16 <Cirrus_Minor>	piousminion: oops
+mars 14 23:59:16 *	Ali_Waris a quitté (Ping timeout: 246 seconds)
+mars 14 23:59:19 <spoken_two>	There is my little problem : I'm running ArchLinux with XFCE and wanted to use Compiz + gtk-window-decorator. Everything works fine, the only problem here is that the Minimize & Maximize button are missing
+mars 14 23:59:36 *	Cirrus_Minor sticks with ati-dri does the damage
+mars 14 23:59:38 *	nomore (~no@aipotu.li) vient de rentrer
+mars 15 00:00:01 <sklv>	lsblk -f : https://ptpb.pw/Mu1I mkinitcpio.conf : https://ptpb.pw/gfk8 grub.cfg : https://ptpb.pw/clmm
+mars 15 00:00:16 <piousminion>	spoken_two: You have a titlebar though?
+mars 15 00:00:25 <Cirrus_Minor>	spoken_two: isnt there a compiz thing that enables them ? been a long time since i used compiz but iirc its doable
+mars 15 00:00:27 <Namarrgon>	sklv: "lsblk -f"
+mars 15 00:00:47 <spoken_two>	Titlebar + cross button to close window
+mars 15 00:01:22 *	chipping a quitté (Ping timeout: 246 seconds)
+mars 15 00:01:28 <sklv>	sorry wrong link lsblk -f : https://ptpb.pw/Sh3R
+mars 15 00:01:58 *	setty1 a quitté (Quit: WeeChat 1.7)
+mars 15 00:02:02 <Cirrus_Minor>	spoken_two: maybe you need another pkg but in the menu where you enable flame like effects etc. i remember seeing the minimize/maxiize
+mars 15 00:02:16 <Cirrus_Minor>	+m
+mars 15 00:02:27 <grazzolini>	sklv: why are you using the mdadm hook instead of the mdadm_udev hook?
+mars 15 00:02:28 *	cyphase (~cyphase@unaffiliated/cyphase) vient de rentrer
+mars 15 00:02:40 <piousminion>	The "effect" is just what happens when you click them. He can't click them. :P
+mars 15 00:02:40 *	mdmga a quitté (Ping timeout: 260 seconds)
+mars 15 00:02:52 <Namarrgon>	sklv: root=/dev/mapper/ssdlvm-root rw cryptdevice=/dev/md0:ssdlvm-root
+mars 15 00:03:03 <Namarrgon>	sklv: your / and the dmcrypt container cannot be the same device
+mars 15 00:03:24 <Namarrgon>	sklv: and remove the root= parameter you added to /etc/default/grub
+mars 15 00:03:43 *	renatosilva a quitté (Quit: http://renatosilva.net)
+mars 15 00:03:54 *	Gathis a quitté (Remote host closed the connection)
+mars 15 00:03:55 <grazzolini>	sklv: and use UUID's, PARTUUID's or labels
+mars 15 00:04:08 *	chipping (~chipping@82-69-3-143.dsl.in-addr.zen.co.uk) vient de rentrer
+mars 15 00:04:08 <sklv>	am i not using labels?
+mars 15 00:04:09 <dreisner>	and maybe start over with fewer filesystems
+mars 15 00:04:12 <dreisner>	wtf
+mars 15 00:04:18 <Namarrgon>	!moar filesystems
+mars 15 00:04:18 <phrik>	moaarrr filesystems!!! MMMOOOOOAAAAAARRRRRRR!!!
+mars 15 00:04:32 <Cirrus_Minor>	piousminion: ensure you havent disabled window decorations in the 'effects'section
+mars 15 00:04:40 <grazzolini>	sklv: nope
+mars 15 00:04:42 <spoken_two>	For exemple, my Browser Vivaldi wich doesn't use the native gui can minimize and maximize (double click on window works for all)
+mars 15 00:05:01 <sklv>	i only do it like that because I'm sick of running out of inodes on ext4 and i don't want to use a non ext filesystem
+mars 15 00:05:12 *	boustrophedon (~boustroph@static.88-198-24-113.clients.your-server.de) vient de rentrer
+mars 15 00:05:12 <dreisner>	separating out /usr makes little sense. separating it out via LVM when it ties back to the same device(s) as / makes even less sense.
+mars 15 00:05:21 <piousminion>	Cirrus_Minor: You mean spoken_two. Anyway, that's only the "effect", not the option to display the button.
+mars 15 00:05:35 <dreisner>	uh, what? running out of inodes?
+mars 15 00:05:43 <grazzolini>	sklv: what are you doing?
+mars 15 00:05:56 *	Pie-jacker875 a quitté (Ping timeout: 260 seconds)
+mars 15 00:06:02 <Cirrus_Minor>	piousminion: no window decoration IS the buttons
+mars 15 00:06:15 <Cirrus_Minor>	spoken_two: ^^
+mars 15 00:06:28 <piousminion>	Cirrus_Minor: misread. We're all over the place today. :P
+mars 15 00:06:39 <Cirrus_Minor>	aye
+mars 15 00:07:06 *	The_Loko a quitté (Quit: Leaving)
+mars 15 00:07:28 *	loffa a quitté (Ping timeout: 256 seconds)
+mars 15 00:07:48 *	infides a quitté (Ping timeout: 260 seconds)
+mars 15 00:08:12 <sklv>	grazzolini: nothing special. mostly embedded development. one time i had a thing with lots of small files (can't remember what), i extacted it to my downloads folder and then because it was one filesystem with /usr /var etc, it used up all the inodes and my system couldn't create new files until it was fixed. i thought that was a BS scenario so i made it so if one partition ran out of inodes at least it can't affect the others
+mars 15 00:08:13 *	kelnoky a quitté (Quit: WeeChat 1.7)
+mars 15 00:08:27 <spoken_two>	When I run the gnome-tweak-tool ( i'm on XFCE ), in Windows > titlebar's buttons there is a gap
+mars 15 00:08:52 *	Tazmain a quitté (Quit: Leaving)
+mars 15 00:08:59 <grazzolini>	sklv: pretty edge case, but sure. fix your grub and mkinitcpio and you will be able to boot
+mars 15 00:08:59 *	viperfang a quitté (Ping timeout: 260 seconds)
+mars 15 00:09:38 *	hahuang61 (~hahuang65@104-50-0-198.lightspeed.sntcca.sbcglobal.net) vient de rentrer
+mars 15 00:10:03 *	mlvk a quitté (Ping timeout: 245 seconds)
+mars 15 00:10:19 *	mtn_ (~mtn@unaffiliated/mtn) vient de rentrer
+mars 15 00:10:36 *	dviola (~diego@unaffiliated/diegoviola) vient de rentrer
+mars 15 00:10:42 <spoken_two>	btw i'm setting theme with : gsettings set org.gnome.desktop.wm.preferences theme NameOfTheme
+mars 15 00:10:48 *	robotroll a quitté (Ping timeout: 240 seconds)
+mars 15 00:10:52 *	noeh a quitté (Ping timeout: 256 seconds)
+mars 15 00:11:06 <spoken_two>	maybe there is on option to setup with gsettings ? 
+mars 15 00:11:22 *	sertsa (~sertsa@69.39.5.211) vient de rentrer
+mars 15 00:11:33 <Cirrus_Minor>	spoken_two: set theme w// lxappearance ?
+mars 15 00:11:56 *	bocaneri (~bocaneri@about/linux/staff/sauvin) vient de rentrer
+mars 15 00:12:14 *	z3r0n0id (~zero@unaffiliated/z3r0n0id) vient de rentrer
+mars 15 00:12:14 <Cirrus_Minor>	spoken_two: id use the adwaita theme in the interim
+mars 15 00:12:20 *	kilgoretrout a quitté (Ping timeout: 268 seconds)
+mars 15 00:12:31 <Cirrus_Minor>	its known to work (many dont work so well)
+mars 15 00:12:33 *	frankdrey a quitté (Quit: My MacBook has gone to sleep. ZZZzzz…)
+mars 15 00:12:39 *	Throdne_ a quitté (Quit: Leaving)
+mars 15 00:13:45 *	Hunts (~hunts@cpc104822-sgyl39-2-0-cust136.18-2.cable.virginm.net) vient de rentrer
+mars 15 00:14:09 *	Ali_Waris (~hussain_c@49.44.51.160) vient de rentrer
+mars 15 00:14:12 <spoken_two>	gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close' => With this I can bring back the two buttons missing on GUI
+mars 15 00:14:13 *	nebben (uid217484@gateway/web/irccloud.com/x-depphsavajoaonjc) vient de rentrer
+mars 15 00:14:16 *	manuelschneid3r a quitté (Ping timeout: 256 seconds)
+mars 15 00:14:17 <spoken_two>	but no events when clicking
+mars 15 00:14:27 *	thunder-ltu a quitté (Ping timeout: 258 seconds)
+mars 15 00:14:28 *	curiousx (~curiousx@unaffiliated/curiousx) vient de rentrer
+mars 15 00:14:29 *	noeh (~noeh@ip-178-200-236-42.hsi07.unitymediagroup.de) vient de rentrer
+mars 15 00:14:40 *	fatbotgw (~fatbotgw@66.103.105.66) vient de rentrer
+mars 15 00:14:48 *	MXfive (~MXfive@95.149.139.182) vient de rentrer
+mars 15 00:14:48 <Cirrus_Minor>	spoken_two: did you check you havent disabled window decorations in compiz ?
+mars 15 00:15:03 *	SpinTronix a quitté (Quit: Konversation terminated!)
+mars 15 00:15:04 *	murkx (~mur@unaffiliated/murkx) vient de rentrer
+mars 15 00:15:49 <spoken_two>	Yep it's checked, i'm using " gtk-window-decorator --replace " in settings of window decoration
+mars 15 00:15:58 *	cerion_ a quitté (Ping timeout: 264 seconds)
+mars 15 00:16:16 *	bugzc (~1@unaffiliated/bugzc) vient de rentrer
+mars 15 00:16:34 *	ravior a quitté (Quit: Konversation terminated!)
+mars 15 00:16:54 <Cirrus_Minor>	ok ive no idea what that is, im a simple dwm dood, dont use titlebars and window decorations etc. im out of ideas then bro
+mars 15 00:17:39 *	hellkiller (~hellkille@177.107.9.113) vient de rentrer
+mars 15 00:17:49 *	datamoshr (~john@unaffiliated/datamoshr) vient de rentrer
+mars 15 00:17:49 *	sargosse (~sargosse@ARennes-658-1-37-124.w83-199.abo.wanadoo.fr) vient de rentrer
+mars 15 00:18:19 *	rk0n a quitté (Quit: WeeChat 1.7)
+mars 15 00:18:39 <spoken_two>	:o !
+mars 15 00:18:44 <spoken_two>	it's actually working 
+mars 15 00:18:45 <spoken_two>	:D
+mars 15 00:18:53 <sklv>	ok I changed my mkinitcpio.conf to mdadm_udev and changed my /etc/default grub to not include root= entry, but now I'm in recovrey shell and i can't mount /dev/mapper/ssdlvm-root to /new_root because "unkown filesystem type 'LVM2_member'"
+mars 15 00:19:01 <Cirrus_Minor>	!give spoken_two badge
+mars 15 00:19:02 <phrik>	spoken_two: You earned a badge! https://s19.postimg.org/hpbvytaqr/Badge.jpg
+mars 15 00:19:07 *	Pie-jacker875 (~Pie-jacke@c-24-62-41-71.hsd1.ma.comcast.net) vient de rentrer
+mars 15 00:19:08 *	Ali_Waris a quitté (Quit: Leaving)
+mars 15 00:19:13 <spoken_two>	gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close' works fine :)
+mars 15 00:19:25 *	frankdrey (~textual@c-73-225-124-33.hsd1.wa.comcast.net) vient de rentrer
+mars 15 00:20:37 *	sadmansk a quitté (Ping timeout: 246 seconds)
+mars 15 00:20:39 *	mefistofeles a quitté (Ping timeout: 260 seconds)
+mars 15 00:20:45 <Cirrus_Minor>	sklv: grub is gonna need root=THEUUID
+mars 15 00:20:46 <Namarrgon>	sklv: what about the fallback initramfs image?
+mars 15 00:21:07 <Cirrus_Minor>	sorry Namarrgon got this
+mars 15 00:21:34 *	sanitypassing a quitté (Quit: WeeChat 1.7)
+mars 15 00:21:35 *	crobbins a quitté (Ping timeout: 240 seconds)
+mars 15 00:21:40 *	ntldr a quitté (Quit: G⃒j⃒o⃒r⃒e⃒ E⃒n⃒ E⃒n⃒d⃒r⃒i⃒n⃒g⃒... D⃒r⃒e⃒p⃒e⃒ D⃒e⃒g⃒ S⃒e⃒l⃒v⃒)
+mars 15 00:22:12 *	tinnotl a quitté (Quit: Leaving)
+mars 15 00:22:13 *	sedrosken a quitté (Remote host closed the connection)
+mars 15 00:22:44 *	datamoshr a quitté (Ping timeout: 260 seconds)
+mars 15 00:23:09 <sklv>	Namarrgon: same in recovery
+mars 15 00:23:18 *	blueness a quitté (Quit: blueness)
+mars 15 00:23:24 <spoken_two>	thx boys
+mars 15 00:23:26 <spoken_two>	:)
+mars 15 00:23:43 <spoken_two>	love xoxoxo and good night
+mars 15 00:24:04 *	Levex a quitté (Quit: My MacBook Pro has gone to sleep... ZzzZzzzZzz..)
+**** FIN DU JOURNAL À Wed Mar 15 00:24:40 2017
+
+**** DÉBUT DU JOURNAL À Wed Mar 15 19:35:44 2017
+
+mars 15 19:35:44 *	Vous parlez maintenant sur #archlinux
+mars 15 19:35:44 *	Le sujet de #archlinux est : Welcome to Arch Linux World Domination, Inc. <+> π <+> Channel rules: https://goo.gl/fkksz9 <+> Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net <+> Become an official Arch Tester: https://goo.gl/3uvJQk <+> Breaking news: The new nvidia stuff doesn't get along with the old nvidia stuff
+mars 15 19:35:44 *	Sujet de #archlinux choisi par IHateMyIsp (Tue Mar 14 21:36:33 2017)
+mars 15 19:35:51 <spoken>	hi
+mars 15 19:36:22 <tomty89>	!give spoken welcome1
+mars 15 19:36:23 <phrik>	spoken: i give you my warm hug
+mars 15 19:36:32 <daif_>	help, i get no connection to the internet anymore
+mars 15 19:36:40 *	cdown a quitté (Ping timeout: 246 seconds)
+mars 15 19:36:42 *	bluedrc a quitté (Quit: Lost terminal)
+mars 15 19:36:45 <spoken>	:D
+mars 15 19:36:51 *	datamoshr a quitté (Ping timeout: 240 seconds)
+mars 15 19:36:51 <jokke>	hm https://github.com/ValveSoftware/steam-for-linux/issues/4808
+mars 15 19:36:53 <phrik>	Title: steamcmd checks for updates and quits. Does nothing else. · Issue #4808 · ValveSoftware/steam-for-linux · GitHub (at github.com)
+mars 15 19:37:15 <daif_>	my dhcpcd is active, but i cant ping something
+mars 15 19:37:46 <IHateMyIsp>	ping 8.8.8.8
+mars 15 19:37:52 <IHateMyIsp>	also is this a vm?
+mars 15 19:38:02 <tomty89>	daif_: `ip a`
+mars 15 19:38:06 <daif_>	cennect: Network is unreachable
+mars 15 19:38:07 <Zippit>	check if you actually have an IP if you type ifconfig
+mars 15 19:38:14 <tomty89>	yikes ifconfig
+mars 15 19:38:34 <tomty89>	even Android use `ip` these days
+mars 15 19:38:41 <IHateMyIsp>	ip r
+mars 15 19:38:57 *	Narrat (~Narrat@p5DED169E.dip0.t-ipconnect.de) vient de rentrer
+mars 15 19:39:13 <Zippit>	im oldschool like that
+mars 15 19:39:30 <daif_>	ifconfig command not found
+mars 15 19:39:36 <IHateMyIsp>	net-tools was deprecated over a decade ago, stop using it
+mars 15 19:39:42 <IHateMyIsp>	daif_: ip r
+mars 15 19:39:50 <Sout>	also worth checking if you have a route setup correctly
+mars 15 19:40:21 <tomty89>	well, `ip r` checks routes
+mars 15 19:40:27 <daif_>	ip r no return
+mars 15 19:40:37 <tomty89>	\o/
+mars 15 19:40:39 <IHateMyIsp>	then you are not connected to anything
+mars 15 19:40:48 <IHateMyIsp>	wired or wifi?
+mars 15 19:40:54 *	cutgah a quitté (Remote host closed the connection)
+mars 15 19:40:55 <daif_>	wired to router
+mars 15 19:40:56 <Sout>	ah it does. 
+mars 15 19:40:56 <tomty89>	daif_: dhcpcd probably hasn't got anything for you
+mars 15 19:41:05 <IHateMyIsp>	is this a vm?
+mars 15 19:41:13 <aydio>	hello guys, my macbook pro mid 2015 model instantly wakes up from hibernation when closing the lid. I can see the apple logo light shutting down for a few seconds, then lighing up again.
+mars 15 19:41:16 <daif_>	no it isnt
+mars 15 19:41:19 <daif_>	no vm
+mars 15 19:41:24 <tomty89>	daif_: journalctl -b -u dhcpcd
+mars 15 19:41:28 *	panikovsky a quitté (Ping timeout: 260 seconds)
+mars 15 19:41:34 <tomty89>	or maybe dhcpcd@something, idk
+mars 15 19:41:37 <IHateMyIsp>	ip a; lspci | gre Eth
+mars 15 19:41:44 <tomty89>	Eth...
+mars 15 19:41:51 <tomty89>	oh lspci
+mars 15 19:41:54 *	seawasp (~user@CPEbc4dfb93bf83-CMbc4dfb93bf80.cpe.net.cable.rogers.com) vient de rentrer
+mars 15 19:41:57 <tomty89>	we got `ip l`
+mars 15 19:42:06 <IHateMyIsp>	intentional grep for Eth is intentional
+mars 15 19:42:21 <daif_>	it just tells me something with ipv6
+mars 15 19:42:44 <tomty89>	grats
+mars 15 19:42:55 <IHateMyIsp>	btw, I hate people who host their project on gh, but then doesn't make their releases on gh
+mars 15 19:43:04 <jelle>	:P
+mars 15 19:43:06 <IHateMyIsp>	and no release tagging
+mars 15 19:43:11 *	seawasp a quitté (Client Quit)
+mars 15 19:43:21 <IHateMyIsp>	and don't announce their release on their ML either....
+mars 15 19:43:23 *	panikovsky (~panikovsk@46.61.42.168) vient de rentrer
+mars 15 19:43:23 *	jelle continues fighting openssl
+mars 15 19:43:30 <IHateMyIsp>	doesn't*
+mars 15 19:43:45 *	s_kunk (~s_kunk@unaffiliated/s-kunk/x-5139101) vient de rentrer
+mars 15 19:44:27 <tomty89>	daif_: it probably somehow got hiccup because of some ipv6 stuff. you may want to either override the unit(s) with a `-4` switch or turn to systemd-networkd or so instead
+mars 15 19:44:48 *	Mete- (~joao@2804:d51:295e:d200:4a5d:60ff:fee6:ff07) vient de rentrer
+mars 15 19:45:12 <daif_>	systemd-networkd?
+mars 15 19:45:16 *	hardfalcon (~hardfalco@x4e302f58.dyn.telefonica.de) vient de rentrer
+mars 15 19:45:30 *	dn1987p a quitté (Excess Flood)
+mars 15 19:46:46 *	rootooThahW5Ohje (~user@CPEbc4dfb93bf83-CMbc4dfb93bf80.cpe.net.cable.rogers.com) vient de rentrer
+mars 15 19:47:12 *	mtemmerm (~mtemmerm@188.189.79.97) vient de rentrer
+mars 15 19:47:19 <tomty89>	daif_: https://wiki.archlinux.org/index.php/Systemd-networkd make sure you stop and disable dhcpcd
+mars 15 19:47:20 <phrik>	Title: systemd-networkd - ArchWiki (at wiki.archlinux.org)
+mars 15 19:47:25 *	oozbooz (~ocherno@96-68-1-209-static.hfc.comcastbusiness.net) vient de rentrer
+mars 15 19:47:43 *	n1ck3 (~n1ck3@94.255.183.46) vient de rentrer
+mars 15 19:47:50 *	neonai a quitté (Ping timeout: 256 seconds)
+mars 15 19:47:51 *	sargosse (~sargosse@ARennes-658-1-37-124.w83-199.abo.wanadoo.fr) vient de rentrer
+mars 15 19:48:00 *	bugzc (~1@unaffiliated/bugzc) vient de rentrer
+mars 15 19:48:12 <IHateMyIsp>	post actual output
+mars 15 19:48:16 *	mtemmerm a quitté (Client Quit)
+mars 15 19:48:16 <daif_>	systemd-network alternative to dhcpcd?
+mars 15 19:48:22 <IHateMyIsp>	can't help you without actual output
+mars 15 19:48:29 <IHateMyIsp>	and check your damn cable trice
+mars 15 19:48:35 *	tzero a quitté (Ping timeout: 240 seconds)
+mars 15 19:48:40 *	nvanwyen (~nvanwyen@static-108-28-123-226.washdc.fios.verizon.net) vient de rentrer
+mars 15 19:48:41 *	benoitldr (~benoitldr@2a01:cb15:82ab:5000:33d8:4909:2f4f:359e) vient de rentrer
+mars 15 19:48:43 <IHateMyIsp>	at both ends!
+mars 15 19:48:48 <tomty89>	daif_: well, it can play the role as a dhcp client
+mars 15 19:48:53 *	benoitldr a quitté (Client Quit)
+mars 15 19:48:58 <tomty89>	daif_: and more
+mars 15 19:49:10 <tomty89>	dhcpcd sucks these days tbh
+mars 15 19:49:22 *	Box_of_Foxes (~FoxBox@unaffiliated/box-of-foxes/x-4791669) vient de rentrer
+mars 15 19:49:31 *	SilverBe (~SilverBe@p5DDB2B61.dip0.t-ipconnect.de) vient de rentrer
+mars 15 19:50:06 *	bunker a quitté (Ping timeout: 256 seconds)
+mars 15 19:50:21 *	tzero (~tzero@unaffiliated/tzero) vient de rentrer
+mars 15 19:50:22 *	Shinryuu a quitté (Quit: uisdf)
+mars 15 19:50:28 <tomty89>	got to go
+mars 15 19:50:29 *	tomty89 a quitté (Quit: Leaving)
+mars 15 19:50:35 *	StaticAmbience (~StaticAmb@host86-147-250-92.range86-147.btcentralplus.com) vient de rentrer
+mars 15 19:50:37 <rootooThahW5Ohje>	EMIYA: thank you
+mars 15 19:51:58 <daif_>	thanks tomty :)
+mars 15 19:52:07 *	Bonn333 a quitté (Quit: ZNC - http://znc.in)
+mars 15 19:52:09 *	sargosse a quitté (Remote host closed the connection)
+mars 15 19:52:48 *	windel (~windel@2001:984:3702:1:c5bc:5e0b:f8a9:6070) vient de rentrer
+mars 15 19:52:54 *	sargosse (~sargosse@ARennes-658-1-37-124.w83-199.abo.wanadoo.fr) vient de rentrer
+mars 15 19:53:02 *	rgb-one (~rgb-one@162.216.167.10) vient de rentrer
+mars 15 19:53:26 <rgb-one>	beep bloop bleep f e l l o w a r c h u s e r s
+mars 15 19:53:50 <rgb-one>	well, I should just say arch users as I ain't using arch
+mars 15 19:53:50 *	eidolon (quasselcor@2604:a880:800:10::bb4:f001) vient de rentrer
+mars 15 19:54:00 *	YungRaj a quitté (Quit: My Mac has gone to sleep. ZZZzzz…)
+mars 15 19:54:11 <eschwartz>	lmat: incidentally, if you really dig into the mirrorlist it turns out some of them even sync once per minute. e.g. mirror.lty.me for the US
+mars 15 19:54:18 *	frvr a quitté (Remote host closed the connection)
+mars 15 19:54:27 *	n1ck3 a quitté (Ping timeout: 240 seconds)
+mars 15 19:54:28 *	j08nY (~j08nY@kou-street209-53.pks.muni.cz) vient de rentrer
+mars 15 19:54:28 <eschwartz>	In case you really want to be more up-to-date
+mars 15 19:54:28 *	h4wk (~h4wk@cpc82411-trow6-2-0-cust90.18-1.cable.virginm.net) vient de rentrer
+mars 15 19:54:35 *	a3Dman a quitté (Ping timeout: 240 seconds)
+mars 15 19:54:45 <eschwartz>	But yeah, no excuse for one that lets you get 24 hours behind. :D
+mars 15 19:54:52 *	YungRaj (~YungRaj@70-139-212-121.lightspeed.cyprtx.sbcglobal.net) vient de rentrer
+mars 15 19:54:54 <rootooThahW5Ohje>	eschwartz: isn't there a thing on the wiki saying not sync more than once an hour?
+mars 15 19:55:11 *	BlackLanzer (~BlackLanz@188.94.124.206) vient de rentrer
+mars 15 19:55:16 <lmat>	eschwartz: Yeah, I've noticed that any time I run pacman -Syu (even if I've just run it), I *always* get at least one new listing ^_^
+mars 15 19:55:18 <eschwartz>	IHateMyIsp: this (no release tagging) seems to be very common in e.g. PyPI releases
+mars 15 19:55:59 <eschwartz>	rootooThahW5Ohje: Well, that is to save server load really. Some mirrors have special permission and use an HTTP check
+mars 15 19:56:00 *	sargosse a quitté (Remote host closed the connection)
+mars 15 19:56:36 *	ShaunPC_ a quitté (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+mars 15 19:56:52 *	sargosse (~sargosse@ARennes-658-1-37-124.w83-199.abo.wanadoo.fr) vient de rentrer
+mars 15 19:56:54 *	ShaunPC (~quassel@fctnnbsc38w-142162051091.dhcp-dynamic.FibreOp.nb.bellaliant.net) vient de rentrer
+mars 15 19:56:57 *	jstimm a quitté (Ping timeout: 240 seconds)
+mars 15 19:57:04 *	red-001 a quitté (Excess Flood)
+mars 15 19:57:04 *	andrewSC a quitté (Quit: WeeChat 1.7)
+mars 15 19:57:11 *	Valicek1 a quitté (Remote host closed the connection)
+mars 15 19:57:11 <grazzolini>	specially the mirrors our own servers uses =D
+mars 15 19:57:12 *	n1ck3 (~n1ck3@94.255.183.46) vient de rentrer
+mars 15 19:57:35 <eschwartz>	Well, anyone who has access to the master master repo...
+mars 15 19:57:48 <eschwartz>	also pkgbuild.com syncs once a minute I believe
+mars 15 19:58:03 <eschwartz>	but IIRC that is in Germany
+mars 15 19:58:12 <jelle>	it's a hetzner machine, so yes germany
+mars 15 19:58:14 <grazzolini>	eschwartz: all arch servers are
+mars 15 19:58:19 <jelle>	fuuu vim hangs
+mars 15 19:58:19 *	Arch-Duke (~Cirrus_Mi@CAcert/Cirrus-Minor) vient de rentrer
+mars 15 19:58:37 *	frenchbeard a quitté (Remote host closed the connection)
+mars 15 19:58:44 *	Cirrus_Minor a quitté (Ping timeout: 260 seconds)
+mars 15 19:58:45 *	edh a quitté (Remote host closed the connection)
+mars 15 19:58:46 *	eschwartz hangs vim by the neck until dead
+mars 15 19:58:52 <eschwartz>	:D
+mars 15 19:59:01 *	red-001 (red@gateway/shell/elitebnc/x-objwzrgirbugtcbq) vient de rentrer
+mars 15 19:59:03 <rootooThahW5Ohje>	eschwartz: :D
+mars 15 19:59:10 *	boyne a quitté (Ping timeout: 264 seconds)
+mars 15 19:59:25 *	nofxx a quitté (Ping timeout: 268 seconds)
+mars 15 19:59:35 *	Valicek1 (~Thunderbi@55-125-149-46.synanet.cz) vient de rentrer
+mars 15 19:59:44 *	YungRaj a quitté (Ping timeout: 256 seconds)
+mars 15 19:59:44 *	raijin a quitté (Read error: Connection reset by peer)
+mars 15 19:59:56 *	raijin (~raijin@unaffiliated/raijin) vient de rentrer
+mars 15 20:00:06 *	n1ck3 a quitté (Remote host closed the connection)
+mars 15 20:00:17 *	frenchbeard (~frenchbea@2a01cb0881912b000226c7fffe37a65c.ipv6.abo.wanadoo.fr) vient de rentrer
+mars 15 20:00:27 *	rootooThahW5Ohje a quitté (Quit: leaving)
+mars 15 20:00:48 *	nofxx (~nofxx@unaffiliated/nofxx) vient de rentrer
+mars 15 20:01:26 *	yithian (yith@nat/redhat/x-pmxxcukkammvbxcl) vient de rentrer
+mars 15 20:01:27 *	manuelschneid3r (~manuelsch@p20030072AF71C900F5DCC8E88D6BEEF1.dip0.t-ipconnect.de) vient de rentrer
+mars 15 20:01:30 *	stoffepojken (~stoffe@h-148-185.a328.priv.bahnhof.se) vient de rentrer
+mars 15 20:01:38 *	venmx (~pactadmin@cpc8-camd15-2-0-cust699.20-2.cable.virginm.net) vient de rentrer
+mars 15 20:02:26 *	a3Dman (~3Dman@unaffiliated/a3dman) vient de rentrer
+mars 15 20:03:21 *	syslock a quitté (Quit: tschüß...)
+mars 15 20:03:37 *	neonai (~neonai@188-143-70-12.pool.digikabel.hu) vient de rentrer
+mars 15 20:03:37 *	yith a quitté (Ping timeout: 246 seconds)
+mars 15 20:03:42 *	SilverBe a quitté (Quit: Leaving)
+mars 15 20:03:46 *	aydio (~adem@HSI-KBW-046-005-180-078.hsi8.kabel-badenwuerttemberg.de) est parti ("WeeChat 1.7")
+mars 15 20:04:20 *	even_me a quitté (Ping timeout: 260 seconds)
+mars 15 20:04:48 *	wadapad a quitté (Ping timeout: 260 seconds)
+mars 15 20:05:06 *	Bonn333 (~Bonn333@shell.starepro.info) vient de rentrer
+mars 15 20:05:27 *	elliot_598 a quitté (Ping timeout: 240 seconds)
+mars 15 20:06:05 *	yosinof (~yosipromp@186-95-77-106.genericrev.cantv.net) vient de rentrer
+mars 15 20:06:15 *	torak (~torak@88.253.63.71) vient de rentrer
+mars 15 20:06:21 *	venmx a quitté (Ping timeout: 240 seconds)
+mars 15 20:06:33 *	techno_x64 (~techno_x6@gateway/vpn/privateinternetaccess/technox64/x-06346947) vient de rentrer
+mars 15 20:06:40 *	andmars a quitté (Quit: leaving)
+mars 15 20:06:59 *	cutgah (~Thunderbi@165.red-81-47-7.dynamicip.rima-tde.net) vient de rentrer
+mars 15 20:07:07 *	ae__ (~ae__@unaffiliated/ae/x-1948392) vient de rentrer
+mars 15 20:07:41 *	SopaXorzTaker a quitté (Quit: Leaving)
+mars 15 20:07:59 *	awalker a quitté (Read error: Connection reset by peer)
+mars 15 20:08:54 *	segurb a quitté (Ping timeout: 260 seconds)
+mars 15 20:09:07 *	douedd a quitté (Read error: Connection reset by peer)
+mars 15 20:09:35 *	douedd (~davybee@2.125.43.156) vient de rentrer
+mars 15 20:09:49 *	yosinof a quitté (Client Quit)
+mars 15 20:10:01 *	krabador a quitté (Quit: Leaving)
+mars 15 20:10:50 *	benzrf (~benzrf@benzrf.com) est parti ("WeeChat 1.7")
+mars 15 20:11:08 *	utack_ a quitté (Ping timeout: 240 seconds)
+mars 15 20:11:34 *	Black_Prince (~Black_Pri@unaffiliated/blackprince) vient de rentrer
+mars 15 20:12:00 *	Shinryuu (~gdsptuwtd@mobile-access-6df063-234.dhcp.inet.fi) vient de rentrer
+mars 15 20:12:18 *	aombk a quitté (Read error: Connection reset by peer)
+mars 15 20:13:06 *	toriso (~toriso@unaffiliated/toriso) vient de rentrer
+mars 15 20:13:41 <firef1y>	vim... hangs... ?
+mars 15 20:14:18 *	Binero_ (~Binero@2a02:a03f:1aa0:6c00:33a3:7dd:44d3:45ee) vient de rentrer
+mars 15 20:15:52 *	Levex a quitté (Quit: My MacBook Pro has gone to sleep... ZzzZzzzZzz..)
+mars 15 20:16:23 *	eugo (~eugo@unaffiliated/eugo) vient de rentrer
+mars 15 20:16:25 *	Zesty_ a quitté (Read error: Connection reset by peer)
+mars 15 20:16:43 *	beest a quitté (Quit: beestChat 1.7)
+mars 15 20:16:52 *	philwyettreb a quitté (Quit: Play the game, for the games sake.)
+mars 15 20:16:56 *	galel a quitté (Ping timeout: 260 seconds)
+mars 15 20:17:09 *	galel (~galel@gateway/vpn/privateinternetaccess/galel) vient de rentrer
+mars 15 20:17:43 *	beest (~beest@unaffiliated/gnubeest) vient de rentrer
+mars 15 20:17:50 *	yosinof (~yosipromp@186-95-77-106.genericrev.cantv.net) vient de rentrer
+mars 15 20:18:25 *	skope (skope@psykedelia.org) vient de rentrer
+mars 15 20:19:34 <yosinof>	Hello, I enable Independent HP in alsamixer and now I don't have sound on my headphones, and now I can't disable it again the same way I enabled it.. Do you know another way to disable it?
+mars 15 20:21:41 *	SysGhost a quitté (Read error: Connection reset by peer)
+mars 15 20:21:51 *	SysGhost (~sysghost@217.21.233.245) vient de rentrer
+mars 15 20:22:16 <d_garbage>	yosinof, you can't disable it?
+mars 15 20:22:30 <simplefied>	daif_: try to add 'ipv4only' line to /etc/dhcpcd.conf
+mars 15 20:22:32 <d_garbage>	is it like a toggle button
+mars 15 20:22:50 <raijin>	hmm that was weird, permissions errors in a kernel build
+mars 15 20:23:10 <raijin>	I Wonder if it has to do with the screen /suspending
+mars 15 20:23:20 *	dandels (~dandels@unaffiliated/dandels) vient de rentrer
+mars 15 20:25:20 <neonai>	hello, a quick solution to backup my arch, maybe in .iso for later installation?
+mars 15 20:25:22 <daif_>	kk
+mars 15 20:25:58 <daif_>	at the end of this file
+mars 15 20:26:11 <dviola>	the module rtsx_usb_ms is being loaded by default when I boot my system (memstick driver) and I don't have this hardware
+mars 15 20:26:16 <daif_>	is noipv4ll
+mars 15 20:26:33 <dviola>	how can I find out why it's being loaded?
+mars 15 20:27:06 <neonai>	Ok nvm, I found it
+mars 15 20:27:13 *	philwyettreb (~philwyett@79-74-74-194.dynamic.dsl.as9105.com) vient de rentrer
+mars 15 20:27:16 *	rgb-one (~rgb-one@162.216.167.10) est parti ("Leaving")
+mars 15 20:27:19 <simplefied>	daif_: this is other option. you need ipv4only
+mars 15 20:28:08 <felixjet>	when i create a partition table for an usb, should i select msdos or gpt?
+mars 15 20:28:11 <yosinof>	d_garbage, http://imgur.com/a/mfW1o .. yes, I can't, I press the up and down arrow keys like I did to enabled it, but it doesn't do anything..
+mars 15 20:28:12 <phrik>	Title: Imgur: The most awesome images on the Internet (at imgur.com)
+mars 15 20:28:25 *	ravior a quitté (Quit: Konversation terminated!)
+mars 15 20:28:53 *	stoffepojken a quitté (Remote host closed the connection)
+mars 15 20:28:59 <daif_>	i delete that line
+mars 15 20:28:59 *	stoffepojken_ (~stoffe@h-148-185.a328.priv.bahnhof.se) vient de rentrer
+mars 15 20:29:05 *	panikovsky a quitté (Quit: Leaving)
+mars 15 20:29:16 <strayArch>	strayArch
+mars 15 20:29:19 <strayArch>	oops
+mars 15 20:29:35 <daif_>	typed "ipvonly" when ping 8.8.8.8 Desitination Host Unreachable
+mars 15 20:29:38 *	toriso a quitté (Quit: Leaving)
+mars 15 20:29:46 *	qqqqqqqqq9 (~guido@p5DD6E775.dip0.t-ipconnect.de) vient de rentrer
+mars 15 20:29:59 *	marinos (~marinos@athedsl-409828.home.otenet.gr) vient de rentrer
+mars 15 20:30:06 <Ghosthree3>	is it the fault of nvidia drivers that i cant swap TTYs, i only have 1
+mars 15 20:30:12 <grawity>	yes
+mars 15 20:30:26 <simplefied>	daif_: you mean ipv4only? with '4'?
+mars 15 20:30:28 *	SeddiHz (uid200619@gateway/web/irccloud.com/x-erqjskaeqkktlpea) vient de rentrer
+mars 15 20:30:43 <simplefied>	daif_: try reboot maybe:)
+mars 15 20:30:54 *	windel a quitté (Quit: Konversation terminated!)
+mars 15 20:31:19 *	curiousx (~curiousx@unaffiliated/curiousx) vient de rentrer
+mars 15 20:31:26 *	Goatman (~WhatdoIty@80.255.6.46) vient de rentrer
+mars 15 20:31:27 *	laundry_96 a quitté (Remote host closed the connection)
+mars 15 20:31:28 *	Xiretza (~Xiretza@mx.brose.me) vient de rentrer
+mars 15 20:31:32 <daif_>	kk
+mars 15 20:31:41 <daif_>	yeah forget the type the "4"^^
+mars 15 20:31:46 <d_garbage>	yosinof, ok, can't really think of anything :)
+mars 15 20:31:55 <d_garbage>	yosinof, but good luck :)
+mars 15 20:32:04 <yosinof>	d_garbage, thanks.
+mars 15 20:32:06 *	Box_of_Foxes a quitté ()
+mars 15 20:32:14 *	Pie-jacker875 a quitté (Quit: Leaving)
+mars 15 20:32:18 <strayArch>	Namarrgon, https://github.com/ArchStrike/ArchStrike/pull/329  if you're curious, i guess the multilib requirement is only necessary when x86_64 is set in makepkg.conf and pacman.conf
+mars 15 20:32:20 <phrik>	Title: arachni-scanner: updated version and fixed dependencies by strayArch · Pull Request #329 · ArchStrike/ArchStrike · GitHub (at github.com)
+mars 15 20:32:28 *	Gathis a quitté (Read error: Connection reset by peer)
+mars 15 20:32:31 <qqqqqqqqq9>	if i want to use an arm-pc as thin client, do i need an arm installation on the terminal server?
+mars 15 20:32:36 <Khorne>	!alarm
+mars 15 20:32:36 *	Levex (~levex@fedora/Levex) vient de rentrer
+mars 15 20:32:37 <phrik>	If you're here because of an issue with your Raspberry Pi or other ARM device, join #archlinux-arm.
+mars 15 20:32:46 *	Gathis (~TheBlack@unaffiliated/gathis) vient de rentrer
+mars 15 20:32:46 <daif_>	okay, after reboot it did something new
+mars 15 20:32:56 <Khorne>	But no, depending on how you build your thin client
+mars 15 20:32:56 *	datamoshr (~john@unaffiliated/datamoshr) vient de rentrer
+mars 15 20:33:02 *	Pie-jacker875 (~Pie-jacke@c-24-62-41-71.hsd1.ma.comcast.net) vient de rentrer
+mars 15 20:33:10 <Khorne>	If it uses X forwarding for example your server can use whatever it wants
+mars 15 20:33:28 *	marinos a quitté (Client Quit)
+mars 15 20:33:36 <d_garbage>	yosinof, well of course the usual, check the docs, google, see where the config file is stored and look at that. Might also be a hardware thing that stops you changing back, like something being 'in use' or some such. Just general stuff 
+mars 15 20:34:03 <qqqqqqqqq9>	Khorne: But if i use this https://wiki.archlinux.org/index.php/Diskless_system, I do?
+mars 15 20:34:06 *	even_me (~eVe@archlinux/fellow/even) vient de rentrer
+mars 15 20:34:21 *	absolutejam (~absolutej@185.4.24.24) vient de rentrer
+mars 15 20:34:36 *	kilgoretrout (~kilgoretr@c-73-54-178-137.hsd1.ga.comcast.net) vient de rentrer
+mars 15 20:34:37 <d_garbage>	yosinof, like stop all output to the card so nothing is using it and then try disabling it again
+mars 15 20:34:47 <Khorne>	qqqqqqqqq9, uh, yea I'd say so
+mars 15 20:34:52 *	hahuang65 a quitté (Ping timeout: 256 seconds)
+mars 15 20:35:00 <qqqqqqqqq9>	Khorne: ok, thanks
+mars 15 20:35:15 <simplefied>	daif_: what?
+mars 15 20:35:32 <Namarrgon>	strayArch: don't worry about [multilib], the software is available on both architectures anyway
+mars 15 20:35:39 <Khorne>	qqqqqqqqq9, "Next we will create a full Arch Linux installation in a subdirectory on the server." at least that installation is what needs to fit your client arch
+mars 15 20:35:41 *	eugo a quitté (Read error: Connection reset by peer)
+mars 15 20:35:51 <Khorne>	The server OS itself can be w/e
+mars 15 20:36:06 <Khorne>	I would assume at least
+mars 15 20:36:19 *	JDH313 (~jacob@pool-100-1-48-148.nwrknj.fios.verizon.net) vient de rentrer
+mars 15 20:36:20 <d_garbage>	yosinof, also do consider pulseaudio, it's generally so much easier to use
+mars 15 20:36:36 <Khorne>	qqqqqqqqq9, also thats not really a thin client
+mars 15 20:36:47 *	_thelion_ (~Matthias@188-22-1-94.adsl.highway.telekom.at) vient de rentrer
+mars 15 20:37:00 *	mstruebing (~mstruebin@p200300E3DBD2E2902AD244FFFEEFAF20.dip0.t-ipconnect.de) vient de rentrer
+mars 15 20:37:21 <Namarrgon>	strayArch: ah, "depends_x86_64+=('lib32-libxslt' 'lib32-libxml2')" is wrong for arch=('x86_64')
+mars 15 20:37:23 *	strive a quitté (Quit: WeeChat 1.4)
+mars 15 20:37:38 <grawity>	makes sense if it's a lib32 package itself
+mars 15 20:37:39 <yosinof>	d_garbage, I did install it after I did that, and pavucontrol but didn't solve the issue.
+mars 15 20:37:47 <Namarrgon>	it doesn't look like one
+mars 15 20:37:49 <qqqqqqqqq9>	Khorne: Ah ok, there I went wrong. 
+mars 15 20:37:55 <d_garbage>	well, you wouldn't expect it to, would you :)
+mars 15 20:37:56 *	datamoshr a quitté (Ping timeout: 260 seconds)
+mars 15 20:38:11 <Khorne>	qqqqqqqqq9, no worries, I just wanted to point it out :)
+mars 15 20:38:19 <Namarrgon>	grawity: https://github.com/ArchStrike/ArchStrike/pull/329/files
+mars 15 20:38:20 <phrik>	Title: arachni-scanner: updated version and fixed dependencies by strayArch · Pull Request #329 · ArchStrike/ArchStrike · GitHub (at github.com)
+**** FIN DU JOURNAL À Wed Mar 15 20:38:34 2017
+
+**** DÉBUT DU JOURNAL À Thu Mar 16 23:53:51 2017
+
+mars 16 23:53:51 *	Vous parlez maintenant sur #archlinux
+mars 16 23:53:51 *	Le sujet de #archlinux est : Welcome to Arch Linux World Domination, Inc. <+> π <+> Channel rules: https://goo.gl/fkksz9 <+> Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net <+> Become an official Arch Tester: https://goo.gl/3uvJQk <+> Breaking news: The new nvidia stuff doesn't get along with the old nvidia stuff
+mars 16 23:53:51 *	Sujet de #archlinux choisi par IHateMyIsp (Tue Mar 14 21:36:33 2017)
+mars 16 23:53:54 *	Caleb (~archdemon@archlinux/user/caleb) vient de rentrer
+mars 16 23:53:56 <spoken>	Hi
+mars 16 23:54:09 *	curiousx (~curiousx@unaffiliated/curiousx) vient de rentrer
+mars 16 23:54:34 <Namarrgon>	kryl: your problem is lib32-qt4, not skype. read the comments on its AUR page.
+mars 16 23:54:50 *	kichawa (bolky@unaffiliated/kichawa) vient de rentrer
+mars 16 23:55:20 *	Avonis a quitté (Quit: rip)
+mars 16 23:55:50 <hahuang65>	hmm
+mars 16 23:56:03 *	philwyettreb (~philwyett@79-74-74-194.dynamic.dsl.as9105.com) vient de rentrer
+mars 16 23:56:10 *	JoshDreamland (~Josh@enigma/joshdreamland) vient de rentrer
+mars 16 23:56:39 *	hahuang65 a quitté (Quit: WeeChat 1.7)
+mars 16 23:56:44 <secondbox>	http://tcpst.net/qb97 teraflops <- here's a datadump (xorg logs, dmesg | grep nvidia, ...)
+mars 16 23:56:55 <earnestly>	Scimmia: Gosh, security is bad on electron, I hadn't realised until just now looking if it even could use the sandbox
+mars 16 23:56:58 <secondbox>	teraflops: also, awesomewm, LightDM was in front of it
+mars 16 23:57:11 *	Pie-jacker875 a quitté (Ping timeout: 258 seconds)
+mars 16 23:57:11 <earnestly>	!give secondbox lightdm
+mars 16 23:57:12 <spoken>	I got an issue with my screen and radeon: when settings frequency to 144Hz, screen flickering begin
+mars 16 23:57:12 <phrik>	secondbox: https://bugs.launchpad.net/lightdm/+bug/1457049
+mars 16 23:57:29 *	hahuang65 (~hahuang65@104-50-0-198.lightspeed.sntcca.sbcglobal.net) vient de rentrer
+mars 16 23:57:31 <secondbox>	same issue with/without LightDM though.
+mars 16 23:57:33 <spoken>	120Hz no problem
+mars 16 23:57:46 *	knidos (~knidos@85.100.171.246) vient de rentrer
+mars 16 23:57:51 <teraflops>	secondbox: so optimus powered laptop using nvidia blob + bumblebee?
+mars 16 23:58:08 *	chipping a quitté (Ping timeout: 240 seconds)
+mars 16 23:58:15 <secondbox>	teraflops: optimus-laptop, sure, but I didn't bother setting up switching. intended to run everything off nvidia
+mars 16 23:58:22 *	shizy a quitté (Ping timeout: 246 seconds)
+mars 16 23:58:33 *	ivyb a quitté (Quit: Leaving)
+mars 16 23:58:42 *	Avonis (~Avonis@unaffiliated/avonis) vient de rentrer
+mars 16 23:58:47 <earnestly>	[  7843.385] (II) Server terminated successfully (0). Closing log file.
+mars 16 23:58:53 <secondbox>	so no bumblebee installed & configured
+mars 16 23:58:56 <teraflops>	secondbox: but you have bumblebee enabled?
+mars 16 23:59:04 <secondbox>	um..
+mars 16 23:59:05 <Namarrgon>	secondbox: kernel 4.9.11, xorg 1.19.1 etc. how long have you not update the system?
+mars 16 23:59:10 *	crobbins a quitté (Ping timeout: 264 seconds)
+mars 16 23:59:10 <earnestly>	You can run "everything" from the nvidia card, since when?
+mars 16 23:59:15 <teraflops>	secondbox: if you dont want to use the nvidia just disable it in bios/uefi :P
+mars 16 23:59:49 <teraflops>	secondbox: ah the other way around sorry
+mars 16 23:59:50 <secondbox>	Namarrgon: last -Syu was a while ago... I use a different laptop for work and end up not really being on my own laptop
+mars 16 23:59:51 <earnestly>	Since the LVDS is usually not physically attached to the nvidia card, usually the HDMI/DP ports are, but idk
+mars 16 23:59:52 *	infides_afk a quitté (Ping timeout: 258 seconds)
+mars 17 00:00:09 <secondbox>	teraflops: that's alright. should I jump in and setup bumblebee?
+mars 17 00:00:32 <secondbox>	in xinitrc, I run xrandr --setprovideroutputsource modesetting NVIDIA-0
+mars 17 00:00:36 *	brogon_ a quitté (Ping timeout: 260 seconds)
+mars 17 00:00:38 <secondbox>	taken from the optimus archwiki page
+mars 17 00:00:42 *	mmillar (~mmillar@static-50-53-71-0.bvtn.or.frontiernet.net) vient de rentrer
+mars 17 00:00:49 *	chipping (~chipping@82-69-3-143.dsl.in-addr.zen.co.uk) vient de rentrer
+mars 17 00:00:49 *	laundry_96 a quitté (Remote host closed the connection)
+mars 17 00:01:08 <kryl>	Namarrgon, thx
+mars 17 00:01:28 *	ADHDmin (~ADHDmin@104.129.24.187) vient de rentrer
+mars 17 00:01:39 <earnestly>	secondbox: Your Xorg log is loading intel's DDX, the xserver has to be running in order to run xrandr commands, and the xserver itself is just exiting because you're giving it nothing to do
+mars 17 00:01:41 *	mmillar_ a quitté (Ping timeout: 268 seconds)
+mars 17 00:01:48 *	momomo (~momomo@77.42.139.134) vient de rentrer
+mars 17 00:01:57 *	d1z a quitté (Ping timeout: 240 seconds)
+mars 17 00:02:42 <teraflops>	secondbox: was that hack working before? 
+mars 17 00:02:58 <secondbox>	teraflops: ... somehow?
+mars 17 00:03:09 <teraflops>	secondbox: I tested that by myself, useless imo
+mars 17 00:03:19 *	Avonis a quitté (Ping timeout: 258 seconds)
+mars 17 00:03:25 *	brogon_ (~brogon@unaffiliated/brogon) vient de rentrer
+mars 17 00:03:28 *	itai86 a quitté (Ping timeout: 240 seconds)
+mars 17 00:03:38 *	undeadleech a quitté (Quit: WeeChat 1.7)
+mars 17 00:03:57 *	thunder-ltu a quitté (Ping timeout: 240 seconds)
+mars 17 00:04:36 <teraflops>	secondbox: intel GPU is fine for all the shit, you want more power? use blumblebee, youll save battery and (like now) yourself from few headaches
+mars 17 00:04:37 *	thohal a quitté (Quit: Leaving.)
+mars 17 00:05:48 <spoken>	Someone got an idea about my frenquency issue ? 
+mars 17 00:05:50 <teraflops>	secondbox: it's just my humble opinion though
+mars 17 00:05:50 <secondbox>	teraflops: my intention was to run CuDNN without paying out of my ass for aws :P
+mars 17 00:06:08 *	mkroman a quitté (Ping timeout: 256 seconds)
+mars 17 00:06:18 <teraflops>	secondbox: I can do CUDA stuff with optirun/primus
+mars 17 00:06:55 *	lacrymology (~lacrymolo@190.2.100.134) vient de rentrer
+mars 17 00:06:58 *	utack_ a quitté (Ping timeout: 264 seconds)
+mars 17 00:07:34 *	lvkm a quitté (Ping timeout: 245 seconds)
+mars 17 00:07:48 <teraflops>	I can mining bitcoins while making french toast on my laptop :P
+mars 17 00:07:50 *	rubdos a quitté (Ping timeout: 256 seconds)
+mars 17 00:08:03 *	sajattack (~sajattack@S01060018e7f04e85.gv.shawcable.net) vient de rentrer
+mars 17 00:08:06 *	secondbox a quitté (Remote host closed the connection)
+mars 17 00:08:18 <teraflops>	he left, I blame my joke
+mars 17 00:08:54 *	Pie-jacker875 (~Pie-jacke@c-24-62-41-71.hsd1.ma.comcast.net) vient de rentrer
+mars 17 00:11:05 *	sunn (~oliver@host86-191-187-185.range86-191.btcentralplus.com) vient de rentrer
+mars 17 00:11:48 *	kryl a quitté (Ping timeout: 256 seconds)
+mars 17 00:11:54 *	esreverse a quitté (Quit: <--)
+mars 17 00:12:24 *	Tazmain a quitté (Quit: Leaving)
+mars 17 00:13:25 *	k3asd` a quitté (Ping timeout: 246 seconds)
+mars 17 00:13:39 *	secondbox (~johannes@gprs-inet-183-141.elisa.ee) vient de rentrer
+mars 17 00:13:42 <secondbox>	lol
+mars 17 00:13:55 *	bkn89 a quitté (Quit: Leaving)
+mars 17 00:14:28 <secondbox>	doing a -Syyuu because still got a black screen, bumblebee seems to be very taken aback by the lack of bbswitch, and bbswitch needs a fresher kernel
+mars 17 00:14:41 *	Caleb a quitté (Quit: REALITY.SYS Corrupted: Re-boot universe? (Y/N/Q))
+mars 17 00:14:51 <earnestly>	secondbox: Why are you using -uu then...?
+mars 17 00:14:58 <earnestly>	secondbox: In fact, why are you using -yy?
+mars 17 00:15:26 <sheep>	secondbox: always reboot after kernel updates
+mars 17 00:16:44 <secondbox>	earnestly: eh, friend helped me setup arch and he suggested it
+mars 17 00:17:00 <earnestly>	secondbox: Do you know what -uu does?  Or why you'd need to use -yy?
+mars 17 00:17:25 <teraflops>	secondbox: bbswitch is optional dep for bumblebee
+mars 17 00:17:29 <earnestly>	secondbox: Either way, their suggestion was pretty bad.  To update, simply -Syu
+mars 17 00:17:42 <Scimmia>	I always have to qustion if these people are really friends when people say that
+mars 17 00:18:18 *	Cirrus_Minor a quitté (Quit: WeeChat 1.7)
+mars 17 00:18:27 *	kremfloete a quitté (Quit: kremfloete)
+mars 17 00:18:28 <Scimmia>	most often they're setting their "friend" up
+mars 17 00:18:33 *	yahal (~stf@i577A242C.versanet.de) vient de rentrer
+mars 17 00:18:46 *	bitmod (~bitmod@gateway/tor-sasl/bitmod) vient de rentrer
+mars 17 00:18:59 <bitmod>	what's the best way of installing python on arch?
+mars 17 00:19:09 <memori>	pacman -S python
+mars 17 00:19:23 *	kremfloete (~kremfloet@84-52-239.231.3p.ntebredband.no) vient de rentrer
+mars 17 00:19:31 <memori>	^ is python3, use python2 if you want python2
+mars 17 00:19:51 <earnestly>	"python" always refers to the latest version of python
+mars 17 00:19:52 *	Perigee a quitté (Quit: WeeChat 1.7)
+mars 17 00:19:57 <bitmod>	anaconda isn't recommend then?
+mars 17 00:20:08 <earnestly>	Of course not?
+mars 17 00:20:11 *	gugah a quitté (Ping timeout: 268 seconds)
+mars 17 00:20:17 <sheep>	always use pacman unless you absolutely can't
+mars 17 00:20:24 <bitmod>	understood, thanks
+mars 17 00:20:56 <memori>	Some people are still stuck in python2, though, so figured I'd be explicit
+mars 17 00:20:57 *	earnestly has to go and figure out what this anaconda shit is now
+mars 17 00:20:57 *	KaibutsuX a quitté (Ping timeout: 256 seconds)
+mars 17 00:20:57 <Scimmia>	earnestly: similar to pip
+mars 17 00:21:03 <earnestly>	Another one? :s
+mars 17 00:21:06 <Scimmia>	yep
+mars 17 00:21:14 <sheep>	what is this, windows?
+mars 17 00:21:24 *	Perigee (~Perigee@pool-108-36-240-70.phlapa.fios.verizon.net) vient de rentrer
+mars 17 00:21:58 <teraflops>	that anaconda thingy is in the AUR though
+mars 17 00:22:10 *	datamoshr (~john@unaffiliated/datamoshr) vient de rentrer
+mars 17 00:22:15 <earnestly>	Back when I thought https://standalone-sysadmin.com/just-what-we-need-another-package-manager-a93adc844a1f was enough
+mars 17 00:22:17 <phrik>	Title: Just what we need…another package manager – Standalone-SysAdmin (at standalone-sysadmin.com)
+mars 17 00:22:28 <teraflops>	🐍 
+mars 17 00:23:02 <memori>	Now let's go write another python package manager, but in go :3
+mars 17 00:23:05 <secondbox>	Scimmia: lol
+mars 17 00:23:13 <earnestly>	Then again, who am I really kidding.  New languages have existed almost every month or two for the last 30 years or more, and each one seems to eventually aquire yet-another-language-package-manager, each of which do nothing new, solve nothing generically and all suck
+mars 17 00:23:29 <bitmod>	regarding language package managers, should i prioritize pacman over managers like pip?
+mars 17 00:23:36 <earnestly>	bitmod: Yes of course
+mars 17 00:23:44 <secondbox>	bitmod: pip often has fresher versions, though
+mars 17 00:23:49 <earnestly>	No
+mars 17 00:23:54 <memori>	bitmod, yes. Pacman > AUR managers > per-langauge managers
+mars 17 00:23:57 *	Nullifer (~Nullifer@104.218.70.128) vient de rentrer
+mars 17 00:24:14 <earnestly>	bitmod: Write your own packages if they're not already, it's dead easy
+mars 17 00:24:16 <sheep>	except in the case where you're dealing with venv or something lik that
+mars 17 00:24:21 <earnestly>	No need
+mars 17 00:24:27 <bitmod>	what exactly is the reasoning behind this? I would've assumed the language package manager would have the most up-to-date version
+mars 17 00:24:43 <earnestly>	bitmod: It does, secondbox has no authority here
+mars 17 00:24:50 <teraflops>	xD
+mars 17 00:24:53 <secondbox>	lol
+mars 17 00:24:55 <earnestly>	sheep: Or did your friend tell you that? :p
+mars 17 00:24:58 <sheep>	but in that case the language package manager interferes with the system package manager
+mars 17 00:24:59 <earnestly>	secondbox: *^
+mars 17 00:25:05 <robattila256>	bitmod: because pacman cant remove pip files, any stuff installed with pip is going to be leftovers in /usr/lib
+mars 17 00:25:19 <robattila256>	although easy to remove i guess but i dont see the point
+mars 17 00:25:42 <earnestly>	I feel like package managers being one of the most awesome things about Linux distributions, and yet no one really seems to understand the most fundamental way they work
+mars 17 00:25:49 <earnestly>	Then again, most people don't even know how toilets work
+mars 17 00:25:57 <secondbox>	fair enough, I'm fairly shit at maintaining my arch, but when working with python either at work or for udacity pip is often the more up-to-date version
+mars 17 00:26:03 <teraflops>	those white holes?
+mars 17 00:26:12 <memori>	Yeah, I just accept it as part of the linux magic
+mars 17 00:26:13 <earnestly>	secondbox: That makes no sense though
+mars 17 00:26:28 *	mystified a quitté (Quit: Leaving)
+mars 17 00:26:44 <earnestly>	secondbox: pip doesn't "package" git releases, which you can.  pip just packages what upstream squirts out, and there's no reason you couldn't bump the pkgver and get that new version too
+mars 17 00:27:50 <earnestly>	I feel like the only sane language of recent times when it comes to this is pony
+mars 17 00:27:51 *	doMynation (~doMynatio@modemcable094.145-131-66.mc.videotron.ca) vient de rentrer
+mars 17 00:28:19 <secondbox>	bleh
+mars 17 00:28:23 <earnestly>	Why can't CS people learn from both extant art and from prior art?  At all?  Ever?
+mars 17 00:28:30 *	daey_ (~Flutterba@unaffiliated/day) vient de rentrer
+mars 17 00:28:39 <earnestly>	The same square wheels every two months
+mars 17 00:29:01 <earnestly>	I blame ACM and IEEE for being absolute scum
+mars 17 00:29:23 <bitmod>	i'm a little confused. If arch doesn't have packages for the majority of languages (which would otherwise be installed using that language's package manager), it seems unrealistic to use pacman in most circumstances
+mars 17 00:29:35 *	nando293921 a quitté (Ping timeout: 240 seconds)
+mars 17 00:30:00 *	clynamen a quitté (Ping timeout: 260 seconds)
+mars 17 00:30:04 *	utack_ (~utack@2a02:810a:83c0:f3f8:5ee0:c5ff:fe29:835d) vient de rentrer
+mars 17 00:30:41 <earnestly>	teraflops: Remember that toilet?  Yeah ^
+mars 17 00:30:45 <secondbox>	I'll continue fixing the arch shit later, /me awaaay
+mars 17 00:30:47 *	secondbox (~johannes@gprs-inet-183-141.elisa.ee) est parti
+mars 17 00:30:56 *	momomo a quitté (Ping timeout: 260 seconds)
+mars 17 00:31:09 <teraflops>	bitmod: you better use linux from scracth and get rid of a package manager then
+mars 17 00:31:10 Python interface unloaded
+mars 17 00:31:10 FiSHLiM plugin unloaded
+**** FIN DU JOURNAL À Fri Mar 17 00:31:10 2017
+
+**** DÉBUT DU JOURNAL À Sat Mar 18 18:30:54 2017
+
+mars 18 18:30:54 *	Vous parlez maintenant sur #archlinux
+mars 18 18:30:54 *	Le sujet de #archlinux est : Welcome to Arch Linux World Domination, Inc. <+> π <+> Channel rules: https://goo.gl/fkksz9 <+> Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net <+> Become an official Arch Tester: https://goo.gl/3uvJQk <+> Breaking news: The new nvidia stuff doesn't get along with the old nvidia stuff
+mars 18 18:30:54 *	Sujet de #archlinux choisi par IHateMyIsp (Tue Mar 14 21:36:33 2017)
+mars 18 18:30:59 <spoken>	hello dear friends
+mars 18 18:31:52 *	govg a quitté (Ping timeout: 260 seconds)
+mars 18 18:32:57 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 18:35:05 *	datamoshr (~john@unaffiliated/datamoshr) vient de rentrer
+mars 18 18:35:47 *	ishmael a quitté (Quit: ishmael)
+mars 18 18:35:58 <d_garbage>	!trollcat
+mars 18 18:35:58 <phrik>	http://i.imgur.com/bG4Qy.jpg
+mars 18 18:36:08 *	teknolust a quitté (Read error: No route to host)
+mars 18 18:36:14 <knucker_>	!trollcat
+mars 18 18:36:16 <phrik>	http://i.imgur.com/bG4Qy.jpg
+mars 18 18:36:42 *	Galactus (~Galactus@unaffiliated/galactus) vient de rentrer
+mars 18 18:37:47 *	strelox (~user@p200300754F741600ABAC493DF603E10E.dip0.t-ipconnect.de) vient de rentrer
+mars 18 18:38:10 *	MiLeon (~MiLeon@HSI-KBW-109-193-166-038.hsi7.kabel-badenwuerttemberg.de) vient de rentrer
+mars 18 18:38:21 *	mohsen_ a quitté (Quit: WeeChat 1.7)
+mars 18 18:38:28 *	govg a quitté (Ping timeout: 240 seconds)
+mars 18 18:39:16 *	mtorromeo a quitté (Remote host closed the connection)
+mars 18 18:40:04 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 18:40:06 *	datamoshr a quitté (Ping timeout: 256 seconds)
+mars 18 18:40:31 *	marinos (~marinos@athedsl-297383.home.otenet.gr) vient de rentrer
+mars 18 18:40:33 *	erdave a quitté (Read error: Connection reset by peer)
+mars 18 18:42:09 *	mtorromeo (~quassel@archlinux/trusteduser/mtorromeo) vient de rentrer
+mars 18 18:42:12 *	mmillar (~mmillar@static-50-53-71-0.bvtn.or.frontiernet.net) vient de rentrer
+mars 18 18:42:24 *	Silenced (~Silenced@unaffiliated/silenced-v2/x-9676589) vient de rentrer
+mars 18 18:42:40 *	homerj (~homerj@april-fools/2013/second/homerj) vient de rentrer
+mars 18 18:42:52 *	solenodic (~solenodic@unaffiliated/solenodic) vient de rentrer
+mars 18 18:44:45 *	mmillar_ a quitté (Ping timeout: 258 seconds)
+mars 18 18:45:11 *	datamoshr (~john@unaffiliated/datamoshr) vient de rentrer
+mars 18 18:45:15 *	ishmael (~ishmael@gateway/tor-sasl/ishmael) vient de rentrer
+mars 18 18:45:46 *	govg a quitté (Ping timeout: 256 seconds)
+mars 18 18:46:46 <boogiewoogie>	hey. when using xinit i get the error "parse_vt_settings: cannot open /dev/tty0 (Permission denied)" as a user with ALL(ALL) permissions. ive read i shouldnt sudo xinit, so i assume this should work as a normal user. any ideas as to why it doesnt?
+mars 18 18:46:50 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 18:47:25 <Namarrgon>	you should use startx, not xinit, and not with sudo
+mars 18 18:47:35 <boogiewoogie>	okay
+mars 18 18:47:55 <boogiewoogie>	yeah, startx does work, i was just interested in the reason for xinit not working
+mars 18 18:48:07 <Namarrgon>	startx will start X on the same vt you ran it, where logind has set up the proper permissions for /dev
+mars 18 18:48:27 *	even_me a quitté (Remote host closed the connection)
+mars 18 18:48:43 *	even_me (~eVe@archlinux/fellow/even) vient de rentrer
+mars 18 18:48:59 <Namarrgon>	if you start X on a differnt vt that you never logged in on you won't have permissions for /dev/drm/*, /dev/input/* etc
+mars 18 18:49:18 <riverclaw>	SysGhost earnestly Tom^ I had to go while you were discussing the 100mb issue, is there consensus on what to do now? :) 
+mars 18 18:49:28 *	datamoshr a quitté (Ping timeout: 240 seconds)
+mars 18 18:49:31 <boogiewoogie>	okay
+mars 18 18:49:51 <boogiewoogie>	thanks for the explanation :)
+mars 18 18:49:52 *	tharugrim (~tharugrim@unaffiliated/tharugrim) vient de rentrer
+mars 18 18:50:12 *	YungRaj (~YungRaj@70-139-212-121.lightspeed.cyprtx.sbcglobal.net) vient de rentrer
+mars 18 18:50:49 *	orf_ (~orf_@host86-141-163-18.range86-141.btcentralplus.com) vient de rentrer
+mars 18 18:50:49 *	zxhello a quitté (Read error: Connection reset by peer)
+mars 18 18:50:58 <Namarrgon>	boogiewoogie: take a loot at the startx script to see what it is doing
+mars 18 18:51:10 *	zxhello (~zx@159.224.41.193) vient de rentrer
+mars 18 18:51:30 *	nartes (~nartes@109.126.151.122) vient de rentrer
+mars 18 18:52:20 <computer2000>	Can the Chromium Title Bar and close/min/max buttons be made to look like any other window in Arch Linux? Why does it look different?
+mars 18 18:52:30 *	teknolust (~quassel@70.15.234.47.res-cmts.ovr.ptd.net) vient de rentrer
+mars 18 18:52:33 <boogiewoogie>	okay, on it
+mars 18 18:52:57 <boogiewoogie>	also i figured vt was a user from your explanation - is that correct? whats it short for?
+mars 18 18:53:17 *	Valicek1 a quitté (Ping timeout: 240 seconds)
+mars 18 18:53:42 *	clandestino a quitté (Ping timeout: 256 seconds)
+mars 18 18:53:46 <beest>	computer2000: "use system title bar and borders" will set chromium to whatever your gtk theme is
+mars 18 18:53:50 <earnestly>	riverclaw: If you already have an extant ESP, use gparted to resize that to 200M instead of Windows' default 100M
+mars 18 18:54:06 *	dx486 (~username@unaffiliated/chessknight) vient de rentrer
+mars 18 18:54:12 <Namarrgon>	boogiewoogie: virtual terminal, the thing you run startx from
+mars 18 18:54:19 <earnestly>	riverclaw: I suggest doing that before adding partitions for Linux
+mars 18 18:54:26 <computer2000>	beest: where do I set that
+mars 18 18:54:38 <beest>	in the chromium settings under "appearance"
+mars 18 18:55:06 <computer2000>	beest, thanks
+mars 18 18:55:10 <earnestly>	riverclaw: alternatively you could create the ESP yourself initially but only if when installing Windows the ESP resides on the "C:\" drive
+mars 18 18:55:12 *	aze (~aze@unaffiliated/aze) vient de rentrer
+mars 18 18:55:34 *	nyarlu a quitté (Quit: WeeChat 1.7)
+mars 18 18:55:48 <boogiewoogie>	i see, thanks
+mars 18 18:56:04 *	mar77i_ (~mar77i@77-56-218-203.dclient.hispeed.ch) vient de rentrer
+mars 18 18:56:16 <beest>	i misspoke, you have to hit a button somewhere to use your gtk theme but "use system title bar and borders" will use your wm's bar
+mars 18 18:56:52 <computer2000>	Is there a place to browse available gnome themes for arch linux? sorry new to arch
+mars 18 18:56:59 *	frankdrey (~textual@2601:601:c700:7c2e:8de3:baef:e690:ad87) vient de rentrer
+mars 18 18:57:07 <riverclaw>	earnestly I've already installed arch, but let me explain my situation, I've got a tightly packed small SSD with windows, this is where the esp resides. I've got a second drive, a hdd where i've got my arch partition & currently because grub needs it for legacy booting, i've got a bios partition
+mars 18 18:57:21 <earnestly>	computer2000: Does it make it easier if you instead drop "arch" and simply search for gnome themes?
+mars 18 18:57:31 <earnestly>	computer2000: Since there's nothing specific to Arch about Gnome themes
+mars 18 18:57:50 *	mar77i a quitté (Ping timeout: 260 seconds)
+mars 18 18:58:10 <earnestly>	riverclaw: Why use legacy BIOS boot at all?
+mars 18 18:58:10 <computer2000>	earnestly, yes
+mars 18 18:58:43 <computer2000>	earnestly, thanks i'm sorry i'm noob, so noob
+mars 18 18:58:45 <SysGhost>	riverclaw: You can try to battle that GPT/BIOS combo. It does work, if done right with the extra BIOS partition. You could try to resize that ESP partition, and go for a full UEFI boot (prefered imho). or shrink down the initramfs, and hope it'll fit within the 100 MB ESP.
+mars 18 18:58:53 <riverclaw>	Because i didn't want to fiddle with my windows install, I'm not experienced so I'd rather stay away from it as I don't trust myself
+mars 18 18:59:01 <earnestly>	riverclaw: grub can be installed as an EFI binary directly to the ESP and effortlessly load kernels from your secondary harddrive (assuming you don't use grub-mkconfig), either that or refined, which is also able to load kernels from different disks
+mars 18 18:59:39 <earnestly>	riverclaw: Just not systemd-boot, because that thing is shit
+mars 18 18:59:39 *	borkr (~borkr@83.243.155.126) vient de rentrer
+mars 18 18:59:47 <riverclaw>	okay hold on earnestly 
+mars 18 18:59:48 <earnestly>	riverclaw: You'll probably have better luck with refined.  Don't use legacy bios (CSM) mode
+mars 18 19:00:06 <riverclaw>	I'd rather battle the GPI/BIOS combo
+mars 18 19:00:22 *	sphrak (~niclas@host-85-30-183-143.sydskane.nu) vient de rentrer
+mars 18 19:00:29 <riverclaw>	but mybe we can skip GRUB all together and go for syslinux
+mars 18 19:00:29 <earnestly>	riverclaw: I don't recommend wasting your time doing that
+mars 18 19:00:37 <spoken>	hi, i got a problem with my screen and amdgpu
+mars 18 19:00:46 <earnestly>	riverclaw: You can't really
+mars 18 19:00:47 <spoken>	can't setup 144Hz without artifact on screen
+mars 18 19:00:53 <riverclaw>	earnestly I've tried that before but that wouldn't detect my arch partition, thus had nothing to boot 
+mars 18 19:00:59 <earnestly>	riverclaw: Unless you don't mind manually changing the boot device from POST every time
+mars 18 19:01:12 <riverclaw>	what do you mean?
+mars 18 19:01:13 <earnestly>	riverclaw: So you did it wrong, once, and gave up?
+mars 18 19:01:16 <earnestly>	Sigh
+mars 18 19:01:19 *	marinos a quitté (Quit: Lost terminal)
+mars 18 19:01:31 <earnestly>	riverclaw: Sorry, I don't recommend what you're doing, you'll have to figure it out because I don't want to
+mars 18 19:01:45 <Namarrgon>	spoken: #amdgpu #radeon bugs.freedesktop.org
+mars 18 19:02:01 <riverclaw>	earnestly no I tried installing it for UEFI, legacy and neither worked, so I tried GRUB which at least detects my partitions, so that's going slightly better
+mars 18 19:02:29 <earnestly>	computer2000: Don't worry, just think of Linux as Linux and forget distros are a thing.  As the name suggests, they're supposed to only distribute the software from upstream (where the software is made).  Some modify it, add their own artwork and logos and stuff, generally trying to make the whole experience cohesive
+mars 18 19:02:30 <riverclaw>	earnestly Ok, no worries. I knew what I signed up for when I decided to go for arch ;) 
+mars 18 19:02:35 <Tom^>	spoken: what kind of cable are you using?
+mars 18 19:02:39 <SysGhost>	riverclaw: If I had that situation, I'd resize the ESP. Then, *if* the windows boot fail, simply boot up a Windows ISO and perform a boot repair.
+mars 18 19:02:46 *	govg a quitté (Ping timeout: 258 seconds)
+mars 18 19:03:17 <earnestly>	riverclaw: I wouldn't use grub to detect anything, I'd write it manually, which I was willing to help you do, but not if you're going to do silly things like dual EFI and Legacy BIOS booting
+mars 18 19:03:19 <spoken>	Tom^: DVI ofc, I know that HDMI doesn't support it atm
+mars 18 19:03:42 <Tom^>	spoken: its only dual link dvi cables that runs 144hz
+mars 18 19:03:47 *	blueness a quitté (Quit: blueness)
+mars 18 19:03:55 <Tom^>	spoken: which i hope you have
+mars 18 19:03:58 <earnestly>	I don't :(
+mars 18 19:04:03 <spoken>	Tom^: the fact is that on Windows it works fine
+mars 18 19:04:10 <Tom^>	is it a dual link cable?
+mars 18 19:04:26 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 19:04:28 *	smdeep (~smdeep@202.142.103.51) vient de rentrer
+mars 18 19:04:35 <earnestly>	spoken: https://en.wikipedia.org/wiki/File:DVI_Connector_Types.svg
+mars 18 19:04:36 <phrik>	Title: File:DVI Connector Types.svg - Wikipedia (at en.wikipedia.org)
+mars 18 19:04:39 <computer2000>	earnestly, thanks. Can there be only one theme installed at a time or is there like a manager to switch between themes? I see I can use AUR packages but when installing I guess it overwrites the existing, currenty running one?
+mars 18 19:04:58 <earnestly>	computer2000: you can install many, but only use one at a time
+mars 18 19:05:12 <computer2000>	earnestly, how to switch between them?
+mars 18 19:05:20 <earnestly>	computer2000: It shouldn't overwrite, each theme should occupy its own directory
+mars 18 19:05:31 <earnestly>	computer2000: Doesn't gnome-tweak-tool let you do that easily?
+mars 18 19:05:40 <riverclaw>	earnestly I've not decided on what to do at all, I don't want to use legacy booting or dual EFI, I only thought of it because the other options weren't going anywhere with my know-how, elaborate on what you mean by writing it manually please 
+mars 18 19:05:42 <computer2000>	earnestly, oh i'll check
+mars 18 19:05:45 <spoken>	:o sorry, I wanted to say DisplayPort ... I'm using DP sorry guys
+mars 18 19:06:06 <spoken>	and btw I got an RX 480, with Dual Link DVI-D
+mars 18 19:06:18 <Tom^>	right, then yes you better ask in #amdgpu #radeon and check bugs.freedesktop.org
+mars 18 19:06:49 *	Repentinus (~repentinu@fsfe/repentinus) vient de rentrer
+mars 18 19:07:19 <earnestly>	riverclaw: I wouldn't use grub in this specific case though, I'd recommend refined.  As for manually writing the grub.cfg, doing something like: search -u "the / fs UUID" root, and linux $(root)/boot/...
+mars 18 19:07:29 *	somis (~somis@149.56.153.177) vient de rentrer
+mars 18 19:07:40 *	Keniyal (~Keniyal@unaffiliated/keniyal) vient de rentrer
+mars 18 19:08:04 <earnestly>	riverclaw: My grub lives on a tiny FAT12 ESP booting a btrfs / on the same device but different partition: https://ptpb.pw/VfB4/sh
+mars 18 19:08:05 <phrik>	Title: pb (at ptpb.pw)
+mars 18 19:08:28 <Paddy_NI>	earnestly: What size is your ESP?
+mars 18 19:09:16 *	souledge220 (~souledge2@rstinder.de) vient de rentrer
+mars 18 19:09:29 <SysGhost>	earnestly: I like that you have comments in that config. Many don't bother with that.
+mars 18 19:10:15 <earnestly>	Paddy_NI: 2M, could have gone smaller but that's the largest image size I could make grub-mkimage or grub-standalone generate
+mars 18 19:10:25 <Tom^>	SysGhost: he is such a showoff
+mars 18 19:10:36 <earnestly>	Tom^: I comment for my own benefit
+mars 18 19:10:44 <earnestly>	I don't remember any of this shit
+mars 18 19:11:07 <Paddy_NI>	earnestly: I opted for 1GiB as I felt paranoid that it would eventually bite me in the ass if I had gone smaller
+mars 18 19:11:12 *	govg a quitté (Ping timeout: 258 seconds)
+mars 18 19:11:12 <computer2000>	Any recommendation for flat, modern gnome theme? :)
+mars 18 19:11:20 <Paddy_NI>	computer2000: ARc
+mars 18 19:11:22 <Paddy_NI>	Arc
+mars 18 19:11:35 <computer2000>	What about https://github.com/nana-4/Flat-Plat
+mars 18 19:11:36 <phrik>	Title: GitHub - nana-4/Flat-Plat: A Material Design-like theme for GNOME/GTK+ based desktop environments. (at github.com)
+mars 18 19:11:58 <earnestly>	Paddy_NI: I didn't plan on adding anything other than grub.efi to the ESP, but if I was using refined and Windows I would probably use ~200M FAT32
+mars 18 19:12:00 <Paddy_NI>	Wow, bright!
+mars 18 19:12:08 *	rquid a quitté (Remote host closed the connection)
+mars 18 19:12:13 *	gffa (~unknown@unaffiliated/gffa) vient de rentrer
+mars 18 19:12:14 <Paddy_NI>	I could definitely not look at that for more than 5 mins computer2000 
+mars 18 19:12:16 *	robattila256 a quitté (Quit: WeeChat 1.7)
+mars 18 19:12:26 <earnestly>	Paddy_NI: Ostensibly UEFI only supports FAT32 but you can bet these vendors just steal vfat code which supports all of them
+mars 18 19:12:32 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 19:12:37 <Paddy_NI>	Absolutely
+mars 18 19:12:53 <earnestly>	computer2000: Looks nice, try it and see
+mars 18 19:13:03 *	Valicek1 (~Thunderbi@37-48-39-131.tmcz.cz) vient de rentrer
+mars 18 19:13:05 <earnestly>	Paddy_NI: It has a dark variant :P
+mars 18 19:13:41 <earnestly>	computer2000: (Keep in mind that it's including both a Gnome shell theme and a GTK3 theme, two different components)
+mars 18 19:13:47 *	mefistofeles a quitté (Ping timeout: 240 seconds)
+mars 18 19:14:04 <computer2000>	Do you guys use yaourt?
+mars 18 19:14:05 <earnestly>	computer2000: Again, gnome-tweak-tool should make doing this relatively easy
+mars 18 19:14:08 <computer2000>	earnestly, what does that  mean?
+mars 18 19:14:10 <riverclaw>	earnestly Could it be that the problem with my grub is that I'm not using UUID's but rather write stuff like /dev/sda ? Because my setup should realy work.. As (you?) said, the problem is that grub can't find his files in /boot, right?  But when I'm in the grub cli it detects the disks fine
+mars 18 19:14:12 <earnestly>	computer2000: Nope, highly unrecommended
+mars 18 19:15:09 <earnestly>	computer2000: Stick with git and makepkg for now, until you know enough to make an informed choice yourself
+mars 18 19:15:09 <computer2000>	earnestly, what does it mean it comes with gtk3 and gnome themes, what's the difference? sorry
+mars 18 19:15:09 <SysGhost>	I'm stil wondering why in the world did the Unified EFI Forum settle for FAT32 of all available file systems. ??? 
+mars 18 19:15:09 <riverclaw>	earnestly If you'd rather push on using refined instead of grub, I'm game, you're the pro here :p 
+mars 18 19:15:09 <computer2000>	earnestly, ok
+mars 18 19:15:31 <earnestly>	computer2000: The buttons, sliders and so on are GTK3 elements.  The client side decorations, overlays, panel and so on are the gnome shell (the compositor which arranges the windows on your screen)
+mars 18 19:16:02 <computer2000>	earnestly, I see, so I have to activate both
+mars 18 19:16:12 *	rtkt a quitté (Ping timeout: 260 seconds)
+mars 18 19:16:21 <earnestly>	computer2000: If you want a consistent theme across both, yeah
+mars 18 19:16:32 *	Hairyplotter (~Want@d-24-245-119-23.cpe.metrocast.net) vient de rentrer
+mars 18 19:16:52 *	blueness (~blueness@gentoo/developer/blueness) vient de rentrer
+mars 18 19:16:57 *	Avonis (~Avonis@unaffiliated/avonis) vient de rentrer
+mars 18 19:17:26 <earnestly>	riverclaw: See http://www.rodsbooks.com/refind/configfile.html and https://wiki.archlinux.org/index.php/REFInd
+mars 18 19:17:27 <phrik>	Title: The rEFInd Boot Manager: Configuring the Boot Manager (at www.rodsbooks.com)
+mars 18 19:17:40 <riverclaw>	earnestly on it.
+mars 18 19:17:49 *	rolig a quitté (Ping timeout: 246 seconds)
+mars 18 19:18:27 *	Agent001 (~quassel@185.202.60.94.rev.vodafone.pt) vient de rentrer
+mars 18 19:18:36 *	Phenox_ (~phenox_@195.82.49.140) vient de rentrer
+mars 18 19:18:43 *	crCr62U0 a quitté (Quit: Leaving)
+mars 18 19:18:50 <earnestly>	riverclaw: The problem with having both a UEFI install (Windows) and a CSM install is that you can't easily switch between the two.  You have to configure the BIOS every boot to prefer CSM or UEFI booting and then still manually specify device boot order
+mars 18 19:19:09 *	c_korn a quitté (Quit: Leaving)
+mars 18 19:19:32 <earnestly>	riverclaw: Of all UEFI's faults, dual booting isn't one of them.  It makes it really trivial even
+mars 18 19:19:39 <spoken>	ok thx guys
+mars 18 19:19:42 *	rolig (~rolig@unaffiliated/rollig) vient de rentrer
+mars 18 19:19:44 <spoken>	I found a solution
+mars 18 19:19:44 <spoken>	:o
+mars 18 19:20:10 <spoken>	com #11 : https://bugs.freedesktop.org/show_bug.cgi?id=96868 in case you wanted to know
+mars 18 19:20:12 <phrik>	Title: 96868 – AMDGPU Tonga only does 2560x1440 at 120hz, switching to 144hz causes display errors, same thing used to happen with fglrx. (at bugs.freedesktop.org)
+mars 18 19:20:17 <earnestly>	riverclaw: You can mount the ESP on the /boot mountpoint so kernel updates implicitly install there making life even simpler.  In which case you can just use systemd-boot
+mars 18 19:20:28 *	govg a quitté (Ping timeout: 240 seconds)
+mars 18 19:20:50 *	steakwipe (~ninjapira@unaffiliated/ninjapirate) vient de rentrer
+mars 18 19:20:59 *	zsk (~zsk@unaffiliated/zsk) vient de rentrer
+mars 18 19:21:00 <earnestly>	spoken: Good find
+mars 18 19:21:29 <earnestly>	spoken: You may want to include your experience and information since it could do with a comment from 2017 ;p
+mars 18 19:21:53 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 19:21:57 *	kiao2938 (~mj@46.128.154.166.dynamic.cablesurf.de) vient de rentrer
+mars 18 19:21:58 *	Adbray a quitté (Quit: Quit)
+mars 18 19:22:14 Erenzie ericchu ericnoan ErkiDerLoony errl erufu 
+mars 18 19:22:15 earnestly e e0f e2k eadrom Eantit eb0t_ ebe ec ecloud ecraven ectospasm ec\_ Eduard_Munteanu edumass egis egrain eidolon eighty6me eir Eisenhans ekkelett ekra elbo22 elgatov elijah Elish Elizabeth elliot007 elliot_51 elonus elsewho emilsp EMIYA emlow empty[] enckse enderst endre enkeyz Enkidu_ak Entalyan epatpol epheo epic epon eprice equilibriumuk Erenzie ericchu ericnoan ErkiDerLoony errl erufu eschwartz esph etix etnbrd eto EvanA even_me evie_hammond evil-god Ewout ewpt3ch Exagone313 excalibr 
+mars 18 19:22:25 <spoken>	@earnestly: ok :)
+mars 18 19:22:49 <riverclaw>	earnestly yeah I understand it's a hassle, but for me it would be acceptable since i'm only going to try arch, see if it is my thing and if i like it enough i'll throw windows from my SSD and make it switch places with arch currently on my hdd. So in principle although pretty crappy, it would be okay for my situation. I'm just a bit frustrated that I couldn't make GRUB or syslinux boot my 
+mars 18 19:22:49 <riverclaw>	arch install, makes me feel a little bad inside. 
+mars 18 19:22:53 <earnestly>	riverclaw: That is, use the Windows ESP as your /boot iff you only use the stock kernel
+mars 18 19:23:05 *	Phenox_ a quitté (Ping timeout: 240 seconds)
+mars 18 19:23:21 *	GI_Jack a quitté (Quit: Leaving)
+mars 18 19:23:21 <riverclaw>	earnestly but lets focus on getting refined 
+mars 18 19:23:27 <earnestly>	riverclaw: Tbh
+mars 18 19:23:38 <earnestly>	riverclaw: Since you just said this is to try Arch, you're not going to be using multiple kernels
+mars 18 19:23:52 <earnestly>	riverclaw: In light of that you should really be mounting the ESP as your /boot instead
+mars 18 19:24:06 <riverclaw>	ok
+mars 18 19:24:15 <riverclaw>	but I'm a bit confused as to what to do next 
+mars 18 19:24:18 <earnestly>	And since everything no lives on the ESP, use systemd-boot.  It will detect the Windows loader and create a meny entry for it too
+mars 18 19:24:27 <riverclaw>	I'm not very familiar with this tuff
+mars 18 19:24:45 <riverclaw>	systemd-boot is a script I can simply run, i assume?
+mars 18 19:24:50 <earnestly>	riverclaw: It's a bit overwhelming yeah, it makes a lot of sense once you grok it but getting there is difficult
+mars 18 19:25:41 <earnestly>	riverclaw: systemd-boot is the general name for systemd's bootloader, the tool `bootctl' is used to manage it and query information
+mars 18 19:25:53 <riverclaw>	earnestly yeah, good that there's guys like you in these irc channels ;)
+mars 18 19:26:14 <earnestly>	riverclaw: E.g. even though I'm not using systemd-boot, I can still get info from it: https://ptpb.pw/yaM3
+mars 18 19:26:17 <riverclaw>	Ok, so I should remove the legacy partition, remove grub
+mars 18 19:26:30 *	medzernik (~david@95-105-186-188.dynamic.orange.sk) vient de rentrer
+mars 18 19:26:40 *	muhannad__ a quitté (Quit: muhannad__)
+mars 18 19:26:49 <riverclaw>	earnestly I see
+mars 18 19:26:58 <earnestly>	(Nevermind the redhat thing, that's something lenovo thought grub was so I decided to keep it as a joke.  (You'd have have read MJG articles about how crazy a lot of UEFI stuff was/is))
+mars 18 19:27:03 *	egrain a quitté (Remote host closed the connection)
+mars 18 19:27:14 <earnestly>	riverclaw: Are you willing to start clean?
+mars 18 19:27:18 *	govg a quitté (Ping timeout: 258 seconds)
+mars 18 19:27:26 <earnestly>	riverclaw: (You don't have to, but it might be easier to "see" what's going on)
+mars 18 19:27:27 *	jomg a quitté (Quit: Leaving)
+mars 18 19:28:13 <riverclaw>	earnestly I can install arch again, but I can't give you a clean disk to work with, My arch partition sits on its drive alongside another filled with data used by windows
+mars 18 19:28:14 *	rtkt (~rtkt@ptr-fhfszoxih9re3plzful.18120a2.ip6.access.telenet.be) vient de rentrer
+mars 18 19:28:26 *	Adbray (~Adbray@2001:470:c692:666:4c45:c220:a394:c135) vient de rentrer
+mars 18 19:28:29 *	rtkt a quitté (Remote host closed the connection)
+mars 18 19:28:33 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 19:28:43 <earnestly>	riverclaw: That's fine, I didn't mean empty disks
+mars 18 19:28:46 <riverclaw>	But the arch drive has no on is.
+mars 18 19:28:48 *	TotalOblivion a quitté (Ping timeout: 260 seconds)
+mars 18 19:29:17 <riverclaw>	earnestly good, lets go I'll switch to UEFI, boot from my arch live iso and start fresh
+mars 18 19:29:24 *	mstruebing (~mstruebin@178.162.199.66) vient de rentrer
+mars 18 19:29:37 <earnestly>	riverclaw: Go with a single partition then, put Arch there.  Mount it to /mnt, then mount the extant ESP to /mnt/boot
+mars 18 19:29:44 <earnestly>	riverclaw: Yep
+mars 18 19:29:51 *	computer2000 a quitté (Remote host closed the connection)
+mars 18 19:30:58 <riverclaw>	earnestly give me a minute
+mars 18 19:30:58 *	c4mp4r a quitté (Ping timeout: 264 seconds)
+mars 18 19:30:58 *	c4mp4r (~catalin@79.112.81.228) vient de rentrer
+mars 18 19:30:58 *	elliot_598 (~elliot@150.129.109.58) vient de rentrer
+mars 18 19:31:48 *	Valicek1 a quitté (Ping timeout: 240 seconds)
+mars 18 19:32:39 *	blueness a quitté (Quit: blueness)
+mars 18 19:32:55 <spoken>	done, I posted my message :)
+mars 18 19:33:00 <earnestly>	spoken: \o/
+mars 18 19:33:04 *	alx741 a quitté (Quit: alx741)
+mars 18 19:33:11 <spoken>	Can I post the solution on ArchWiki ? 
+mars 18 19:33:22 <spoken>	is it possible for me to modify it ? 
+mars 18 19:33:41 *	alx741 (~alx741@190.152.48.126) vient de rentrer
+mars 18 19:33:56 *	elliot_51 a quitté (Ping timeout: 260 seconds)
+mars 18 19:33:58 *	dx486 a quitté (Quit: Leaving)
+mars 18 19:34:09 <earnestly>	spoken: Yes, but remember to keep a link (reference) to the bug report in the wiki so that if this gets fixed it can be removed
+mars 18 19:34:28 *	govg a quitté (Ping timeout: 240 seconds)
+mars 18 19:34:32 <spoken>	kk understood
+mars 18 19:34:51 *	badpixel (~igor@unaffiliated/badpixel) vient de rentrer
+mars 18 19:35:59 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 19:36:26 *	sysfx (~nimda@37.35.13.157) vient de rentrer
+mars 18 19:36:35 *	j08nY a quitté (Quit: Leaving)
+mars 18 19:36:36 *	tearitdown (~user@5.197.37.69) vient de rentrer
+mars 18 19:36:39 <riverclaw>	earnestly I'm ready got the esp mounted as boot and everything is cleaned up
+mars 18 19:37:05 <earnestly>	riverclaw: pacstrap as usual, then once done, chroot in and bootctl --path=/boot install
+mars 18 19:37:26 *	sunshinehunter a quitté (Remote host closed the connection)
+mars 18 19:38:04 *	torak (~torak@88.226.49.250) vient de rentrer
+mars 18 19:38:05 <earnestly>	(bootctl does look for /boot by default but also tries /efi and /boot/efi as well, it'd probably be fine to not include --path, but better to be explicit when the default isn't one thing)
+mars 18 19:38:09 <riverclaw>	earnestly litteraly type ' bootctl --path=/boot install '?
+mars 18 19:38:23 <earnestly>	riverclaw: After you've pacstrapped and arch-chroot'd in
+mars 18 19:38:29 <riverclaw>	kk
+mars 18 19:38:31 *	homerj a quitté (Remote host closed the connection)
+mars 18 19:38:39 <earnestly>	riverclaw: Then you can check the results with `bootctl status'
+mars 18 19:38:42 <riverclaw>	kk
+mars 18 19:38:49 <riverclaw>	give me a minute :)
+mars 18 19:39:04 *	BlueRavenGT (~BlueRaven@8-22-13-219.utopiafiber.net) vient de rentrer
+mars 18 19:39:11 <earnestly>	!yt hybrid - break my soul
+mars 18 19:39:12 <phrik>	earnestly: Hybrid- Break My Soul - YouTube <https://www.youtube.com/watch?v=Mdy1i_d2i-s>
+mars 18 19:39:13 <earnestly>	Tom^: ^
+mars 18 19:39:58 *	mirk0 a quitté (Ping timeout: 264 seconds)
+mars 18 19:40:04 *	amdi_ (~amdi_@pool-108-32-75-158.pitbpa.fios.verizon.net) vient de rentrer
+mars 18 19:40:34 *	jiggawattz (jiggawattz@w0000.net) est parti ("tschüß!")
+mars 18 19:40:38 *	InverseRhombus (~InverseRh@2a02:c7d:da1e:1300:b937:c268:ffe:b3c8) vient de rentrer
+mars 18 19:41:03 *	astrofog (~astrofog@unaffiliated/astrofog) vient de rentrer
+mars 18 19:41:03 *	aw1 (~aw1@unaffiliated/aw1) vient de rentrer
+mars 18 19:41:07 *	homerj (~homerj@april-fools/2013/second/homerj) vient de rentrer
+mars 18 19:41:17 *	errl a quitté (Remote host closed the connection)
+mars 18 19:41:36 *	chr0mag (~chr0mag@69.50.180.172.cable.tpia.cipherkey.com) vient de rentrer
+mars 18 19:41:46 *	Keniyal a quitté (Ping timeout: 264 seconds)
+mars 18 19:42:14 <homerj>	getting a bit more comfortable with this KDE Discover to update packages
+mars 18 19:42:20 *	setty1 (~weechat@46.25.189.30) vient de rentrer
+mars 18 19:42:22 *	eprice a quitté (Quit: EliteBNC free bnc service - http://elitebnc.org - be a part of the Elite!)
+mars 18 19:42:36 <earnestly>	homerj: How does it do that?
+mars 18 19:42:40 *	clandestino (~raijin@unaffiliated/raijin) vient de rentrer
+mars 18 19:42:46 <earnestly>	homerj: Ah, packagekit
+mars 18 19:43:02 <homerj>	package...yes
+mars 18 19:43:12 <earnestly>	homerj: Nice
+mars 18 19:43:42 <homerj>	throws up a a notification when there's stuff to update
+mars 18 19:43:52 <homerj>	no AUR support though, at least not yet
+mars 18 19:44:04 *	hj0x3 a quitté (Remote host closed the connection)
+mars 18 19:44:05 <earnestly>	homerj: Yeah, these also certainly beat the pants of distro specific stuff like ubuntu's software center
+mars 18 19:44:07 *	muhannad__ (~muhannad@95.218.87.62) vient de rentrer
+mars 18 19:44:10 *	darme a quitté (Ping timeout: 258 seconds)
+mars 18 19:44:10 *	aajjbb a quitté (Ping timeout: 264 seconds)
+mars 18 19:44:21 <earnestly>	homerj: I doubt it'd ever support the AUR (nor do I think it should :P)
+mars 18 19:44:26 *	hj0x3 (~hj0x3@46.166.137.212) vient de rentrer
+mars 18 19:44:29 <earnestly>	of/off
+mars 18 19:45:01 *	mitchel (~mitchel@ip5457546e.direct-adsl.nl) vient de rentrer
+mars 18 19:45:40 *	riverclaw a quitté (Ping timeout: 260 seconds)
+mars 18 19:45:44 *	steakwipe a quitté (Remote host closed the connection)
+mars 18 19:45:57 *	datamoshr (~john@unaffiliated/datamoshr) vient de rentrer
+mars 18 19:45:58 <sysfx>	Hi all, I have a little trouble with my new usb connected printer, I'm trying to get it to work under arch linux, I've installed the driver, and it is appearing as /dev/usb/lp0, so I can print using the echo command, but I can't get it to appear in cups, any ideas?
+mars 18 19:46:39 *	Avonis a quitté (Quit: rip)
+mars 18 19:47:41 <earnestly>	sysfx: (Side question, can you basically redirect ps into lp0 and print it?)
+mars 18 19:47:59 <sysfx>	yes, echo test > /dev/usb/lp0 prints test
+mars 18 19:48:10 <earnestly>	sysfx: I mean, postscript commands and such
+mars 18 19:48:17 *	govg a quitté (Ping timeout: 240 seconds)
+mars 18 19:48:20 <earnestly>	sysfx: Or, cat foo.pdf > /dev/usb/lp0
+mars 18 19:48:26 *	pavlushka a quitté (Quit: See you on the other side.....)
+mars 18 19:48:35 <earnestly>	(uuoc but you get the idea)
+mars 18 19:48:59 <homerj>	cups should just autodetect it when you "add printer"
+mars 18 19:49:03 <homerj>	make the uri, etc.
+mars 18 19:49:16 *	mitchel a quitté (Client Quit)
+mars 18 19:49:17 *	riverclaw (~riverclaw@87.66.234.146) vient de rentrer
+mars 18 19:49:23 *	Valicek1 (~Thunderbi@37-48-0-65.tmcz.cz) vient de rentrer
+mars 18 19:49:25 <homerj>	you may need the footmatic stuff, depending on what printer it is
+mars 18 19:49:39 <homerj>	or foomatic-zjs or whatever
+mars 18 19:49:44 <riverclaw>	earnestly sorry for the disconnect, not sure what happend. But it seems fine now
+mars 18 19:50:08 <earnestly>	sysfx: E.g. can you redirect https://ptpb.pw/wK5s this into lp0?
+mars 18 19:50:19 *	Quark (~quark@unaffiliated/quark) vient de rentrer
+mars 18 19:50:25 <earnestly>	(Because that would be really cool)
+mars 18 19:50:34 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 19:50:43 <homerj>	earnestly, that's how my old HP Laserjet 4L worked
+mars 18 19:50:44 *	datamoshr a quitté (Ping timeout: 260 seconds)
+mars 18 19:50:45 <homerj>	heh
+mars 18 19:51:08 <earnestly>	homerj: :D
+mars 18 19:51:27 *	gh16ito (~gh16ito@cpe-24-90-212-88.nyc.res.rr.com) vient de rentrer
+mars 18 19:51:47 *	niemal (~mein@unaffiliated/anoniem4l) vient de rentrer
+mars 18 19:52:00 *	darme (~darme@88-223-71-157.meganet.lt) vient de rentrer
+mars 18 19:52:01 <earnestly>	riverclaw: Disconnections can happen, what do you mean but "it seems fine now"?  The connection or something else?
+mars 18 19:52:10 <sysfx>	it should just work, i know, yes i have the fommatic stuff installed
+mars 18 19:52:25 *	pajpax (~pajpax@bband-dyn103.95-103-254.t-com.sk) vient de rentrer
+mars 18 19:52:28 <riverclaw>	earnestly the connection ;) I ran 'bootctl --path=/boot install' succesfully, wht's next? 
+mars 18 19:52:43 <earnestly>	riverclaw: Check that it worked, bootctl status
+mars 18 19:52:57 *	HuntsMan a quitté (Ping timeout: 240 seconds)
+mars 18 19:53:08 *	tinnotl1 a quitté (Ping timeout: 240 seconds)
+mars 18 19:53:26 <riverclaw>	I can't exactly give you a copy, how can I tell it's good? I can see the Linux boot manager on top of the windows boot manager
+mars 18 19:53:30 <gh16ito>	So I'm trying to fix this issue: "ca-certificates-utils: /etc/ssl/certs/ca-certificates.crt exists in filesystem"
+mars 18 19:53:39 <gh16ito>	I'm thinking I need to uninstall ca-certificates-utils?
+mars 18 19:54:07 <gh16ito>	But when I do pacman -R ca-certificates-utils, it says it can't be done because it's breaking a bunch of dependencies.
+mars 18 19:54:14 <mtn>	gh16ito: read the news on the front page
+mars 18 19:54:56 *	stefanauss_ (~stefanaus@host67-101-dynamic.171-212-r.retail.telecomitalia.it) vient de rentrer
+mars 18 19:55:10 <gh16ito>	Ah, OK.
+mars 18 19:55:19 <earnestly>	riverclaw: IF you're not sure how to make sense of it, feel free to post the output somewhere
+mars 18 19:55:54 <gh16ito>	Thanks mtn!
+mars 18 19:55:58 *	zsk a quitté (Quit: Leaving...)
+mars 18 19:55:59 <earnestly>	gh16ito: Although the news covers this, remember that a general way to deal with "file exists" type errors is to follow these simple steps:
+mars 18 19:56:02 *	chocopuff a quitté (Ping timeout: 256 seconds)
+mars 18 19:56:03 <earnestly>	!give gh16ito conflict
+mars 18 19:56:04 <phrik>	gh16ito: Check which package owns the file with pacman -Qo, if nothing does, remove it. If the file is owned ensure it's not an AUR (or foreign) package, otherwise submit a bug report. Repeat until no more conflicts.
+mars 18 19:56:06 <mtn>	gh16ito: welcome
+mars 18 19:56:10 <riverclaw>	earnestly, sure, what do you suggest I use to post it?
+mars 18 19:56:20 <earnestly>	riverclaw: Any pastebin in the /topic would be fine
+mars 18 19:56:20 *	govg a quitté (Ping timeout: 260 seconds)
+mars 18 19:56:23 <tomty89>	!ptpb
+mars 18 19:56:24 <phrik>	“<command> 2>&1 | curl -F c=@- https://ptpb.pw” OR “curl -F c=@path/to/a/file https://ptpb.pw” OR install community/pbpst
+mars 18 19:56:27 *	aw1 a quitté (Ping timeout: 240 seconds)
+mars 18 19:56:32 <earnestly>	riverclaw: ^ e.g.
+mars 18 19:56:39 <tomty89>	buhman is a saint
+mars 18 19:56:45 <spoken>	Solution added here : https://wiki.archlinux.org/index.php/AMDGPU#Troubleshooting
+mars 18 19:56:46 <phrik>	Title: AMDGPU - ArchWiki (at wiki.archlinux.org)
+mars 18 19:56:47 <riverclaw>	awesome, thanks :p 
+mars 18 19:56:49 <tomty89>	and sudokode 
+mars 18 19:56:49 *	jstimm (~jstimm@unaffiliated/jstimm) vient de rentrer
+mars 18 19:56:54 <spoken>	In Troubleshooting section
+mars 18 19:56:59 <spoken>	Hope it will help more people
+mars 18 19:57:04 <earnestly>	tomty89: And silverp :P
+mars 18 19:57:05 *	stefanauss a quitté (Ping timeout: 240 seconds)
+mars 18 19:57:10 <tomty89>	hmm
+mars 18 19:57:21 *	h4k1m (~hakim@unaffiliated/h4k1m) vient de rentrer
+mars 18 19:57:31 <knucker_>	i just install arch linux from wiki was amazing expiriance i want to do it again :P
+mars 18 19:57:38 *	govg (~govg@unaffiliated/govg) vient de rentrer
+mars 18 19:58:04 <spoken>	knucker_: ahah welcome :D
+mars 18 19:58:05 <earnestly>	spoken: Nice, yeah I'm sure it will.  Btw, change the code examples to use the code block stuff.  So in the edit section, place a leading space on the line, and use # echo ..., to emphasis that it's root
+mars 18 19:58:16 *	nartes a quitté (Quit: Leaving)
+mars 18 19:58:20 <earnestly>	spoken: Or I guess I can
+mars 18 19:58:35 <knucker_>	spoken i feel i am wizard now
+mars 18 19:58:36 *	nartes (~nartes@109.126.151.122) vient de rentrer
+mars 18 19:58:37 <knucker_>	lol
+mars 18 19:58:37 <spoken>	thx :) and correct my english please
+mars 18 19:58:42 <spoken>	:p
+mars 18 19:58:48 *	mohsen_ (~Mohsen@188.210.79.238) vient de rentrer
+mars 18 19:59:02 *	nartes a quitté (Max SendQ exceeded)
+mars 18 19:59:19 *	addcn (~addcn@209.129.128.213) vient de rentrer
+mars 18 19:59:26 *	shiva est maintenant connu sous le nom in1t3r
+mars 18 19:59:38 *	nartes (~nartes@109.126.151.122) vient de rentrer
+mars 18 19:59:55 *	rio (~rio@summer.c137.eu) vient de rentrer
+mars 18 20:00:02 <knucker_>	is better to have a long term kernel ?
+mars 18 20:00:17 *	gh16ito a quitté (Quit: Leaving)
+mars 18 20:00:24 <haavard>	knucker_: depends on your definition of "better"
+mars 18 20:00:27 <rio>	anybody experiencing sound problem since a recent update? https://bbs.archlinux.org/viewtopic.php?id=224221 -- by now i think it might be codec-related
+mars 18 20:00:28 <phrik>	Title: Strange sound problems after update / Multimedia and Games / Arch Linux Forums (at bbs.archlinux.org)
+mars 18 20:00:43 <knucker_>	haavard: better i mean more stable
+mars 18 20:00:47 *	Keniyal (~Keniyal@unaffiliated/keniyal) vient de rentrer
+mars 18 20:02:12 <riverclaw>	earnestly https://ptpb.pw/HHUv
+mars 18 20:02:20 <earnestly>	spoken: See https://wiki.archlinux.org/index.php/AMDGPU#Screen_artifacts_and_frenquency_problem
+mars 18 20:02:21 <phrik>	Title: AMDGPU - ArchWiki (at wiki.archlinux.org)
+mars 18 20:02:28 *	j12t (~j12t@c-50-131-55-96.hsd1.ca.comcast.net) vient de rentrer
+mars 18 20:02:34 <earnestly>	spoken: Remember btw, & isn't the same as 'and'
+mars 18 20:02:48 <riverclaw>	earnestly tried installing pbpst but it's being annoying, will fix later :p
+mars 18 20:03:05 <haavard>	knucker_: I mean, yeah, it's probably gonna be more stable. How much, though?
+mars 18 20:03:12 <earnestly>	riverclaw: Looks good, you can see it's listing both Linux and Windows
+mars 18 20:03:14 *	CykloTronic86 (~CykloTron@ip175-241-58-62.adsl.versatel.nl) vient de rentrer
+mars 18 20:03:26 <earnestly>	riverclaw: Finish up in the chroot as needed and then reboot to see if it works
+mars 18 20:03:27 <haavard>	knucker_: personally I have both linux and linux-lts installed. I've never had an issue that could be solved by booting -lts
+mars 18 20:03:28 *	CykloTronic86 a quitté (Remote host closed the connection)
+mars 18 20:03:29 <spoken>	earnestly: thx buddy :)
+mars 18 20:03:36 <riverclaw>	earnestly that's it????
+mars 18 20:03:47 <riverclaw>	earnestly this should work??
+mars 18 20:04:01 *	hringriin (~hringriin@p5DCC3033.dip0.t-ipconnect.de) vient de rentrer
+mars 18 20:04:11 *	dx486 (~username@unaffiliated/chessknight) vient de rentrer
+mars 18 20:04:23 <tomty89>	rio: maybe something to do with resampling?
+mars 18 20:04:26 <earnestly>	riverclaw: It should, double check in /boot/loader/loader.conf that you have a default
+mars 18 20:04:30 *	Eduard_Munteanu a quitté (Remote host closed the connection)
+mars 18 20:04:31 <spoken>	so cia guys :)
+mars 18 20:04:36 Python interface unloaded
+mars 18 20:04:36 FiSHLiM plugin unloaded
+**** FIN DU JOURNAL À Sat Mar 18 20:04:36 2017
+

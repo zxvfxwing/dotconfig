@@ -1,0 +1,6 @@
+[Data]
+Name=Numix
+Thumbnail=/home/spoken/.config/XfceThemeManager/meta/Numix Electric.png
+GtkTheme=Numix
+Xfwm4Theme=Numix Electric
+

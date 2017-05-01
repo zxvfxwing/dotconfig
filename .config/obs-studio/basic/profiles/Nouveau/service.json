@@ -1,0 +1,7 @@
+{
+    "settings": {
+        "server": "rtmp://live.twitch.tv/app",
+        "service": "Twitch"
+    },
+    "type": "rtmp_common"
+}

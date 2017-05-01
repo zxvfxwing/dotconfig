@@ -1,0 +1,113 @@
+{
+	
+	"extension_name": {
+		"description": "The field, that describes the name of extension.",
+		"message": "Chrome Download Manager"
+	},
+	"extension_short_name": {
+		"description": "The field, that describes the short name of extension.",
+		"message": "Chrome Download Manager"
+	},
+	"extension_default_title": {
+		"description": "The field, that describes the default title of extension.",
+		"message": "Download Manager"
+	},
+	"extension_description": {
+		"description": "The field, that describes the description of extension.",
+		"message": "Manages and interacts with your downloads directly from browser's toolbar. Most convenient download manager for your browser."
+	},
+	
+	
+	
+	
+	"head_downloads_title": {
+		"description": "The field, that describes the head value of extension.",
+		"message": "Downloads"
+	},
+	"head_open_folder_title": {
+		"description": "The field, that describes the head value of extension.",
+		"message": "Open folder"
+	},
+	"head_clear_button_value": {
+		"description": "The field, that describes the head value of extension.",
+		"message": "Clear"
+	},
+	"footer_show_all_title": {
+		"description": "The field, that describes the head value of extension.",
+		"message": "Show All Downloads"
+	},
+	
+	
+	
+	
+	"clear_win_top_content": {
+		"description": "The field, that describes the clear_win value of extension.",
+		"message": "Do you want to <b>Clear All</b> downloads?"
+	},
+	"clear_win_middle_text": {
+		"description": "The field, that describes the clear_win value of extension.",
+		"message": "Don't show this dialog again"
+	},
+	"clear_win_clear_all_button_value": {
+		"description": "The field, that describes the clear_win value of extension.",
+		"message": "Clear All"
+	},
+	"clear_win_cancel_button_value": {
+		"description": "The field, that describes the clear_win value of extension.",
+		"message": "Cancel"
+	},
+	
+	
+	
+	
+	"control_resume_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Resume"
+	},
+	"control_cancel_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Cancel"
+	},
+	"control_retry_download_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Retry download"
+	},
+	
+	"control_show_in_part_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Show in"
+	},
+	"control_finder_part_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Finder"
+	},
+	"control_folder_part_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "folder"
+	},
+	
+	
+	"control_status_removed_value": {
+		"description": "The field, that describes the control status value of extension.",
+		"message": "Removed"
+	},
+	"control_status_canceled_value": {
+		"description": "The field, that describes the control status value of extension.",
+		"message": "Canceled"
+	},
+	"control_status_paused_value": {
+		"description": "The field, that describes the control status value of extension.",
+		"message": "Paused"
+	},
+	
+	
+	"item_name_open_title": {
+		"description": "The field, that describes the item value of extension.",
+		"message": "Open"
+	},
+	"item_remove_button_title": {
+		"description": "The field, that describes the item value of extension.",
+		"message": "Remove from list"
+	}
+	
+}

@@ -1,0 +1,9 @@
+<unity_prefs version_major="1" version_minor="1">
+	<pref name="HasPlayedEagleScreechCount" type="int">1</pref>
+	<pref name="HasPlayedToVictory" type="int">1</pref>
+	<pref name="LastCampaignLoaded" type="string"></pref>
+	<pref name="Screenmanager Is Fullscreen mode" type="int">0</pref>
+	<pref name="Screenmanager Resolution Height" type="int">1023</pref>
+	<pref name="Screenmanager Resolution Width" type="int">1902</pref>
+	<pref name="UnitySelectMonitor" type="int">-1</pref>
+</unity_prefs>

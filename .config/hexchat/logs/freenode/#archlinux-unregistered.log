@@ -1,0 +1,143 @@
+**** DÉBUT DU JOURNAL À Tue Mar 14 23:43:29 2017
+
+mars 14 23:43:29 *	Vous parlez maintenant sur #archlinux-unregistered
+mars 14 23:43:29 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 14 23:43:29 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 14 23:43:29 *	Réception d'un CTCP VERSION de EMIYA
+mars 14 23:43:36 <spoken_>	Hi
+mars 14 23:43:36 <EMIYA>	spoken_: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+mars 14 23:43:54 <spoken_>	?invite
+mars 14 23:43:55 *	Vous avez été invité sur #archlinux par EMIYA (niven.freenode.net)
+mars 14 23:43:55 <EMIYA>	Ok, use /join.
+mars 14 23:43:59 Utilisation : JOIN <canal>, rejoindre le canal
+mars 14 23:44:47 <spoken_>	JOIN #archlinux
+mars 14 23:44:47 <EMIYA>	spoken_: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+mars 14 23:44:51 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 14 23:44:51 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 14 23:45:06 >chanserv<	acces #archlinux list
+mars 14 23:45:07 -ChanServ-	Invalid command. Use /msg ChanServ help for a command listing.
+mars 14 23:45:23 >chanserv<	access #archlinux list
+mars 14 23:45:23 -ChanServ-	Entry Nickname/Host          Flags
+mars 14 23:45:23 -ChanServ-	----- ---------------------- -----
+mars 14 23:45:23 -ChanServ-	1     phrakture              +AFRefiorstv [modified 8y 34w 0d ago]
+mars 14 23:45:23 -ChanServ-	2     MrElendig              +Aeiortv [modified 8y 33w 6d ago]
+mars 14 23:45:23 -ChanServ-	3     tigrmesh               +Aeiortv [modified 7y 40w 1d ago]
+mars 14 23:45:23 -ChanServ-	4     eir                    +Aeiortv [modified 7y 6w 2d ago]
+mars 14 23:45:23 -ChanServ-	5     wonder                 +Aefiortv [modified 5y 27w 3d ago]
+mars 14 23:45:23 -ChanServ-	6     brain0                 +Aeiortv [modified 6y 35w 4d ago]
+mars 14 23:45:23 -ChanServ-	7     falconindy             +Aeiortv [modified 5y 27w 3d ago]
+mars 14 23:45:23 -ChanServ-	8     vodik                  +Aeiortv [modified 4y 19w 6d ago]
+mars 14 23:45:23 -ChanServ-	9     phrik                  +Aeiortv [modified 4y 13w 5d ago]
+mars 14 23:45:23 -ChanServ-	10    grawity                +Aeiortv [modified 4y 0w 1d ago]
+mars 14 23:45:23 -ChanServ-	11    jelly12gen             +Aeiortv [modified 3y 38w 3d ago]
+mars 14 23:45:23 -ChanServ-	12    heftig                 +Aeiortv [modified 2y 18w 2d ago]
+mars 14 23:45:23 -ChanServ-	13    allanbrokeit           +Aeiortv [modified 1y 18w 3d ago]
+mars 14 23:45:23 -ChanServ-	14    pid1                   +Aeiortv [modified 49w 2d 6h ago]
+mars 14 23:45:23 -ChanServ-	15    Namarrgon              +Aeiortv [modified 49w 2d 6h ago]
+mars 14 23:45:23 -ChanServ-	16    man                    +Aeiortv [modified 4w 6d 14h ago]
+mars 14 23:45:23 -ChanServ-	17    alad                   +Aeiortv [modified 4w 6d 14h ago]
+mars 14 23:45:23 -ChanServ-	----- ---------------------- -----
+mars 14 23:45:23 -ChanServ-	End of #archlinux FLAGS listing.
+mars 14 23:45:41 Python interface unloaded
+mars 14 23:45:41 FiSHLiM plugin unloaded
+**** FIN DU JOURNAL À Tue Mar 14 23:45:41 2017
+
+**** DÉBUT DU JOURNAL À Tue Mar 14 23:45:59 2017
+
+mars 14 23:45:59 *	Vous parlez maintenant sur #archlinux-unregistered
+mars 14 23:45:59 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 14 23:45:59 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 14 23:46:04 <alad>	hi
+mars 14 23:46:04 <EMIYA>	alad: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+mars 14 23:46:13 <alad>	?invite
+mars 14 23:46:13 *	Vous avez été invité sur #archlinux par EMIYA (niven.freenode.net)
+mars 14 23:46:13 <EMIYA>	Ok, use /join.
+mars 14 23:46:18 Utilisation : JOIN <canal>, rejoindre le canal
+mars 14 23:46:20 -NickServ-	You failed to identify in time for the nickname alad
+mars 14 23:46:20 *	Votre pseudonyme est maintenant Guest75014
+mars 14 23:46:25 <Guest75014>	JOIN <canal>
+mars 14 23:46:30 <Guest75014>	hi
+mars 14 23:46:43 *	arescorpio (~arescorpi@107-29-245-190.fibertel.com.ar) est parti (requested by EMIYA (Go back to #archlinux now.))
+mars 14 23:48:06 *	jathan (~jathan@200.76.155.109) vient de rentrer
+mars 14 23:48:16 <Guest75014>	I got a GUI problem guys
+mars 14 23:48:16 <EMIYA>	Guest75014: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+mars 14 23:48:21 <Guest75014>	?invite
+mars 14 23:48:22 *	Vous avez été invité sur #archlinux par EMIYA (niven.freenode.net)
+mars 14 23:48:22 <EMIYA>	Ok, use /join.
+mars 14 23:48:25 Utilisation : JOIN <canal>, rejoindre le canal
+mars 14 23:48:29 Utilisation : JOIN <canal>, rejoindre le canal
+mars 14 23:48:37 <Guest75014>	JOIN <archlinux>
+mars 14 23:48:43 <Guest75014>	hello
+**** FIN DU JOURNAL À Tue Mar 14 23:49:19 2017
+
+**** DÉBUT DU JOURNAL À Tue Mar 14 23:52:52 2017
+
+mars 14 23:52:52 *	Vous parlez maintenant sur #archlinux-unregistered
+mars 14 23:52:52 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 14 23:52:52 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 14 23:52:57 <spoken_>	hi
+mars 14 23:52:57 <EMIYA>	spoken_: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+mars 14 23:53:05 <spoken_>	?invite
+mars 14 23:53:05 *	Vous avez été invité sur #archlinux par EMIYA (niven.freenode.net)
+mars 14 23:53:06 <EMIYA>	Ok, use /join.
+mars 14 23:53:08 Utilisation : JOIN <canal>, rejoindre le canal
+mars 14 23:53:35 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 14 23:53:35 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 14 23:54:12 *	herbmillerjr (~herb@c-76-120-173-141.hsd1.pa.comcast.net) est parti (requested by EMIYA (Go back to #archlinux now.))
+**** FIN DU JOURNAL À Tue Mar 14 23:54:27 2017
+
+**** DÉBUT DU JOURNAL À Tue Mar 14 23:57:29 2017
+
+mars 14 23:57:29 *	Vous parlez maintenant sur #archlinux-unregistered
+mars 14 23:57:29 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 14 23:57:29 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 14 23:57:29 *	Réception d'un CTCP VERSION de EMIYA
+mars 14 23:57:31 <spoken_two>	hi
+mars 14 23:57:32 <EMIYA>	spoken_two: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+mars 14 23:57:38 <spoken_two>	?invite
+mars 14 23:57:38 *	Vous avez été invité sur #archlinux par EMIYA (niven.freenode.net)
+mars 14 23:57:38 <EMIYA>	Ok, use /join.
+mars 14 23:57:41 Utilisation : JOIN <canal>, rejoindre le canal
+mars 14 23:57:47 *	Vous avez quitté le canal #archlinux-unregistered (requested by EMIYA (Go back to #archlinux now.))
+**** FIN DU JOURNAL À Tue Mar 14 23:57:47 2017
+
+**** DÉBUT DU JOURNAL À Wed Mar 15 19:34:56 2017
+
+mars 15 19:34:56 *	Vous parlez maintenant sur #archlinux-unregistered
+mars 15 19:34:56 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 15 19:34:56 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 15 19:34:56 *	Réception d'un CTCP VERSION de EMIYA
+mars 15 19:35:33 <spoken>	hi
+mars 15 19:35:34 <EMIYA>	spoken: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+mars 15 19:35:35 *	olly- (~elliot@150.129.109.58) vient de rentrer
+mars 15 19:35:39 <spoken>	?invite
+mars 15 19:35:39 *	Vous avez été invité sur #archlinux par EMIYA (niven.freenode.net)
+mars 15 19:35:39 <EMIYA>	Ok, use /join.
+mars 15 19:35:45 *	Vous avez quitté le canal #archlinux-unregistered (requested by EMIYA (Go back to #archlinux now.))
+**** FIN DU JOURNAL À Wed Mar 15 19:35:45 2017
+
+**** DÉBUT DU JOURNAL À Thu Mar 16 23:52:57 2017
+
+mars 16 23:52:57 *	Vous parlez maintenant sur #archlinux-unregistered
+mars 16 23:52:57 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 16 23:52:57 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 16 23:53:03 <spoken>	ezez
+mars 16 23:53:03 <EMIYA>	spoken: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. If you're human, use ?invite to get a pass.)
+mars 16 23:53:05 Utilisation : JOIN <canal>, rejoindre le canal
+mars 16 23:53:44 <spoken>	?invite
+mars 16 23:53:44 *	Vous avez été invité sur #archlinux par EMIYA (niven.freenode.net)
+mars 16 23:53:44 <EMIYA>	Ok, use /join.
+mars 16 23:53:51 *	Vous avez quitté le canal #archlinux-unregistered (requested by EMIYA (Go back to #archlinux now.))
+**** FIN DU JOURNAL À Thu Mar 16 23:53:51 2017
+
+**** DÉBUT DU JOURNAL À Sat Mar 18 18:30:47 2017
+
+mars 18 18:30:47 *	Vous parlez maintenant sur #archlinux-unregistered
+mars 18 18:30:47 *	Le sujet de #archlinux-unregistered est : === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+mars 18 18:30:47 *	Sujet de #archlinux-unregistered choisi par tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Tue Aug  9 06:33:51 2016)
+mars 18 18:30:51 <spoken>	?invite
+mars 18 18:30:51 *	Vous avez été invité sur #archlinux par EMIYA (niven.freenode.net)
+mars 18 18:30:51 <EMIYA>	Ok, use /join.
+mars 18 18:30:55 *	Vous avez quitté le canal #archlinux-unregistered (requested by EMIYA (Go back to #archlinux now.))
+**** FIN DU JOURNAL À Sat Mar 18 18:30:55 2017
+

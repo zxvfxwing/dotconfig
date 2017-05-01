@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="MountItem__home_spoken_MTP_ANDROID" mtime="1491403730" type="int" value="0"/>
+	<entry name="MountItem__run_media_spoken_SolusLiveBudgie" mtime="1491680334" type="int" value="0"/>
+	<entry name="MountItem__run_media_spoken_DAFUNK" mtime="1492269849" type="int" value="0"/>
+	<entry name="MountItem__run_media_spoken_ARCH_201703" mtime="1490898284" type="int" value="0"/>
+	<entry name="MountItem__run_user_1000_gvfs_sftp_host_192_168_1_51" mtime="1491495262" type="int" value="0"/>
+	<entry name="MountItem__run_media_spoken_Elements" mtime="1490300017" type="int" value="0"/>
+	<entry name="MountItem__run_media_spoken_zz" mtime="1490361513" type="int" value="0"/>
+	<entry name="MountItem__run_media_spoken_cc" mtime="1490361519" type="int" value="0"/>
+	<entry name="MountItem__run_media_spoken_R_cup_ration" mtime="1490361522" type="int" value="0"/>
+	<entry name="MountItem__run_user_1000_gvfs_smb_share_server_192_168_1_51_share_home" mtime="1493273479" type="int" value="0"/>
+	<entry name="DockyItem" mtime="1493290174" type="int" value="0"/>
+</gconf>

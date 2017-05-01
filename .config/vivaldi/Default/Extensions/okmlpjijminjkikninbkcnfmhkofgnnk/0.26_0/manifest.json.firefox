@@ -1,0 +1,11 @@
+{
+
+  "permissions": ["storage", "tabs", "http://*/", "https://*/"],
+
+  "applications": {
+    "gecko": {
+      "id": "tooter@effy.is"
+    }
+  }
+
+}

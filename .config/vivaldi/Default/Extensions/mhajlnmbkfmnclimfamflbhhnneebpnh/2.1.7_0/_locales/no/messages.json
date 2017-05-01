@@ -1,0 +1,113 @@
+{
+	
+	"extension_name": {
+		"description": "The field, that describes the name of extension.",
+		"message": "Nedlastingsbehandler Chrome"
+	},
+	"extension_short_name": {
+		"description": "The field, that describes the short name of extension.",
+		"message": "Nedlastingsbehandler Chrome"
+	},
+	"extension_default_title": {
+		"description": "The field, that describes the default title of extension.",
+		"message": "Nedlastingsbehandler"
+	},
+	"extension_description": {
+		"description": "The field, that describes the description of extension.",
+		"message": "Administrerer og samhandler med nedlastinger direkte fra verktøylinjen i nettleseren . Mest praktisk nedlasting manager for nettleseren  din."
+	},
+	
+	
+	
+	
+	"head_downloads_title": {
+		"description": "The field, that describes the head value of extension.",
+		"message": "Nedlastinger"
+	},
+	"head_open_folder_title": {
+		"description": "The field, that describes the head value of extension.",
+		"message": "Åpne mappen"
+	},
+	"head_clear_button_value": {
+		"description": "The field, that describes the head value of extension.",
+		"message": "Fjerne"
+	},
+	"footer_show_all_title": {
+		"description": "The field, that describes the head value of extension.",
+		"message": "Vis alle nedlastinger"
+	},
+	
+	
+	
+	
+	"clear_win_top_content": {
+		"description": "The field, that describes the clear_win value of extension.",
+		"message": "Vil du <b>Fjern alle</b> nedlastinger?"
+	},
+	"clear_win_middle_text": {
+		"description": "The field, that describes the clear_win value of extension.",
+		"message": "Ikke vis denne dialogen igjen"
+	},
+	"clear_win_clear_all_button_value": {
+		"description": "The field, that describes the clear_win value of extension.",
+		"message": "Fjern alle"
+	},
+	"clear_win_cancel_button_value": {
+		"description": "The field, that describes the clear_win value of extension.",
+		"message": "Kansellere"
+	},
+	
+	
+	
+	
+	"control_resume_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Gjenoppta"
+	},
+	"control_cancel_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Kansellere"
+	},
+	"control_retry_download_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Prøv nedlasting"
+	},
+	
+	"control_show_in_part_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Viser i"
+	},
+	"control_finder_part_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "Finder"
+	},
+	"control_folder_part_value": {
+		"description": "The field, that describes the control value of extension.",
+		"message": "mappe"
+	},
+	
+	
+	"control_status_removed_value": {
+		"description": "The field, that describes the control status value of extension.",
+		"message": "Fjernet"
+	},
+	"control_status_canceled_value": {
+		"description": "The field, that describes the control status value of extension.",
+		"message": "Kansellert"
+	},
+	"control_status_paused_value": {
+		"description": "The field, that describes the control status value of extension.",
+		"message": "Pauset"
+	},
+	
+	
+	"item_name_open_title": {
+		"description": "The field, that describes the item value of extension.",
+		"message": "Åpen"
+	},
+	"item_remove_button_title": {
+		"description": "The field, that describes the item value of extension.",
+		"message": "Fjern fra liste"
+	}
+	
+}

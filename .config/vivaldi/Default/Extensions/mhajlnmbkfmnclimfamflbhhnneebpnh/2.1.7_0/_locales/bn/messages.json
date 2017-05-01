@@ -1,0 +1,94 @@
+{
+   "clear_win_cancel_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "বাতিল"
+   },
+   "clear_win_clear_all_button_value": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "সব মুছে ফেলুন"
+   },
+   "clear_win_middle_text": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "এই ডায়ালগ পুনরায় দেখাবেন না"
+   },
+   "clear_win_top_content": {
+      "description": "The field, that describes the clear_win value of extension.",
+      "message": "আপনি করতে চান \u003Cb>সব মুছে ফেলুন\u003C/b> ডাউনলোড?"
+   },
+   "control_cancel_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "বাতিল"
+   },
+   "control_finder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "আবিষ্কর্তা"
+   },
+   "control_folder_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ফোল্ডার"
+   },
+   "control_resume_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "জীবনবৃত্তান্ত"
+   },
+   "control_retry_download_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "ডাউনলোড পুনরায় চেষ্টা"
+   },
+   "control_show_in_part_value": {
+      "description": "The field, that describes the control value of extension.",
+      "message": "দেখাও"
+   },
+   "control_status_canceled_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "বাতিল করা হয়েছে"
+   },
+   "control_status_paused_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "বিরাম দেওয়া"
+   },
+   "control_status_removed_value": {
+      "description": "The field, that describes the control status value of extension.",
+      "message": "অপসারিত"
+   },
+   "extension_default_title": {
+      "description": "The field, that describes the default title of extension.",
+      "message": "ডাউনলোড ম্যানেজার"
+   },
+   "extension_description": {
+      "description": "The field, that describes the description of extension.",
+      "message": "পরিচালনা এবং ব্রাউজারের টুলবারে থেকে সরাসরি আপনার ডাউনলোডসমূহ সাথে মিথস্ক্রিয়া . আপনার ব্রাউজারের জন্য সবচেয়ে সুবিধাজনক ডাউনলোড ম্যানেজার ."
+   },
+   "extension_name": {
+      "description": "The field, that describes the name of extension.",
+      "message": "ডাউনলোড ম্যানেজার Chrome"
+   },
+   "extension_short_name": {
+      "description": "The field, that describes the short name of extension.",
+      "message": "ডাউনলোড ম্যানেজার Chrome"
+   },
+   "footer_show_all_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "সকল ডাউনলোড দেখান"
+   },
+   "head_clear_button_value": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "অপসারণ"
+   },
+   "head_downloads_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ডাউনলোড"
+   },
+   "head_open_folder_title": {
+      "description": "The field, that describes the head value of extension.",
+      "message": "ফোল্ডার খোলা"
+   },
+   "item_name_open_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "খোলা"
+   },
+   "item_remove_button_title": {
+      "description": "The field, that describes the item value of extension.",
+      "message": "তালিকা থেকে বাদ দাও"
+   }
+}

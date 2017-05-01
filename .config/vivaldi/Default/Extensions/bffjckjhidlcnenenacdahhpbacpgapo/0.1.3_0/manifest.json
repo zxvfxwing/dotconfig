@@ -1,0 +1,24 @@
+{
+   "author": "Andy Portmen",
+   "background": {
+      "scripts": [ "utils.js", "map.js", "common.js" ]
+   },
+   "description": "Displays country flag of website's server location, Whois and Geo info",
+   "homepage_url": "http://add0n.com/country-flags.html",
+   "icons": {
+      "128": "data/icons/128.png",
+      "16": "data/icons/16.png",
+      "32": "data/icons/32.png",
+      "48": "data/icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlWYDdOhxnXoG9gCqcnDDcurOJnvl2NwWTTm76tIqng3Ycio3ucnzxsM/uJurdRZIT9DjW3QrVooXfEWW7NPqmkgYq7AJFigZ36zCnAhFO8kf1P5AZHqSelFMrnhk/del0lBgVu3nN1bWn9RthoR0MWFfkuj+L7jwkigU+9YH+Yb1JBGyyvC+FjUIBDtqAlG/pYSeE8ZhCDom5gB+ypuvlv2iDGnJmVksjgo4ti8pD87leaA1ui8frXBBX+dBJ2nBAB+QQnDcCCU+zqddXh2iOLOVcwYXJdeS+bXjLO+MwIWClW5lPrBo3Dr90v0Vv1+NeQZo+44/W9QfQCssBhseGwIDAQAB",
+   "manifest_version": 2,
+   "name": "Country Flags & IP Whois",
+   "page_action": {
+
+   },
+   "permissions": [ "storage", "tabs", "notifications", "webRequest", "\u003Call_urls>" ],
+   "short_name": "icflags",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.3"
+}

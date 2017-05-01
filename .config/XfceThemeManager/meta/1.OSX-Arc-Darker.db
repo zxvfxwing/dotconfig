@@ -1,0 +1,8 @@
+[Data]
+Name=OSX-Arc-Darker
+Thumbnail=/home/spoken/.config/XfceThemeManager/meta/OSX-Arc-Darker.png
+GtkTheme=OSX-Arc-Darker
+Xfwm4Theme=OSX-Arc-Darker
+IconTheme=gnome
+CursorTheme=DMZ-Black
+

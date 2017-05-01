@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="Cutegram"/>
+      <value type="string" value="Discord"/>
+      <value type="string" value="Docky"/>
+      <value type="string" value="kalu"/>
+      <value type="string" value="nm-applet"/>
+      <value type="string" value="org.kdenlive.kdenlive"/>
+      <value type="string" value="owncloud"/>
+      <value type="string" value="pk-update-icon"/>
+      <value type="string" value="Spotify"/>
+      <value type="string" value="Telegram Desktop"/>
+      <value type="string" value="Thunar"/>
+      <value type="string" value="thunar-volman"/>
+      <value type="string" value="Transmission"/>
+      <value type="string" value="Xfce volume control"/>
+      <value type="string" value="Xfce volume daemon"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
+      <value type="string" value="xfce4-settings-helper"/>
+    </property>
+    <property name="muted_applications" type="array">
+      <value type="string" value="Xfce volume control"/>
+    </property>
+  </property>
+  <property name="notify-location" type="uint" value="2"/>
+  <property name="log-level" type="uint" value="0"/>
+  <property name="log-level-apps" type="uint" value="0"/>
+  <property name="theme" type="string" value="Default"/>
+  <property name="primary-monitor" type="uint" value="1"/>
+  <property name="do-not-disturb" type="bool" value="false"/>
+  <property name="expire-timeout" type="int" value="3"/>
+  <property name="do-fadeout" type="bool" value="true"/>
+  <property name="notification-log" type="bool" value="false"/>
+</channel>

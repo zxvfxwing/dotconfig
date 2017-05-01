@@ -1,0 +1,29 @@
+[Added Associations]
+x-scheme-handler/http=exo-web-browser.desktop
+x-scheme-handler/https=exo-web-browser.desktop
+application/x-shellscript=mousepad.desktop;
+text/plain=mousepad.desktop;
+text/x-matlab=mousepad.desktop;
+image/png=ristretto.desktop;shutter.desktop;
+inode/directory=exo-file-manager.desktop
+x-scheme-handler/trash=exo-file-manager.desktop
+application/x-php=atom.desktop;
+video/x-matroska=vlc.desktop;
+text/x-python=mousepad.desktop;
+image/gif=geeqie.desktop;shutter.desktop;
+video/mp4=vlc.desktop;org.gnome.Totem.desktop;
+video/x-msvideo=vlc.desktop;org.gnome.Totem.desktop;
+image/jpeg=geeqie.desktop;shutter.desktop;
+application/pdf=evince.desktop;inkscape.desktop;
+application/x-7z-compressed=org.gnome.FileRoller.desktop;
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
+application/x-bittorrent=deluge.desktop;transmission-qt.desktop;
+text/x-chdr=mousepad.desktop;
+text/x-csrc=mousepad.desktop;
+text/html=vivaldi-stable.desktop;atom.desktop;
+application/vnd.oasis.opendocument.spreadsheet=libreoffice-calc.desktop;
+
+[Default Applications]
+video/mp4=vlc.desktop
+video/x-msvideo=vlc.desktop
+application/x-bittorrent=deluge.desktop
