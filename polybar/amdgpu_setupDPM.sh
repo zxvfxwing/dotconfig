@@ -1,0 +1,1 @@
+/home/spoken/ownScripts/amdgpu_setupDPM

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Type=Application
-Name=redshift
-Exec=redshift -l 0.00:0.00 -t 6000:3200 -b 1.00:1.00
-StartupNotify=false
-Terminal=false
-Hidden=false
