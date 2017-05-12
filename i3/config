@@ -30,6 +30,13 @@ font pango:Hack Regular 8
 # Disable WINDOWS BORDER / TITLE BAR
 for_window [class="^.*"] border pixel 2
 
+# Go to urgent window
+#for_window [urgent=latest] focus
+
+# Make dialog / pop-up floating (alltime)
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up l
@@ -54,9 +61,10 @@ exec --no-startup-id feh --bg-scale /home/spoken/.wallpaper
 exec --no-startup-id xrandr -r 144
 exec --no-startup-id compton -f
 exec_always --no-startup-id redshift
-exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id sh /home/spoken/.config/polybar/launch.sh
+exec --no-startup-id /home/spoken/.config/i3/init_workspace.sh
 
-#RESTART
+#RESTART POLYBAR
 bindsym Mod1+p exec --no-startup-id ~/.config/polybar/launch.sh
 
 #ROFI
@@ -70,7 +78,7 @@ bindsym Control+space exec --no-startup-id rofi -show run
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
 
-workspace_auto_back_and_forth yes
+#workspace_auto_back_and_forth yes
 
 #Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
