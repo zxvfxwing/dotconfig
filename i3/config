@@ -54,21 +54,16 @@ set Mode_switch $right m
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Return exec gnome-terminal
-#bind Mod1+36 exec gnome-terminal
+bindsym Mod1+Return exec xfce4-terminal
 
 # kill focused window
 bindsym Mod1+Control+q kill
-#bindsym Mode_switch Mod1+Control+a kill
-#bind Mod1+37+38 kill
 
 bindsym End exec scrot -q 100 '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/shots/$f'
-bindsym Mode_switch F12 exec scrot -q 100 '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/shots/$f'
-
 
 ## AUTOSTARTING PROGRAMS ##
 #WALLPAPER
-exec --no-startup-id feh --bg-scale /home/spoken/.wallpaper
+exec --no-startup-id feh --bg-fill /home/spoken/.wallpaper
 exec --no-startup-id xrandr -r 144
 exec --no-startup-id compton -f
 exec_always --no-startup-id redshift
@@ -77,14 +72,9 @@ exec --no-startup-id /home/spoken/.config/i3/init_workspace.sh
 
 #RESTART POLYBAR
 bindsym Mod1+p exec --no-startup-id ~/.config/polybar/launch.sh
-bindsym Mode_switch Mod1+j exec --no-startup-id ~/.config/polybar/launch.sh
 
 #ROFI
 bindsym Control+space exec --no-startup-id rofi -show run
-#bindsym Mod1+Tab exec --no-startup-id rofi -show
-#bindsym Mod1+Tab focus right
-#bindsym Mod1+Shift+Tab focus left
-#bindsym Mod1+Tab workspace back_and_forth
 
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
@@ -134,23 +124,17 @@ bindsym Mod1+Control+Right move right
 
 # split in horizontal orientation
 bindsym Mod1+h split h
-bindsym Mode_switch Mod1+b split h
 
 # split in vertical orientation
 bindsym Mod1+v split v
-bindsym Mode_switch Mod1+é split v
 
 # enter fullscreen mode for the focused container
 bindsym Mod1+f fullscreen toggle
-bindsym Mode_switch Mod1+e fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym Mod1+s layout stacking
-bindsym Mode_switch Mod1+à layout stacking
 bindsym Mod1+w layout tabbed
-bindsym Mode_switch Mod1+ layout tabbed
 bindsym Mod1+e layout toggle split
-bindsym Mode_switch Mod1+e layout toggle split
 
 # toggle tiling / floating
 bindsym Mod1+Control+space floating toggle
@@ -197,10 +181,8 @@ bindsym Mod1+Control+0 move container to workspace 10
 
 # reload the configuration file
 bindsym Mod1+Control+c reload
-bindsym Mode_switch Mod1+Control+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsysm Mod1+Control+r restart
-bindsysm Mode_switch Mod1+Control+r restart
 
 # exit i3 (logs you out of your X session)
 bindsym Mod1+Control+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
