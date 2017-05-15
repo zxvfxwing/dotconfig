@@ -11,8 +11,8 @@
 # Start i3 with your most wanted applications, in the workspace you want !
 #
 # It doesn't work like assign in i3 config file.
-# Indeed, assign will make all future windows of a specific app pop-up in a designed workspace.
-# But what if you want to start just one time an app in a specific workspace and later make it pop-up in other one?
+# Indeed, assign will make all future windows of a specific app open in a designed workspace.
+# But what if you want to start just one time an app in a specific workspace and later open it in any other one ?
 # With assign, you will have to make it start in the chosen workspace, then move it manually (boring).
 # Here no assign, no problem :)
 
