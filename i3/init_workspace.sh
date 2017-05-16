@@ -54,10 +54,14 @@
 
 ###### Important ######
 # INSTALL wmctrl !
+#
+# Community package on ArchLinux (sudo pacman -S wmctrl)
+#
+# More information :
+# http://tripie.sweb.cz/utils/wmctrl/
 #######################
 
 # App you want to start :
-# You can find the WM_CLASS(STRING) of your application with `xprop`
 apps=(
 "vivaldi-stable"
 "atom"
@@ -70,7 +74,7 @@ apps=(
 )
 
 # Which workspace assign to your wanted App :
-# here atom will start in the 3rd workspace.
+# i.e : atom will start in the 3rd workspace.
 workspaces=(
 "2"
 "3"
@@ -97,7 +101,7 @@ do
 done
 
 
-## OPTIONAL ##
+####### ABSOLUTELY OPTIONAL ########
 ## inject message(s) into terminal (first one created : /dev/pts/0)
 
 # wait a moment

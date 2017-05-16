@@ -28,7 +28,7 @@ font pango:Hack Regular 8
 # font, it doesn’t scale on retina/hidpi displays.
 
 # Disable WINDOWS BORDER / TITLE BAR
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 
 # Go to urgent window
 #for_window [urgent=latest] focus
@@ -59,7 +59,9 @@ bindsym Mod1+Return exec xfce4-terminal
 # kill focused window
 bindsym Mod1+Control+q kill
 
-bindsym End exec scrot -q 100 '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/shots/$f'
+#bindsym End exec scrot -q 100 '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/shots/$f'
+
+bindsym 107 exec --no-startup-id /usr/bin/imgur-screenshot
 
 ## AUTOSTARTING PROGRAMS ##
 #WALLPAPER
@@ -70,16 +72,20 @@ exec_always --no-startup-id redshift
 exec_always --no-startup-id sh /home/spoken/.config/polybar/launch.sh
 exec --no-startup-id /home/spoken/.config/i3/init_workspace.sh
 
+# ASSIGN WORKSPACES
+assign [class="discord"] 4
+
 #RESTART POLYBAR
-bindsym Mod1+p exec --no-startup-id ~/.config/polybar/launch.sh
+bindsym Mod1+p exec --no-startup-id /home/spoken/.config/polybar/launch.sh
 
 #ROFI
 bindsym Control+space exec --no-startup-id rofi -show run
 
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
+bindsym Mod1+z [urgent=latest] focus
 
-#workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth yes
 
 #Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -255,7 +261,7 @@ bindsym Mod1+Control+g mode "$mode_gaps"
 gaps inner 10
 gaps outer -5
 smart_borders on
-smart_gaps on
+#smart_gaps on
 
 #BORDER COLOR PART
 client.focused #d67c40 #d67c40 #FFFFFF
