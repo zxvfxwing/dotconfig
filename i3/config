@@ -28,14 +28,18 @@ font pango:Hack Regular 8
 # font, it doesn’t scale on retina/hidpi displays.
 
 # Disable WINDOWS BORDER / TITLE BAR
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 
 # Go to urgent window
-#for_window [urgent=latest] focus
+focus_on_window_activation urgent
+popup_during_fullscreen smart
+workspace_auto_back_and_forth yes
+force_display_urgency_hint 500 ms
 
 # Make dialog / pop-up floating (alltime)
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
+for_window [class="com-intellij-rt-execution-application-AppMainV2"] floating enable
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -56,12 +60,14 @@ floating_modifier Mod1
 # start a terminal
 bindsym Mod1+Return exec xfce4-terminal
 
+
+bindsym Mod1+Control+o exec record-desktop
+
 # kill focused window
 bindsym Mod1+Control+q kill
 
-#bindsym End exec scrot -q 100 '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/shots/$f'
-
-bindsym 107 exec --no-startup-id /usr/bin/imgur-screenshot
+bindsym End exec scrot -q 100 '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/shots/$f'
+bindcode 107 exec --no-startup-id /usr/bin/imgur-screenshot
 
 ## AUTOSTARTING PROGRAMS ##
 #WALLPAPER
@@ -69,7 +75,9 @@ exec --no-startup-id feh --bg-fill /home/spoken/.wallpaper
 exec --no-startup-id xrandr -r 144
 exec --no-startup-id compton -f
 exec_always --no-startup-id redshift
+exec_always --no-startup-id dunst
 exec_always --no-startup-id sh /home/spoken/.config/polybar/launch.sh
+exec_always --no-startup-id /home/spoken/.config/i3/autoname_workspaces.py &
 exec --no-startup-id /home/spoken/.config/i3/init_workspace.sh
 
 # ASSIGN WORKSPACES
@@ -79,13 +87,11 @@ assign [class="discord"] 4
 bindsym Mod1+p exec --no-startup-id /home/spoken/.config/polybar/launch.sh
 
 #ROFI
-bindsym Control+space exec --no-startup-id rofi -show run
+bindsym Control+space exec --no-startup-id rofi -show run -width 20 -lines 3
 
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
 bindsym Mod1+z [urgent=latest] focus
-
-workspace_auto_back_and_forth yes
 
 #Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -152,7 +158,7 @@ bindsym Mod1+space focus mode_toggle
 bindsym Mod1+a focus parent
 
 # focus the child container
-#bindsym Mod1+d focus child
+bindsym Mod1+d focus child
 
 # move the currently focused window to the scratchpad
 bindsym Mod1+Control+minus move scratchpad
@@ -162,16 +168,16 @@ bindsym Mod1+Control+minus move scratchpad
 bindsym Mod1+plus scratchpad show
 
 # switch to workspace
-bindsym Mod1+1 workspace 1
-bindsym Mod1+2 workspace 2
-bindsym Mod1+3 workspace 3
-bindsym Mod1+4 workspace 4
-bindsym Mod1+5 workspace 5
-bindsym Mod1+6 workspace 6
-bindsym Mod1+7 workspace 7
-bindsym Mod1+8 workspace 8
-bindsym Mod1+9 workspace 9
-bindsym Mod1+0 workspace 10
+bindsym Mod1+1 workspace number 1
+bindsym Mod1+2 workspace number 2
+bindsym Mod1+3 workspace number 3
+bindsym Mod1+4 workspace number 4
+bindsym Mod1+5 workspace number 5
+bindsym Mod1+6 workspace number 6
+bindsym Mod1+7 workspace number 7
+bindsym Mod1+8 workspace number 8
+bindsym Mod1+9 workspace number 9
+bindsym Mod1+0 workspace number 10
 
 # move focused container to workspace
 bindsym Mod1+Control+1 move container to workspace 1
@@ -197,7 +203,6 @@ bindsym Mod1+Control+e exec "i3-nagbar -t warning -m 'You pressed the exit short
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-
         # Pressing left will shrink the window’s width.
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
@@ -220,68 +225,18 @@ mode "resize" {
 
 bindsym Mod1+r mode "resize"
 
-## -- RESIZE GAPS -- #
-mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
-
-        bindsym Control+plus  gaps inner all plus 5
-        bindsym Control+minus gaps inner all minus 5
-        bindsym Control+0     gaps inner all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
-
-        bindsym Control+plus  gaps outer all plus 5
-        bindsym Control+minus gaps outer all minus 5
-        bindsym Control+0     gaps outer all set 0
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-set $mode_gaps Gaps: (o) outer, (i) inner
-set $mode_gaps_outer Outer Gaps: +|-|0 (local), Control + +|-|0 (global)
-set $mode_gaps_inner Inner Gaps: +|-|0 (local), Control + +|-|0 (global)
-bindsym Mod1+Control+g mode "$mode_gaps"
-
 #GAPS GENERAL MODE
 gaps inner 10
-gaps outer -5
+gaps outer 0
 smart_borders on
 #smart_gaps on
 
 #BORDER COLOR PART
-client.focused #d67c40 #d67c40 #FFFFFF
-client.focused_inactive #5C5C5C #5C5C5C #FFFFFF
-client.unfocused #5C5C5C #5C5C5C #FFFFFF
-client.urgent #5C5C5C #ff2190 #FFFFFF
+# class                 border  backgr. text    indicator child_border
+client.focused          #fca849 #285577 #ffffff #2e9ef4   #ed9a1e
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-#        status_command i3status
-#}
-
-#######################################################################
-# automatically start i3-config-wizard to offer the user to create a
-# keysym-based config which used their favorite modifier (alt or windows)
-#
-# i3-config-wizard will not launch if there already is a config file
-# in ~/.i3/config.
-#
-# Please remove the following exec line:
-#######################################################################
-#exec i3-config-wizard
+client.background       #ffffff

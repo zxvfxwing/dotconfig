@@ -112,11 +112,6 @@ sleep 4
 alsi -l > /dev/pts/0
 figlet "Bienvenue." > /dev/pts/0
 
-# time it took to start
-# Take the last line of dmesg (expects you to have no error message :p)
-boottime=$(dmesg | tail -n 1 | awk '{print $2}' | sed 's/\]//')
-echo "boot time: $boottime secondes."> /dev/pts/0
-
 # check updates (ArchLinux user here)
 # Need `checkupdates` & `cower`
 pac=$(checkupdates | wc -l)
