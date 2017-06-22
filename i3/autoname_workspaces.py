@@ -67,6 +67,10 @@ WINDOW_ICONS = {
     'telegram-desktop': fa.icons['paper-plane'],
     'thunderbird': fa.icons['envelope'],
     'deluge': fa.icons['download'],
+    'discord': fa.icons['headphones'],
+    'godot': fa.icons['cogs'],
+    'obs': fa.icons['video-camera'],
+
 }
 
 # This icon is used for any application not in the list above
@@ -106,11 +110,11 @@ def rename_workspaces(i3):
         prev_output = ws_info.output
 
         # renumber workspace
-        name_parts['num'] = n
-        n += 1
+        #name_parts['num'] = n
+        #n += 1
 
         new_name = construct_workspace_name(name_parts)
-        print("%s -- %s  " % (workspace.name, new_name))
+        #print("%s -- %s  " % (workspace.name, new_name))
         i3.command('rename workspace "%s" to "%s"' % (workspace.name, new_name))
 
 

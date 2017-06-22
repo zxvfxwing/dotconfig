@@ -74,14 +74,16 @@ bindcode 107 exec --no-startup-id /usr/bin/imgur-screenshot
 exec --no-startup-id feh --bg-fill /home/spoken/.wallpaper
 exec --no-startup-id xrandr -r 144
 exec --no-startup-id compton -f
+exec --no-startup-id xset m 0 0
 exec_always --no-startup-id redshift
 exec_always --no-startup-id dunst
 exec_always --no-startup-id sh /home/spoken/.config/polybar/launch.sh
 exec_always --no-startup-id /home/spoken/.config/i3/autoname_workspaces.py &
 exec --no-startup-id /home/spoken/.config/i3/init_workspace.sh
+exec_always --no-startup-id xscreensaver -no-splash &
+
 
 # ASSIGN WORKSPACES
-assign [class="discord"] 4
 
 #RESTART POLYBAR
 bindsym Mod1+p exec --no-startup-id /home/spoken/.config/polybar/launch.sh
@@ -135,10 +137,10 @@ bindsym Mod1+Control+Up move up
 bindsym Mod1+Control+Right move right
 
 # split in horizontal orientation
-bindsym Mod1+h split h
+bindsym Mod1+h split v
 
 # split in vertical orientation
-bindsym Mod1+v split v
+bindsym Mod1+v split h
 
 # enter fullscreen mode for the focused container
 bindsym Mod1+f fullscreen toggle
@@ -161,7 +163,7 @@ bindsym Mod1+a focus parent
 bindsym Mod1+d focus child
 
 # move the currently focused window to the scratchpad
-bindsym Mod1+Control+minus move scratchpad
+#bindsym Mod1+l move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
@@ -180,16 +182,16 @@ bindsym Mod1+9 workspace number 9
 bindsym Mod1+0 workspace number 10
 
 # move focused container to workspace
-bindsym Mod1+Control+1 move container to workspace 1
-bindsym Mod1+Control+2 move container to workspace 2
-bindsym Mod1+Control+3 move container to workspace 3
-bindsym Mod1+Control+4 move container to workspace 4
-bindsym Mod1+Control+5 move container to workspace 5
-bindsym Mod1+Control+6 move container to workspace 6
-bindsym Mod1+Control+7 move container to workspace 7
-bindsym Mod1+Control+8 move container to workspace 8
-bindsym Mod1+Control+9 move container to workspace 9
-bindsym Mod1+Control+0 move container to workspace 10
+bindsym Mod1+Control+1 move container to workspace number 1
+bindsym Mod1+Control+2 move container to workspace number 2
+bindsym Mod1+Control+3 move container to workspace number 3
+bindsym Mod1+Control+4 move container to workspace number 4
+bindsym Mod1+Control+5 move container to workspace number 5
+bindsym Mod1+Control+6 move container to workspace number 6
+bindsym Mod1+Control+7 move container to workspace number 7
+bindsym Mod1+Control+8 move container to workspace number 8
+bindsym Mod1+Control+9 move container to workspace number 9
+bindsym Mod1+Control+0 move container to workspace number 10
 
 # reload the configuration file
 bindsym Mod1+Control+c reload

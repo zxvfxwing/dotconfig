@@ -63,27 +63,24 @@
 
 # App you want to start :
 apps=(
-"vivaldi-stable"
-"atom"
+"firefox"
 "telegram-desktop"
 "thunar"
 "spotify"
 "deluge"
 "thunderbird"
-"xfce4-terminal"
+""
 )
 
 # Which workspace assign to your wanted App :
-# i.e : atom will start in the 3rd workspace.
 workspaces=(
+"1"
 "2"
 "3"
 "4"
 "5"
 "6"
-"10"
-"9"
-"1"
+"7"
 )
 
 # counter of opened windows
@@ -105,20 +102,22 @@ done
 ## inject message(s) into terminal (first one created : /dev/pts/0)
 
 # wait a moment
-sleep 4
+#sleep 4
+
+#cd /mining/mist/interface
 
 # Welcome message
 # Need `alsi` & `figlet`
-alsi -l > /dev/pts/0
-figlet "Bienvenue." > /dev/pts/0
+#alsi -l > /dev/pts/0
+#figlet "Bienvenue." > /dev/pts/0
 
 # check updates (ArchLinux user here)
 # Need `checkupdates` & `cower`
-pac=$(checkupdates | wc -l)
-aur=$(cower -u | wc -l)
-echo "update(s): $pac(pac) - $aur(aur)" > /dev/pts/0
+#pac=$(checkupdates | wc -l)
+#aur=$(cower -u | wc -l)
+#echo "update(s): $pac(pac) - $aur(aur)" > /dev/pts/0
 
 # weather
 # more information : curl wttr.in/:help
-echo "" > /dev/pts/0
-curl "fr.wttr.in/Marseille?1" > /dev/pts/0
+#echo "" > /dev/pts/0
+#curl "fr.wttr.in/Marseille?1" > /dev/pts/0

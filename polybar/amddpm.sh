@@ -5,7 +5,7 @@
 
 bridgefile="/home/spoken/.config/amdgpu_dpm_bridge_file"
 dpmvalue=$( cat $bridgefile )
-
+dpm="DPM "
 
 if [ $1 ]; then
     case $dpmvalue in
@@ -15,8 +15,8 @@ if [ $1 ]; then
     esac
 else
     case $dpmvalue in
-        "high" ) echo "DPM %{F#ff9b82}" ;;
-        "low" ) echo "DPM %{F#92ff8e}" ;;
-        "auto" ) echo "DPM %{F#e68eff}" ;;
+        "high" ) echo "$dpm%{F#ff9b82}" ;;
+        "low" ) echo "$dpm%{F#92ff8e}" ;;
+        "auto" ) echo "$dpm%{F#e68eff}" ;;
     esac
 fi

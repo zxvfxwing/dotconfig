@@ -24,11 +24,18 @@ height = 27
 offset-x = 0
 offset-y = 0
 radius = 0
-fixed-center = true
+fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 line-size = 2
 line-color = ${colors.foreground}
+
+border-top-size = 0
+;#fca849
+border-top-color = #777777
+border-bottom-size = 0
+border-bottom-color = #f9b452
+;#fca849
 border-size = 0
 border-color = #333333
 padding-left = 0
@@ -39,8 +46,9 @@ font-0 = Hack:fontformat=truetype:size=9;1
 font-1 = Hack:fontformat=truetype:size=9;1
 font-2 = FontAwesome:fontformat=truetype:size=9;1
 modules-left = i3 xwindow
-modules-center = spotify
-modules-right = xkeyboard amddpm cpu coretemps memory redshift pkg volume date powermenu
+modules-center =
+modules-right = xkeyboard gputemp cpu coretemps memory redshift pkg volume date powermenu
+;spotify
 tray-detached = false
 tray-position = none
 tray-padding = 1
@@ -58,6 +66,17 @@ double-click-left =
 double-click-middle =
 double-click-right =
 
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+;margin-top = 0
+;margin-bottom = 0
+
 [module/xwindow]
 type = internal/xwindow
 label-maxlen = 35
@@ -69,37 +88,40 @@ type = internal/xkeyboard
 ; List of indicators to ignore
 blacklist-0 = num lock
 blacklist-1 = scroll lock
-format = <label-indicator>
-format-spacing = 0
+interval = 1
+format = <label-layout> <label-indicator>
 format-prefix = 
 format-prefix-padding = 1
-format-prefix-background = #ff665b
+format-prefix-background = ${colors.background}
+label-layout = %number%
+label-layout-background = ${colors.background}
+label-layout-padding-right = 0
 label-indicator = %name%
-label-indicator-padding-right = 1
+label-indicator-padding = 1
 label-indicator-background = #ff665b
 
 [module/filesystem]
 type = internal/fs
 mount-0 = /
 mount-1 = /home
-interval = 10
+interval = 60
 fixed-values = true
 spacing = 1
 format-mounted = <label-mounted>
-label-mounted = %mountpoint%:%free%
+label-mounted = %mountpoint%:%free%%
 
 [module/pkg]
 type = custom/script
 interval = 60
-format = <label>
-;format-underline = #6492fc
 exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
 exec = /home/spoken/.config/polybar/pkg.sh
-click-left = exec gnome-terminal -- yaourt -Syyuua --noconfirm
+click-left = exec xfce4-terminal -e "zsh -c \"pacaur -Syu --noconfirm --noedit; cowsay MAJ DONE ! && sleep 3;\""
+;exec xfce4-terminal -e "zsh -c \"echo lol; sleep 3\""
+
 
 [module/coretemps]
 type = custom/script
-interval = 1
+interval = 0.5
 exec-if = sensors
 exec = ~/.config/polybar/tempcores.sh
 
@@ -114,7 +136,7 @@ format-prefix-foreground = #5b
 
 [module/redshift]
 type = custom/script
-interval = 5
+interval = 30
 exec = ~/.config/polybar/redshift.sh
 
 [module/spotify]
@@ -129,9 +151,24 @@ format-foreground = ${colors.foreground}
 
 [module/amddpm]
 type = custom/script
-interval = 0.5
+interval = 0.3
+label-padding-left = 0
 exec = ~/.config/polybar/amddpm.sh
-click-left = ~/.config/polybar/amddpm.sh 1
+;click-left = ~/.config/polybar/amddpm.sh
+
+[module/gputemp]
+type = custom/script
+interval = 1
+label-padding-left = 0
+exec = ~/.config/polybar/gputemp.sh
+click-left = /home/spoken/.config/polybar/amddpm.sh 1
+
+[module/upptime]
+type = custom/script
+interval = 30
+format-prefix = " "
+exec = uptime | awk '{ print $3 }'
+label = %output:0:5:%
 
 [module/i3]
 type = internal/i3
@@ -144,19 +181,19 @@ wrapping-scroll = false
 reverse-scroll = true
 fuzzy-match = true
 
-; ws-icon-[0-9]+ = label;icon
+;ws-icon-[0-9]+ = label;icon
 ; NOTE: The label needs to match the name of the i3 workspace
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-9 = 0;
-ws-icon-default =
+;ws-icon-0 = 1;1
+;ws-icon-1 = 2;2
+;ws-icon-2 = 3;3
+;ws-icon-3 = 4;4
+;ws-icon-4 = 5;5
+;ws-icon-5 = 6;6
+;ws-icon-6 = 7;7
+;ws-icon-7 = 8;8
+;ws-icon-8 = 9;9
+;ws-icon-9 = 0;10
+;ws-icon-default = 
 
 format = <label-state> <label-mode>
 
@@ -170,23 +207,26 @@ label-mode-foreground = #00ffbb
 ;   %index%
 ;   %output%
 ; Default: %icon% %name%
-label-focused = %index%
-label-focused-background = #3f3f3f
-label-focused-underline = #fba922
-label-focused-padding = 2
+label-focused = %name%
+;label-focused-background = #3f3f3f
+label-focused-background = #fca849
+label-focused-foreground = #000000
+;label-focused-underline = #2179ff
+label-focused-padding = 1
 
-label-unfocused = %index%
-label-unfocused-padding = 2
+label-unfocused = %name%
+label-unfocused-padding = 1
 ;label-unfocused-underline = #fba922
 
-label-visible = %index%
+label-visible = %name%
 label-visible-underline = #ed7200
-label-visible-padding = 2
+label-visible-padding = 1
 
-label-urgent = %index%
-label-urgent-background = #b88fbf
-label-urgent-underline = #fba922
-label-urgent-padding = 2
+label-urgent = %name%
+label-urgent-background = #3f3f3f
+label-urgent-foreground = #0ef702
+label-urgent-underline = #0ef702
+label-urgent-padding = 1
 
 [module/cpu]
 type = internal/cpu
@@ -224,7 +264,7 @@ format = <label> <bar-used>
 label = RAM
 ; Only applies if <bar-used> is used
 bar-used-indicator =
-bar-used-width = 15
+bar-used-width = 16
 bar-used-foreground-0 = #55aa55
 bar-used-foreground-1 = #557755
 bar-used-foreground-2 = #f5a70a
@@ -252,22 +292,23 @@ type = internal/network
 interface = enp0s31f6
 label-connected = "%upspeed:0%"
 format-connected = <label-connected>
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = #5bc2d3
+format-connected-margin = -1
 
 [module/networkspeeddown]
 type = internal/network
 interface = enp0s31f6
-label-connected = "%linkspeed%"
-;"%downspeed:0%"
+label-connected = "%downspeed:0%"
 format-connected = <label-connected>
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = #ad2424
+format-connected-margin = -1
 
 [module/date]
 type = internal/date
-interval = 0.5
-date = %d-%m-%Y
+interval = 0.1
+date = %Y-%m-%d
 date-alt =
 time = %T
 time-alt = %s
@@ -305,34 +346,14 @@ label-open = 
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
-label-separator = |
+label-separator = "|"
 label-separator-foreground = ${colors.foreground-alt}
-menu-0-0 =  close
-menu-0-0-exec = menu-open-1
-menu-0-1 =  reboot
-menu-0-1-exec = menu-open-2
-menu-0-2 =  shutdown
-menu-0-2-exec = menu-open-3
+menu-0-0 = ""
+menu-0-0-exec = i3-msg exit, mode "default"
+menu-0-1 = ""
+menu-0-1-exec = systemctl reboot
+menu-0-2 = ""
+menu-0-2-exec = systemctl poweroff -i
 menu-0-2-padding-right = 1
-menu-1-0 =  close
-menu-1-0-exec = i3-msg exit, mode "default"
-menu-1-0-padding-right = 1
-menu-2-0 =  reboot
-menu-2-0-exec = systemctl reboot
-menu-2-0-padding-right = 1
-menu-3-0 =  shutdown
-menu-3-0-exec = systemctl poweroff -i
-menu-3-0-padding-right = 1
-
-[settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-
-[global/wm]
-margin-top = 5
-margin-bottom = 5
 
 ; vim:ft=dosini
