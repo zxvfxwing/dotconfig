@@ -67,7 +67,6 @@ apps=(
 "telegram-desktop"
 "thunar"
 "spotify"
-"deluge"
 "thunderbird"
 ""
 )
@@ -80,7 +79,6 @@ workspaces=(
 "4"
 "5"
 "6"
-"7"
 )
 
 # counter of opened windows
